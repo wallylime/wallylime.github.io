@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Metamorphous&display=swap');
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  max-width: 960px;
+  margin: 1em auto;
+  border-left: 5px solid #12263A;
+  border-right: 5px solid #12263A;
+}
+
+h1 {
+  font-family: "Metamorphous", Garamond, serif;
+  font-size: 3em;
+  background-color: #12263A;
+  color: #E1C27A;
+  padding: .5em;
+  margin-top: 1em;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Metamorphous", Garamond, serif;
+  color: #12263A;
+  background-color: #E1C27A;
+  padding: .5em;
+  margin-left: -.75em;
+  margin-right: -.75em;
+  border: 2px solid #12263A;
+}
+
+img {
+  border-radius: 1.25em;
+  max-width: 30%;
+  float: right;
+  margin: 1em;
+  border: 1.5px solid #12263A;
+}
+
+main {
+  padding: 1em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  color: #12263A;
+}
+
+ul {
+  list-style-type: square;
+}
+
+a {
+  color: #06BCC1;
+}
+
+a:hover {
+  background-color: #E1C27A;
+  color: #12263A;
+}
+
+footer {
+  background-color: #12263A;
+  color: #E1C27A;
+  padding: 1.5em;
+}
+
+footer p {
+  color: #06BCC1;
+}
+
+footer a {
+  color: #E1C27A;
+}
+
+footer a:hover {
+  background-color: #06BCC1;
+}
