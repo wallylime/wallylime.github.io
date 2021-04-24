@@ -49,7 +49,7 @@ ul {
 }
 
 a {
-  color: #05999E;
+  color: #A31B14;
 }
 
 a:hover {
@@ -61,10 +61,6 @@ footer {
   background-color: #12263A;
   color: #E1C27A;
   padding: 1.5em;
-}
-
-footer p {
-  color: #06BCC1;
 }
 
 footer a {
