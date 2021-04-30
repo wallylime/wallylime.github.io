@@ -1,0 +1,75 @@
+body {
+  max-width: 960px;
+  background-color: #E1C27A;
+  margin: auto;
+  font-family: "Spartan", Helvetica, sans-serif;
+  font-size: 14px;
+}
+header {
+  background-color: #12263A;
+  color: #E1C27A;
+  border-radius: 1em;
+  padding: .5em;
+  text-align: center;
+  margin: 1em;
+}
+main {
+  margin: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "New Tegomin", serif;
+  background-color: #12263A;
+  border-radius: .5em;
+  padding: .5em;
+  text-align: center;
+  color: #E1C27A;
+}
+#name {
+  margin-top: -1em;
+}
+
+img {
+  max-width: 100%;
+  border-radius: .5em;
+  border: 1px solid #12263A;
+  margin: auto;
+}
+
+#num1, #num2, #num3 {
+  background-color: white;
+  border-radius: 1em;
+  padding: 1em;
+  border: 3px solid #12263A;
+}
+.business {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+#container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+}
+a {
+  color: #12263A;
+}
+a:hover {
+  color: #A31B14;
+}
+footer {
+  background-color: #12263A;
+  border-radius: 1em;
+  color: #E1C27A;
+  text-align: center;
+  font-weight: bold;
+  padding: 1.5em;
+  margin: 1em;
+}
+footer p {
+  font-weight: normal;
+}
+
+footer a {
+  color: #E1C27A;
+}
