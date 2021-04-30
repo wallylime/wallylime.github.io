@@ -6,12 +6,12 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
   #num1 {
-    grid-template-columns: 1 / 2;
+    grid-column: 1 / 2;
   }
   #num2 {
-    grid-template-columns: 2 / 3;
+    grid-column: 2 / 3;
   }
   #num3 {
-    grid-template-columns: 3 / 4;
+    grid-column: 3 / 4;
   }
 }
