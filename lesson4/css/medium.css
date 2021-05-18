@@ -1,0 +1,18 @@
+@media only screen and (min-width: 32em) {
+  .navigation {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  
+  .navigation li:first-child {
+    display: none;
+  }
+
+  .navigation li {
+    display: block;
+  }
+
+  .logo {
+    align-self: center;
+  }
+}
