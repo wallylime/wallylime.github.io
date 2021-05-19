@@ -1,15 +1,23 @@
-@media only screen and (min-width: 32em) {
-  .navigation {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-  }
+@media only screen and (min-width: 40em) {
   
-  .navigation li:first-child {
+  nav button {
     display: none;
   }
+ 
+  nav ul li a {
+    border-top: none;
+  }
+  
+  nav ul.hide {
+    display: flex;
+  }
 
-  .navigation li {
-    display: block;
+ nav ul li {
+    flex: 1 1 100%;
+  }
+
+  h1 {
+    font-size: 2.5rem;
   }
 
   .logo {

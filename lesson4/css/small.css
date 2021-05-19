@@ -36,37 +36,42 @@ nav {
   border-radius: 0 0 .5rem .5rem;
 }
 
+nav button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
 nav ul {
   list-style-type: none;
   margin: .5rem;
   overflow: hidden;
 }
-nav ul li {
-  padding: .4rem;
+
+nav ul.hide {
+  display: none;
 }
+
 nav ul li a {
   font-size: 1.2rem;
   font-weight: bold;
   color: #4f5d73;
   text-align: center;
   text-decoration: none;
+  display: block;
+  padding: .4rem;
+  border-top: 1px solid #4f5d73;
+}
+nav ul li.active a {
+  background-color: #e0ebf5;
+  color: #e0995e;
+  text-decoration: underline;
 }
 
 nav a:hover {
   background-color: #e0995e;
   color: white;
-}
-
-.navigation li:first-child {
-  display: block;
-}
-
-.navigation li {
-  display: none;
-}
-
-.responsive li {
-  display: block;
 }
 
 main {
@@ -98,6 +103,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "New Tegomin", serif;
 }
 
+h1 {
+  margin-bottom: 0;
+}
 footer {
   font-size: 1rem;
   max-width: 960px;
