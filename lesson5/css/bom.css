@@ -19,7 +19,7 @@ main {
 	padding: 0.5rem;
 	background-color: #bed;
 	display: grid;
-	grid-template-columns: 1;
+	grid-template-columns: 1fr;
 }
 
 input,
