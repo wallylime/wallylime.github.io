@@ -5,4 +5,9 @@
   h1 {
    font-size: 4rem;
  }
+ .weather-summary {
+  position: absolute;
+  top: 3rem;
+  left: 35rem;
+}
 }

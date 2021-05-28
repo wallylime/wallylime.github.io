@@ -16,6 +16,23 @@ header {
 header p {
   color: white;
 }
+aside {
+  display: none;
+}
+
+.banner {
+  display: block;
+  justify-self: center;
+  background-color: #e0995e;
+  color: white;
+  font-family: "New Tegomin", serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1rem;
+  grid-column: 1 / 3;
+  width: 98%;
+}
 
 .logo {
   grid-column: 1 / 2;
@@ -88,6 +105,9 @@ main div {
   border: 1px solid #4f5d73;
   border-radius: .5rem;
 }
+.map {
+  display: none;
+}
 
 h2 {
   background-color: #4f5d73;
@@ -105,11 +125,38 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   margin-bottom: 0;
 }
+
+img {
+  max-width: 100%;
+  border-radius: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+figcaption {
+  text-align: center;
+  margin-top: .25rem;
+  font-size: .8rem;
+}
+
+.firstdiv {
+  position: relative;
+}
+.weather-summary h3 {
+  color: #e0995e;
+}
+.weather-summary {
+  background-color: #4f5d73;
+  color: white;
+}
+
+.forecast {
+  display: none;
+}
 footer {
   font-size: 1rem;
-  max-width: 960px;
   background-color: #4f5d73;
-  border-radius: 1rem;
   color: white;
   text-align: center;
   padding: 1.5rem;

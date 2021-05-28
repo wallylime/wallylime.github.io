@@ -23,4 +23,19 @@
   .logo {
     align-self: center;
   }
+.forecast {
+  background-color: #4f5d73;
+  display: grid;
+  grid-template-rows: 2;
+  grid-template-columns: repeat(5, 1fr);
+}
+.forecast h3 {
+  grid-row: 1 / 2;
+}
+.forecast div {
+  grid-row: 2 / 3;
+}
+.map {
+  display: block;
+}
 }

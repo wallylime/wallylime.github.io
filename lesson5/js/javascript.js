@@ -1,6 +1,6 @@
 //Navigation display function for smaller screens
 function toggleMenu() {
-  document.getElementById("navigation").classList.toggle("hide");
+  document.querySelector("#navigation").classList.toggle("hide");
 }
 
 //Building day and month lists
@@ -11,3 +11,9 @@ let today = new Date();
 let dateDisplay = days[today.getDay()] + ", " + today.getDate() + " " + months[today.getMonth()] + " " + today.getFullYear();
 document.querySelector("#year").textContent = today.getFullYear();
 document.querySelector("#currentDate").textContent = dateDisplay;
+
+//Pancake banner
+if (today.getDay() == 5) {
+  let banner = document.querySelector("aside");
+  banner.setAttribute("class", "banner");
+}
