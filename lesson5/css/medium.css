@@ -1,18 +1,18 @@
 @media only screen and (min-width: 40em) {
-  
+
   nav button {
     display: none;
   }
- 
+
   nav ul li a {
     border-top: none;
   }
-  
+
   nav ul.hide {
     display: flex;
   }
 
- nav ul li {
+  nav ul li {
     flex: 1 1 100%;
   }
 
@@ -23,19 +23,48 @@
   .logo {
     align-self: center;
   }
-.forecast {
-  background-color: #4f5d73;
-  display: grid;
-  grid-template-rows: 2;
-  grid-template-columns: repeat(5, 1fr);
-}
-.forecast h3 {
-  grid-row: 1 / 2;
-}
-.forecast div {
-  grid-row: 2 / 3;
-}
-.map {
-  display: block;
-}
+
+  .forecast {
+    background-color: #4f5d73;
+    display: grid;
+    grid-template-rows: 2;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .forecast h3 {
+    color: white;
+    grid-row: 1 / 2;
+  }
+
+  .forecast div {
+    grid-row: 2 / 3;
+  }
+
+  .map {
+    display: block;
+  }
+  
+  .contact {
+    background-color: #4f5d73;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2;
+    gap: 1.5rem;
+  }
+
+  .contact h3 {
+    grid-row: 1 / 2;
+  }
+
+  .map {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+  }
+
+  .contact p {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+  }
+
 }
