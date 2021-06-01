@@ -27,7 +27,6 @@
   .forecast {
     background-color: #4f5d73;
     display: grid;
-    grid-template-rows: 2;
     grid-template-columns: repeat(5, 1fr);
   }
 
@@ -49,12 +48,13 @@
     color: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2;
     gap: 1.5rem;
   }
 
   .contact h3 {
     grid-row: 1 / 2;
+    color: white;
+    border-bottom: none;
   }
 
   .map {
