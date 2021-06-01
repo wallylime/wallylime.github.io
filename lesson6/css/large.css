@@ -1,0 +1,25 @@
+@media only screen and (min-width: 65em) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  nav a:hover {
+    border-left: .3rem solid #e0995e;
+    border-right: .3rem solid #e0995e;
+  }
+
+  .weather-summary {
+    position: absolute;
+    top: 3rem;
+    left: 35rem;
+  }
+
+  .weather-summary h3 {
+    border-top: .3rem solid #e0995e;
+    border-bottom: .3rem solid #e0995e;
+  }
+}
