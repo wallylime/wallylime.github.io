@@ -79,6 +79,7 @@ nav {
   margin: 0;
   padding: 0;
   border: .3rem solid #4f5d73;
+  border-radius: 0 0 .5rem .5rem;
 }
 
 nav button {
@@ -196,6 +197,7 @@ footer {
   text-align: center;
   padding: 1.5rem;
   margin: .75rem auto;
+  border-radius: .5rem .5rem 0 0;
 }
 
 footer a {
