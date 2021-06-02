@@ -71,10 +71,10 @@
 
   .weather-summary {
     position: absolute;
-    top: 4rem;
-    left: 40rem;
+    top: 3rem;
+    left: 21rem;
   }
-  
+
   .weather-summary h3 {
     border-top: .2rem solid #e0995e;
     border-bottom: .2rem solid #e0995e;
