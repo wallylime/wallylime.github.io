@@ -1,21 +1,41 @@
 body {
+  width: 100%;
+  max-width: 1100px;
   background-color: #e0ebf5;
   font-family: "Spartan", Helvetica, sans-serif;
   font-size: 14px;
+  margin: 0 auto;
+}
+
+main {
+  padding: .1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+main div {
+  padding: .75rem;
+  background-color: white;
+  border: 1px solid #4f5d73;
+  border-radius: .5rem;
+  margin-bottom: .5rem;
+}
+
+.firstdiv {
+  border-radius: 0 0 .5rem .5rem;
 }
 
 header {
   background-color: #3A4455;
-  padding: .5rem;
+  padding: .75rem;
   margin: 0;
   display: grid;
-  grid-template-columns: 30% 70%;
-  gap: 1.5rem;
+  grid-template-columns: 25% 75%;
 }
 
 header h1 {
   color: #e0ebf5;
-  text-decoration: underline #e0995e;
+  margin-bottom: 0;
 }
 
 header p {
@@ -26,13 +46,13 @@ header p {
   grid-column: 1 / 2;
   max-width: 100%;
   align-self: center;
-  justify-self: end;
+  justify-self: center;
   margin: 0;
 }
 
 .name-motto {
   grid-column: 2 / 3;
-  align-self: center;
+  padding: .2rem;
 }
 
 /*The following aside/banner is only displayed on Fridays using my javascript file*/
@@ -86,6 +106,7 @@ nav ul li a {
   text-decoration: none;
   display: block;
   padding: .4rem;
+  border-top: 1px solid #4f5d73;
 }
 
 nav ul li.active a {
@@ -100,32 +121,15 @@ nav a:hover {
   text-decoration: underline;
 }
 
-main {
-  max-width: 1100px;
-  padding: 0;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: .5rem;
-}
-
-main div {
-  padding: .75rem;
-  background-color: white;
-  border: 1px solid #4f5d73;
-  border-radius: .5rem;
-}
-
 .map {
   display: none;
 }
 
 h2 {
   background-color: #4f5d73;
-  border-radius: .5rem;
+  border-radius: .5rem .5rem 0 0;
   padding: .5rem;
-  color: #e0995e;
-  text-align: center;
+  color: white;
   margin-bottom: 0;
 }
 
@@ -136,11 +140,9 @@ h4,
 h5,
 h6 {
   font-family: "New Tegomin", serif;
+  border-bottom: .2rem solid #e0995e;
 }
 
-h1 {
-  margin-bottom: 0;
-}
 
 img {
   max-width: 100%;
@@ -183,7 +185,7 @@ img {
 }
 
 .contact h3 {
-  color: #e0995e;
+  color: #3A4455;
   border-bottom: 2px solid #e0995e;
 }
 
@@ -195,6 +197,7 @@ footer {
   padding: 1.5rem;
   margin: .75rem auto;
 }
+
 footer a {
   color: white;
 }
@@ -203,4 +206,3 @@ footer a:hover {
   background-color: #e0ebf5;
   color: #3A4455;
 }
-

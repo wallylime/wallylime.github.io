@@ -11,7 +11,7 @@
   <link href="css/small.css" rel="stylesheet">
   <link href="css/medium.css" rel="stylesheet">
   <link href="css/large.css" rel="stylesheet">
-  <link rel="shortcut icon" href="favicon.ico.png" type="image/x-icon">
+  <link href="favicon.ico" rel="shortcut icon">
 </head>
 
 <body>
@@ -38,15 +38,22 @@
   <main>
     <h2>Preston Idaho</h2>
     <div class="firstdiv">
-      <img src="images/townbuildings.jpg" alt="small town scene">
+      <picture>
+        <source srcset="images/imagesmall350px.jpg" media="(min-width: 320px) and (max-width: 500px)">
+        <source srcset="images/imagemedium550px.jpg" media="(min-width: 501px) and (max-width: 799px)">
+        <source srcset="images/imagelarge800px.jpg" media="(min-width: 800px)">
+        <img src="images/imagesmall350px.jpg" alt="sunset scene">
+      </picture>
       <p class="attribution">Photo by Monica Bourgeau on Unsplash</p>
       <div class="weather-summary">
         <h3>Weather Summary</h3>
-        <p> Currently: 65&deg;F<br>
-          High: 80&deg;F<br>
-          Wind Chill: 75&deg;F<br>
+        <p> Currently: <span id="current-temp">40</span>&deg;F<br>
+          Wind Speed: <span id="wind-speed">10</span> mph<br>
+          Wind Chill: <span id="wind-chill"></span><br>
           Humidity: 20%<br>
-          Wind Speed: 10 mph</p>
+          High: 80&deg;F<br>
+          Low: 38&deg;F
+          </p>
       </div>
     </div>
     <div class="forecast">
@@ -99,7 +106,7 @@
     <div class="contact">
       <h3>Contact Information</h3>
       <img class="map" src="images/preston.png" alt="map of Preston, Idaho">
-      <p>Southeast Idaho News<br>
+      <p><strong>Southeast Idaho News</strong><br>
         555 State St.<br>
         Preston, ID 83263<br>
         <br>
@@ -115,6 +122,7 @@
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
   <script src="js/javascript.js"></script>
+  <script src="js/windchill.js"></script>
 </body>
 
 </html>
