@@ -30,7 +30,7 @@ header {
   padding: .75rem;
   margin: 0;
   display: grid;
-  grid-template-columns: 25% 75%;
+  grid-template-columns: auto 75%;
 }
 
 header h1 {
