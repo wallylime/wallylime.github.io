@@ -18,12 +18,6 @@ let dateDisplay = days[today.getDay()] + ", " + today.getDate() + " " + months[t
 document.querySelector("#year").textContent = today.getFullYear();
 document.querySelector("#currentDate").textContent = dateDisplay;
 
-//Pancake banner
-if (today.getDay() == 5) {
-  let banner = document.querySelector("aside");
-  banner.setAttribute("class", "banner");
-}
-
 //The following code is for the days since last visit to the site
 var currentTime = today.getTime();
 
@@ -38,4 +32,10 @@ else {
   //Dividing by 86,400,000 because time stamp is given in miliseconds and there are 1000 miliseconds in a second, 60 seconds in a minute, 60 minutes in an hour, and 24 hours in a day (1000 * 60 * 60 * 24)
   var daysSinceVisit = Math.floor((currentTime - lastVisit) / 86400000);
   document.querySelector("#days-since-last-visit").innerHTML = "Days Since Last Visit: " + daysSinceVisit;
+}
+
+//Pancake banner
+if (today.getDay() == 5) {
+  let banner = document.querySelector("aside");
+  banner.setAttribute("class", "banner");
 }
