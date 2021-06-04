@@ -161,6 +161,7 @@ img {
 
 .firstdiv {
   position: relative;
+  background-color: #3A4455;
 }
 
 .weather-summary h3 {
@@ -175,7 +176,7 @@ img {
 }
 
 .weather-summary {
-  background-color: #3A4455;
+  background-color: #4f5d73;
   color: white;
   padding: 2rem;
   padding-bottom: .75rem;
@@ -207,4 +208,16 @@ footer a {
 footer a:hover {
   background-color: #e0ebf5;
   color: #3A4455;
+}
+
+.gallery {
+  border-radius: 0 0 .5rem .5rem;
+  background-color: #3A4455;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.descriptions {
+  text-align: center;
 }

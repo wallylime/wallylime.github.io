@@ -22,4 +22,12 @@
     border-top: .3rem solid #e0995e;
     border-bottom: .3rem solid #e0995e;
   }
+
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .gallery div:hover {
+    box-shadow: 0 0 1.5rem lightgrey;
+  }
 }
