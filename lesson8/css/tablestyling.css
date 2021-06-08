@@ -1,6 +1,7 @@
 body {
   font-family: "Ubuntu", sans-serif;
   font-size: 22px;
+  font-weight: 500;
   text-align: center;
   margin: auto;
   display: grid;
@@ -11,6 +12,10 @@ body {
 .table {
   grid-column: 1 / 2;
   max-width: 100%;
+}
+
+table {
+  box-shadow: 10px 10px 1rem #628ca6;
 }
 
 table, th, td {
@@ -29,7 +34,6 @@ tr:nth-child(odd) {
 
 tr:nth-child(5) td:nth-child(1) {
   font-style: italic;
-  font-weight: 400;
 }
 
 caption {
@@ -46,7 +50,7 @@ th {
 }
 tfoot td{
   background-color: #7fb9c2;
-  font-size: .95rem;
+  font-size: 18px;
 }
 
 #special {
