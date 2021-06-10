@@ -21,10 +21,6 @@ main div {
   margin-bottom: .5rem;
 }
 
-.firstdiv {
-  border-radius: 0 0 .5rem .5rem;
-}
-
 header {
   background-color: #3A4455;
   padding: .75rem;
@@ -102,6 +98,7 @@ nav ul.hide {
 
 nav ul li a {
   font-size: 1.2rem;
+  font-weight: bold;
   color: #3A4455;
   text-align: center;
   text-decoration: none;
@@ -168,6 +165,7 @@ img[data-src] {
 .firstdiv {
   position: relative;
   background-color: #3A4455;
+  border-radius: 0 0 .5rem .5rem;
 }
 
 .weather-summary h3 {
@@ -195,6 +193,58 @@ img[data-src] {
 .contact h3 {
   color: #3A4455;
   border-bottom: 2px solid #e0995e;
+}
+
+.storm-form {
+  border-radius: 0 0 .5rem .5rem;
+  grid-column: 1 / 2;
+  max-width: 100%;
+}
+
+form {
+  background-color: #e0ebf5;
+  width: 450px;
+  font-size: 20px;
+  border-radius: .5rem;
+  padding: 1rem;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+}
+
+input, textarea, select {
+  display: block;
+  margin-top: .3rem;
+  margin-bottom: 2rem;
+  padding: .8rem;
+  border-radius: .25rem;
+}
+
+.inline {
+  line-height: 0em;
+  display: inline-block;
+}
+
+.submit-button {
+  font-weight: bold;
+  border: 4px solid #e0995e;
+  border-radius: .5rem;
+}
+.submit-button:hover {
+  background-color: #3A4455;
+  color: white;
+}
+
+#thanks {
+  border: 4px solid #e0995e;
+  margin-top: 1rem;
+  border-radius: .5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem;
+  text-align: center;
 }
 
 footer {

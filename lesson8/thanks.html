@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Southeast Idaho News</title>
+  <meta name="description" content="News and weather for Preston, Soda Springs, and Fish Haven Idaho. ">
+  <link href="../lesson6/css/normalize.css" rel="stylesheet">
+  <link href="../lesson6/css/small.css" rel="stylesheet">
+  <link href="../lesson6/css/medium.css" rel="stylesheet">
+  <link href="../lesson6/css/large.css" rel="stylesheet">
+  <link href="../lesson6/favicon.ico" rel="shortcut icon">
+</head>
+
+<body>
+  <header class="header">
+    <img class="logo" src="../lesson6/images/weather-icon-150.png" alt="weather icon">
+    <div class="name-motto">
+      <h1>Southeast Idaho News</h1>
+      <p>Where you go to be in the know! Serving Preston, Soda Springs, and Fish Haven Idaho.</p>
+    </div>
+  </header>
+  <nav>
+    <button onclick="toggleMenu()">&#9776; Menu</button>
+    <ul id="navigation" class="hide">
+      <li><a href="#">Home</a></li>
+      <li><a href="../lesson6/preston-6.html">Preston</a></li>
+      <li><a href="#">Soda Springs</a></li>
+      <li><a href="#">Fish Haven</a></li>
+      <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+      <li><a href="gallery-7.html">Gallery</a></li>
+    </ul>
+  </nav>
+  <main>
+   <div id="thanks">
+     <p>Your storm report has been submitted! Thank you!</p>
+   </div>
+  </main>
+  <footer>&copy; <span id="year"></span> Southeast Idaho News | Emily Wall | <a href="https://wallylime.github.io">WDD
+      230 Portal</a>
+    <p><span id="currentDate"></span> | 
+      <span id="days-since-last-visit"></span>
+    </p>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="../lesson6/js/javascript.js"></script>
+</body>
+
+</html>

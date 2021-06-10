@@ -40,3 +40,8 @@ else {
   document.querySelector("#days-since-last-visit").innerHTML = "Days Since Last Visit: " + daysSinceVisit;
 }
 
+function adjustRating(rating) {
+  document.getElementById("ratingvalue").innerHTML = rating;
+}
+
+
