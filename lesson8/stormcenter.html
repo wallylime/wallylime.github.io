@@ -37,10 +37,10 @@
     <h2>Report a Storm</h2>
     <div class="storm-form">
       <form method="get" action="thanks.html">
-          <label>Full Name*<input type="text" pattern="[A-Za-z ]{5,}" required name="name"></label>
+          <label>Full Name<span class="asterisk">*</span><input type="text" pattern="[A-Za-z ]{5,}" required name="name"></label>
           <label>Email<input type="email" placeholder="janedoe@gmail.com" name="email"></label>
-          <label>Phone Number*<input type="tel" required name="phone"></label>
-          <label>Zip Code*<input type="number" required name="zip"></label>
+          <label>Phone Number<span class="asterisk">*</span><input type="tel" required name="phone"></label>
+          <label>Zip Code<span class="asterisk">*</span><input type="number" required name="zip"></label>
           <label>Storm Date<input type="date" name="storm-date"></label>
           <label>Storm Type<input list="storms" name="storm-type"></label>
           
@@ -83,8 +83,9 @@
           <input class="inline" type="radio" id="maybe" value="Maybe" name="danger-level"><label class="inline" for="maybe">Maybe</label><br>
           <input class="inline" type="radio" id="no" value="No" name="danger-level"><label class="inline" for="no">No</label><br>
 
+          <br>
           <label>Additional Information or Comments<textarea name="additional-comments"></textarea></label>
-        <input class="submit-button" type="submit" value="Report this Storm" name="submit">
+        <input class="submit-button" type="submit" value="Report this Storm">
       </form>
     </div>
   </main>

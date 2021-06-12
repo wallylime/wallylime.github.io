@@ -203,35 +203,55 @@ img[data-src] {
 
 form {
   background-color: #e0ebf5;
-  width: 450px;
   font-size: 20px;
+  font-weight: bold;
   border-radius: .5rem;
   padding: 1rem;
 }
 
 label {
-  font-weight: bold;
   display: block;
 }
 
 input, textarea, select {
+  box-sizing: border-box;
   display: block;
+  width: 100%;
   margin-top: .3rem;
   margin-bottom: 2rem;
   padding: .8rem;
   border-radius: .25rem;
 }
 
+input:required {
+  border: 2px solid #e0995e;
+}
+
+.asterisk {
+  font-size: 2rem;
+  color: #e0995e;
+}
+
 .inline {
-  line-height: 0em;
   display: inline-block;
+  width: auto;
+  padding-left: .5rem;
+  margin-bottom: .2rem;
+}
+
+#rating {
+  width: 60%;
 }
 
 .submit-button {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: bold;
   border: 4px solid #e0995e;
   border-radius: .5rem;
 }
+
 .submit-button:hover {
   background-color: #3A4455;
   color: white;
