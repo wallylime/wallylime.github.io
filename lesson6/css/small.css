@@ -229,7 +229,7 @@ input:required {
 
 .asterisk {
   font-size: 2rem;
-  color: #e0995e;
+  color: darkred;
 }
 
 .inline {
