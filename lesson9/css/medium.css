@@ -84,12 +84,24 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  .towns {
-    grid-template-columns: 1fr 1fr;
-  }
-
   .article img {
     float: left;
     margin: 1rem;
+  }
+
+  .towngrid, .middlegrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .middlegrid img {
+    grid-column: 1 / 2;
+    grid-row: 1;
+  }
+
+  .middlegrid data {
+    grid-column: 2 / 3;
+    grid-row: 1;
   }
 }

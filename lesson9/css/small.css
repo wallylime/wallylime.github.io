@@ -310,7 +310,7 @@ footer a:hover {
 
 section {
   background-color: #e0ebf5;
-  padding: 0 1rem 1rem 1rem;
+  padding: 1rem;
   border-radius: 1rem;
   border: 2px solid #3A4455;
 }
@@ -334,4 +334,16 @@ section p {
 
 .article img {
   box-shadow: 0 .5rem .5rem #3A4455;
+}
+
+.data {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.towngrid h2, .middlegrid h2 {
+  background-color: transparent;
+  color: #4f5d73;
 }
