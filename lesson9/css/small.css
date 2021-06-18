@@ -1,0 +1,337 @@
+body {
+  width: 100%;
+  max-width: 1100px;
+  background-color: #e0ebf5;
+  font-family: "Spartan", Helvetica, sans-serif;
+  font-size: 14px;
+  margin: 0 auto;
+}
+
+main {
+  padding: .1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+main div {
+  padding: .75rem;
+  background-color: white;
+  border: 1px solid #4f5d73;
+  border-radius: .5rem;
+  margin-bottom: .5rem;
+}
+
+header {
+  background-color: #3A4455;
+  padding: .75rem;
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto 75%;
+}
+
+header h1 {
+  color: #e0ebf5;
+  margin-bottom: 0;
+}
+
+header p {
+  color: white;
+}
+
+.logo {
+  grid-column: 1 / 2;
+  max-width: 100%;
+  align-self: center;
+  justify-self: center;
+  margin: 0;
+}
+
+.name-motto {
+  grid-column: 2 / 3;
+  padding: .2rem;
+}
+
+/*The following aside/banner is only displayed on Fridays using my javascript file*/
+aside {
+  display: none;
+}
+
+.banner {
+  display: block;
+  justify-self: center;
+  background-color: #e0ebf5;
+  color: #3A4455;
+  font-family: "New Tegomin", serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1rem;
+  grid-column: 1 / 3;
+  width: 98%;
+}
+
+nav {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  border: .3rem solid #4f5d73;
+  border-radius: 0 0 .5rem .5rem;
+}
+
+nav button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+nav ul.hide {
+  display: none;
+}
+
+nav ul li a {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #3A4455;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  padding: .4rem;
+  border-top: 1px solid #4f5d73;
+}
+
+nav ul li.active a {
+  background-color: #4f5d73;
+  color: white;
+}
+
+nav a:hover {
+  background-color: #e0ebf5;
+  border-left: .1rem solid #e0995e;
+  border-right: .1rem solid #e0995e;
+  text-decoration: underline;
+}
+
+.map {
+  display: none;
+}
+
+h2 {
+  background-color: #4f5d73;
+  border-radius: .5rem .5rem 0 0;
+  padding: .5rem;
+  color: white;
+  margin-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "New Tegomin", serif;
+  border-bottom: .2rem solid #e0995e;
+}
+
+
+img {
+  max-width: 100%;
+  border-radius: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: blur(0rem);
+  transition: filter 2s;
+}
+
+img[data-src] {
+  filter: blur(.3rem);
+}
+
+.attribution {
+  text-align: center;
+  margin-top: .25rem;
+  font-size: .8rem;
+}
+
+.firstdiv {
+  position: relative;
+  background-color: #3A4455;
+  border-radius: 0 0 .5rem .5rem;
+}
+
+.weather-summary h3 {
+  background-color: #e0ebf5;
+  color: #3A4455;
+  border-top: .1rem solid #e0995e;
+  border-bottom: .1rem solid #e0995e;
+  margin-top: 0;
+  margin-left: -2rem;
+  margin-right: -2rem;
+  padding: .5rem;
+}
+
+.weather-summary {
+  background-color: #4f5d73;
+  color: white;
+  padding: 2rem;
+  padding-bottom: .75rem;
+}
+
+.forecast {
+  display: none;
+}
+
+.contact h3 {
+  color: #3A4455;
+  border-bottom: 2px solid #e0995e;
+}
+
+.storm-form {
+  border-radius: 0 0 .5rem .5rem;
+  grid-column: 1 / 2;
+  max-width: 100%;
+}
+
+form {
+  background-color: #e0ebf5;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: .5rem;
+  padding: 1rem;
+}
+
+label {
+  display: block;
+}
+
+input, textarea, select {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  margin-top: .3rem;
+  margin-bottom: 2rem;
+  padding: .8rem;
+  border-radius: .25rem;
+}
+
+input:required {
+  border: 2px solid #e0995e;
+}
+
+.asterisk {
+  font-size: 2rem;
+  color: darkred;
+}
+
+.inline {
+  display: inline-block;
+  width: auto;
+  padding-left: .5rem;
+  margin-bottom: .2rem;
+}
+
+#rating {
+  width: 60%;
+}
+
+.submit-button {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+  border: 4px solid #e0995e;
+  border-radius: .5rem;
+}
+
+.submit-button:hover {
+  background-color: #3A4455;
+  color: white;
+}
+
+#thanks {
+  border: 4px solid #e0995e;
+  margin-top: 1rem;
+  border-radius: .5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer {
+  font-size: 1rem;
+  background-color: #3A4455;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin: .75rem auto;
+  border-radius: .5rem .5rem 0 0;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  background-color: #e0ebf5;
+  color: #3A4455;
+}
+
+.gallery {
+  border-radius: 0 0 .5rem .5rem;
+  background-color: #3A4455;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.descriptions {
+  text-align: center;
+}
+
+.towns {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.towns img {
+  box-shadow: 0 .5rem .5rem #3A4455;
+}
+
+section {
+  background-color: #e0ebf5;
+  padding: 0 1rem 1rem 1rem;
+  border-radius: 1rem;
+  border: 2px solid #3A4455;
+}
+
+section p {
+  padding-left: .5rem;
+}
+
+.infoHeadings {
+  font-weight: bold;
+}
+
+.heroimage {
+  background-color: #4f5d73;
+  margin-top: .5rem;
+}
+
+.heroimage img {
+  box-shadow: 0 .25rem .5rem white;
+}
+
+.article img {
+  box-shadow: 0 .5rem .5rem #3A4455;
+}
