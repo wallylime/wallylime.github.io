@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preston Idaho News</title>
+  <meta name="description" content="News, community events, and weather for Preston, Idaho.">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/small.css" rel="stylesheet">
+  <link href="css/medium.css" rel="stylesheet">
+  <link href="css/large.css" rel="stylesheet">
+  <link href="favicon.ico" rel="shortcut icon">
+</head>
+
+<body>
+  <header class="header">
+    <aside>Preston Pancakes in the Park!<br>
+      9:00am Saturday at the city park!</aside>
+    <img class="logo" src="images/weather-icon-150.png" alt="weather icon">
+    <div class="name-motto">
+      <h1>Southeast Idaho News</h1>
+      <p>Where you go to be in the know! Serving Preston, Soda Springs, and Fish Haven Idaho.</p>
+    </div>
+  </header>
+  <nav>
+    <button onclick="toggleMenu()">&#9776; Menu</button>
+    <ul id="navigation" class="hide">
+      <li><a href="../lesson9/index.html">Home</a></li>
+      <li class="active"><a href="preston-10.html">Preston</a></li>
+      <li><a href="#">Soda Springs</a></li>
+      <li><a href="#">Fish Haven</a></li>
+      <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
+      <li><a href="../lesson7/gallery-7.html">Gallery</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h2>Preston Idaho</h2>
+    <div class="firstdiv">
+         <img src="images/townbuildings.jpg" alt="small town buildings">
+      <div class="weather-summary">
+        <h3>Weather Summary</h3>
+        <p> Currently: <span id="current-temp">40</span>&deg;F<br>
+          Wind Speed: <span id="wind-speed">10</span> mph<br>
+          Wind Chill: <span id="wind-chill"></span><br>
+          Humidity: 20%<br>
+          High: 80&deg;F<br>
+          Low: 38&deg;F
+          </p>
+      </div>
+    </div>
+    <div class="forecast">
+      <h3>5 Day Forecast</h3>
+      <div>
+        <h4>Monday</h4>
+        <img class="sunny" src="images/sunny.jpg" alt="sunshine icon">
+        77&deg;F
+      </div>
+      <div>
+        <h4>Tuesday</h4>
+        <img class="sunny" src="images/sunny.jpg" alt="sunshine icon">
+        75&deg;F
+      </div>
+      <div>
+        <h4>Wednesday</h4>
+        <img class="sunny" src="images/sunny.jpg" alt="sunshine icon">
+        71&deg;F
+      </div>
+      <div>
+        <h4>Thursday</h4>
+        <img class="sunny" src="images/sunny.jpg" alt="sunshine icon">
+        77&deg;F
+      </div>
+      <div>
+        <h4>Friday</h4>
+        <img class="sunny" src="images/sunny.jpg" alt="sunshine icon">
+        82&deg;F
+      </div>
+    </div>
+    <div>
+      <h3>Preston Pancakes in the Park</h3>
+      <img src="images/communityevent.jpg" alt="community event">
+      <p class="attribution">Photo by Aranxa Esteve on Unsplash</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, ratione. Ipsam quasi sit tempora sapiente
+        laudantium dolore earum magnam in et, officiis voluptatem reprehenderit vel. Ex eveniet voluptatem rerum,
+        ducimus ipsam veritatis? Mollitia nostrum animi facere nulla sit! At porro temporibus illo minus voluptates
+        nostrum quos, aliquid sequi quasi neque est commodi omnis natus dolore totam eius voluptas fugiat vitae culpa
+        amet facere nesciunt itaque? Quod quo quae velit optio enim tempora incidunt vel rem sed placeat libero nemo
+        necessitatibus cumque, temporibus aliquid nulla odit quasi fugiat officiis aliquam nisi veritatis repudiandae
+        eum! Incidunt earum eaque veniam a, architecto enim ut laborum, facilis ipsa harum iure corporis, iste accusamus
+        fugit eius tempore ipsum dignissimos dolorum obcaecati maiores possimus et distinctio aliquid odio. Sunt, error
+        pariatur? Distinctio modi impedit quidem molestias error voluptatem blanditiis similique quis numquam facilis
+        voluptates incidunt necessitatibus in culpa assumenda, dicta omnis? Molestias non deserunt totam laudantium
+        sapiente cum reprehenderit ex, doloribus quidem debitis ad cupiditate delectus facilis quod quaerat! Dolor autem
+        sapiente, id nulla iusto saepe omnis ipsum odio itaque perferendis quam laborum quas non officia eos nesciunt
+        neque quasi numquam consectetur quo ab aliquid minus molestias! Corporis quidem, harum soluta veniam aliquid
+        temporibus aut itaque?</p>
+    </div>
+    <div class="contact">
+      <h3>Contact Information</h3>
+      <img class="map" src="images/preston.jpg" alt="map of Preston, Idaho">
+      <p><strong>Southeast Idaho News</strong><br>
+        555 State St.<br>
+        Preston, ID 83263<br>
+        <br>
+        &#9743; 555-555-5555<br>
+        &#9993; southeastidahonews@gmail.com</p>
+    </div>
+  </main>
+  <footer>&copy; <span id="year"></span> Southeast Idaho News | Emily Wall | <a href="https://wallylime.github.io">WDD
+      230 Portal</a>
+    <p>
+      <span id="currentDate"></span> | 
+      <span id="days-since-last-visit"></span>
+    </p>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/javascript.js"></script>
+  <script src="js/windchill.js"></script>
+</body>
+
+</html>
