@@ -41,41 +41,39 @@
          <img src="images/townbuildings.jpg" alt="small town buildings">
       <div class="weather-summary">
         <h3>Weather Summary</h3>
-        <p> Currently: <span id="current-temp">40</span>&deg;F<br>
-          Wind Speed: <span id="wind-speed">10</span> mph<br>
+        <p> Currently: <span id="current-temp"></span>&deg;F & <span id="current-description"></span><br>
+          Wind Speed: <span id="wind-speed"></span>mph<br>
           Wind Chill: <span id="wind-chill"></span><br>
-          Humidity: 20%<br>
-          High: 80&deg;F<br>
-          Low: 38&deg;F
+          Humidity: <span id="humidity"></span>%
           </p>
       </div>
     </div>
     <div class="forecast">
       <h3>5 Day Forecast</h3>
       <div>
-        <h4>Monday</h4>
-        <img class="sunny" src="images/sunny.jpg" alt="sunshine icon">
-        77&deg;F
+        <h4 id="day1"></h4>
+        <img id="icon1" src="" alt="">
+        <p><span id="day1temp"></span>&deg;F</p>
       </div>
       <div>
-        <h4>Tuesday</h4>
-        <img class="sunny" src="images/sunny.jpg" alt="sunshine icon">
-        75&deg;F
+        <h4 id="day2"></h4>
+        <img id="icon2" src="" alt="">
+        <p><span id="day2temp"></span>&deg;F</p>
       </div>
       <div>
-        <h4>Wednesday</h4>
-        <img class="sunny" src="images/sunny.jpg" alt="sunshine icon">
-        71&deg;F
+        <h4 id="day3"></h4>
+        <img id="icon3" src="" alt="">
+        <p><span id="day3temp"></span>&deg;F</p>
       </div>
       <div>
-        <h4>Thursday</h4>
-        <img class="sunny" src="images/sunny.jpg" alt="sunshine icon">
-        77&deg;F
+        <h4 id="day4"></h4>
+        <img id="icon4" src="" alt="">
+        <p><span id="day4temp"></span>&deg;F</p>
       </div>
       <div>
-        <h4>Friday</h4>
-        <img class="sunny" src="images/sunny.jpg" alt="sunshine icon">
-        82&deg;F
+        <h4 id="day5"></h4>
+        <img id="icon5" src="" alt="">
+        <p><span id="day5temp"></span>&deg;F</p>
       </div>
     </div>
     <div>
@@ -114,9 +112,11 @@
       <span id="currentDate"></span> | 
       <span id="days-since-last-visit"></span>
     </p>
+    <p>Weather data from <a href="https://openweathermap.org">OpenWeatherMap</a></p>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
   <script src="js/javascript.js"></script>
+  <script src="js/prestonweather.js"></script>
   <script src="js/windchill.js"></script>
 </body>
 
