@@ -1,5 +1,5 @@
 //This code is for filling in the weather summary on the Preston page
-const weatherURL = "http://api.openweathermap.org/data/2.5/weather?id=5604473&appid=10fc032484daf74e68e4eb98c9bc0ad7&units=imperial";
+const weatherURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=10fc032484daf74e68e4eb98c9bc0ad7&units=imperial";
 fetch(weatherURL)
   .then((response) => response.json())
   .then((prestonWeather) => { 
@@ -10,7 +10,7 @@ fetch(weatherURL)
   })
 
 //This code is for filling in the 5-day forecast on the Preston page
-const forecastURL = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=10fc032484daf74e68e4eb98c9bc0ad7&units=imperial";
+const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=10fc032484daf74e68e4eb98c9bc0ad7&units=imperial";
 fetch(forecastURL)
   .then((response) => response.json())
   .then ((prestonForecast) => {
