@@ -163,9 +163,13 @@ img[data-src] {
 }
 
 .firstdiv {
-  position: relative;
   background-color: #3A4455;
   border-radius: 0 0 .5rem .5rem;
+}
+
+.firstdiv img {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .weather-summary h3 {
@@ -180,10 +184,26 @@ img[data-src] {
 }
 
 .weather-summary {
+  margin-top: 1rem;
   background-color: #4f5d73;
   color: white;
   padding: 2rem;
   padding-bottom: .75rem;
+  border: .1rem solid #e0995e;
+}
+
+.weather-summary p {
+  background-color: white;
+  color: #3A4455;
+  line-height: 1.5;
+  padding: 1rem;
+  margin-left: -2rem;
+  margin-right: -2rem;
+  font-weight: bold;
+}
+
+.weather-summary span {
+  font-size: 1rem;
 }
 
 .forecast {
