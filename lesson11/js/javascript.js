@@ -1,3 +1,5 @@
+//General javascript for use on all pages
+
 WebFont.load({
   google: {families: ["New Tegomin", "Spartan"]
   }
