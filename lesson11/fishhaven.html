@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fish Haven Idaho News</title>
+  <meta name="description" content="News, community events, and weather for Fish Haven, Idaho.">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/small.css" rel="stylesheet">
+  <link href="css/medium.css" rel="stylesheet">
+  <link href="css/large.css" rel="stylesheet">
+  <link href="favicon.ico" rel="shortcut icon">
+</head>
+
+<body>
+  <header class="header">
+    <aside>Preston Pancakes in the Park!<br>
+      9:00am Saturday at the city park!</aside>
+    <img class="logo" src="images/weather-icon-150.png" alt="weather icon">
+    <div class="name-motto">
+      <h1>Southeast Idaho News</h1>
+      <p>Where you go to be in the know! Serving Preston, Soda Springs, and Fish Haven Idaho.</p>
+    </div>
+  </header>
+  <nav>
+    <button onclick="toggleMenu()">&#9776; Menu</button>
+    <ul id="navigation" class="hide">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="preston.html">Preston</a></li>
+      <li><a href="sodasprings.html">Soda Springs</a></li>
+      <li class="active"><a href="fishhaven.html">Fish Haven</a></li>
+      <li><a href="stormcenter.html">Storm Center</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Fish Haven Idaho</h2>
+    <div class="firstdiv">
+         <img src="images/townbuildings.jpg" alt="picture of small town buildings" title="photo by Monica Bourgeau on Unsplash">
+      <div class="weather-summary">
+        <h3>Weather Summary</h3>
+        <p>Currently: <span id="current-temp"></span>&deg;F</p>
+        <p>Description: <span id="current-description"></span></p>
+        <p>Wind Speed: <span id="wind-speed"></span>mph</p>
+        <p>Wind Chill: <span id="wind-chill"></span></p>
+        <p>Humidity: <span id="humidity"></span>%</p>
+      </div>
+    </div>
+    <div class="forecast">
+      <h3>5 Day Forecast</h3>
+      <div>
+        <h4 id="day1">#</h4>
+        <img id="icon1" src="#" alt="#">
+        <p><span id="day1temp"></span>&deg;F</p>
+      </div>
+      <div>
+        <h4 id="day2">#</h4>
+        <img id="icon2" src="#" alt="#">
+        <p><span id="day2temp"></span>&deg;F</p>
+      </div>
+      <div>
+        <h4 id="day3">#</h4>
+        <img id="icon3" src="#" alt="#">
+        <p><span id="day3temp"></span>&deg;F</p>
+      </div>
+      <div>
+        <h4 id="day4">#</h4>
+        <img id="icon4" src="#" alt="#">
+        <p><span id="day4temp"></span>&deg;F</p>
+      </div>
+      <div>
+        <h4 id="day5">#</h4>
+        <img id="icon5" src="#" alt="#">
+        <p><span id="day5temp"></span>&deg;F</p>
+      </div>
+    </div>
+    <div class="article-events">
+      <div class="townarticle">
+      <h3>Preston Pancakes in the Park</h3>
+      <img src="images/communityevent.jpg" alt="community event" title="photo by Aranxa Esteve on Unsplash">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, ratione. Ipsam quasi sit tempora sapiente
+        laudantium dolore earum magnam in et, officiis voluptatem reprehenderit vel. Ex eveniet voluptatem rerum,
+        ducimus ipsam veritatis? Mollitia nostrum animi facere nulla sit! At porro temporibus illo minus voluptates
+        nostrum quos, aliquid  blanditiis similique quis numquam facilis
+        voluptates incidunt necessitatibus in culpa assumenda, dicta omnis? Molestias non deserunt totam laudantium
+        sapiente cum reprehenderit ex, doloribus quidem debitis ad cupiditate delectus facilis quod quaerat! Dolor autem
+        sapiente, id nulla iusto saepe omnis ipsum odio itaque perferendis quam laborum quas non officia eos nesciunt
+        neque quasi numquam consectetur quo ab aliquid minus molestias! Corporis quidem, harum soluta veniam aliquid
+        temporibus aut itaque?</p>
+      </div>
+      <div class="townevents">
+      </div>
+    </div>
+    <div class="contact">
+      <h3>Contact Information</h3>
+      <img class="map" src="images/prestonmap.jpg" alt="map of Preston, Idaho">
+      <p><strong>Southeast Idaho News</strong><br>
+        555 State St.<br>
+        Preston, ID 83263<br>
+        <br>
+        &#9743; 555-555-5555<br>
+        &#9993; southeastidahonews@gmail.com</p>
+    </div>
+  </main>
+  <footer>&copy; <span id="year"></span> Southeast Idaho News | Emily Wall | <a href="https://wallylime.github.io">WDD
+      230 Portal</a>
+    <p>
+      <span id="currentDate"></span> | 
+      <span id="days-since-last-visit"></span>
+    </p>
+    <p>Weather data from <a href="https://openweathermap.org">OpenWeatherMap</a></p>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/javascript.js"></script>
+  <script src="js/fishhaven.js"></script>
+</body>
+
+</html>
