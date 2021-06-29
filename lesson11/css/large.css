@@ -29,14 +29,10 @@
     grid-row: 1 / 2;
   }
 
-  .weather-summary h3 {
+  .weather-summary h3, .townevents h3 {
     border-top: .3rem solid #e0995e;
     border-bottom: .3rem solid #e0995e;
     font-size: 2rem;
-  }
-
-  .weather-summary p {
-    font-size: 1.25rem;
   }
 
   .weather-summary span {

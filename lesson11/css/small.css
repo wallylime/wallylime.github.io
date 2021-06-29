@@ -172,7 +172,7 @@ img[data-src] {
   margin-right: 0;
 }
 
-.weather-summary h3 {
+.weather-summary h3, .townevents h3 {
   background-color: #e0ebf5;
   color: #3A4455;
   border-top: .1rem solid #e0995e;
@@ -183,22 +183,21 @@ img[data-src] {
   padding: .5rem;
 }
 
-.weather-summary {
+.weather-summary, .townevents {
   margin-top: 1rem;
   background-color: #4f5d73;
   color: white;
   padding: 2rem;
   padding-bottom: .75rem;
   border: .1rem solid #e0995e;
+  height: fit-content;
 }
 
-.weather-summary p {
+.weather-summary p, .townevents p {
   background-color: white;
   color: #3A4455;
-  line-height: 1.5;
   padding: 1rem;
-  margin-left: -2rem;
-  margin-right: -2rem;
+  margin: 0 -2rem .3rem -2rem;
   font-weight: bold;
 }
 
@@ -375,4 +374,8 @@ section p {
 .towngrid h2 {
   background-color: transparent;
   color: #4f5d73;
+}
+
+.article-events {
+  background-color: #3A4455;
 }

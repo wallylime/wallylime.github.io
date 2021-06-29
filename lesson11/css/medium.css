@@ -111,7 +111,7 @@
    margin: 1rem;
   }
 
-  .weather-summary h3 {
+  .weather-summary h3, .townevents h3 {
     border-top: .2rem solid #e0995e;
     border-bottom: .2rem solid #e0995e;
     font-size: 1.5rem;
@@ -140,6 +140,12 @@
   .towngrid:nth-child(2) data {
     grid-column: 2 / 3;
     grid-row: 1;
+  }
+
+  .article-events {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
   }
 
 }
