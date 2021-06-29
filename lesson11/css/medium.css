@@ -125,4 +125,21 @@
     grid-template-columns: 1fr 1fr;
   }
 
+  .towngrid {
+    font-size: 1.2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .towngrid:nth-child(2) img {
+    grid-column: 1 / 2;
+    grid-row: 1;
+  }
+
+  .towngrid:nth-child(2) data {
+    grid-column: 2 / 3;
+    grid-row: 1;
+  }
+
 }

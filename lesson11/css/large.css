@@ -64,4 +64,12 @@
     font-size: 2rem;
     color: #3A4455;
   }
+
+  .towns {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .towngrid {
+    display: block;
+  }
 }

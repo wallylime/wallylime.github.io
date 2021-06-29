@@ -318,3 +318,53 @@ footer a:hover {
 .descriptions {
   text-align: center;
 }
+
+.towns {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.towns img {
+  box-shadow: 0 .5rem .5rem #3A4455;
+}
+
+section {
+  background-color: #e0ebf5;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 2px solid #3A4455;
+}
+
+section p {
+  padding-left: .5rem;
+}
+
+.infoHeadings {
+  font-weight: bold;
+}
+
+.heroimage {
+  background-color: #4f5d73;
+  margin-top: .5rem;
+}
+
+.heroimage img {
+  box-shadow: 0 .25rem .5rem white;
+}
+
+.article img {
+  box-shadow: 0 .5rem .5rem #3A4455;
+}
+
+.data {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.towngrid h2 {
+  background-color: transparent;
+  color: #4f5d73;
+}
