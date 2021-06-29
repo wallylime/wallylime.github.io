@@ -72,4 +72,8 @@
   .towngrid {
     display: block;
   }
+
+  .contact p {
+    font-size: 1.5rem;
+  }
 }
