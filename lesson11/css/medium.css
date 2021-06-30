@@ -148,4 +148,9 @@
     gap: 1rem;
   }
 
+  .article img {
+    float: left;
+    margin: .5rem .7rem 0 0;
+  }
+
 }
