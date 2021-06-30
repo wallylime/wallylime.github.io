@@ -209,19 +209,6 @@ img[data-src] {
   display: none;
 }
 
-.contact {
-  background-color: #4f5d73;
-  color: white;
-}
-
-.contact p {
-  line-height: 1.5;
-}
-
-.contact h3 {
-  border-bottom: 2px solid #e0995e;
-}
-
 .storm-form {
   border-radius: 0 0 .5rem .5rem;
   grid-column: 1 / 2;
@@ -294,26 +281,6 @@ input:required {
   text-align: center;
 }
 
-footer {
-  font-size: 1rem;
-  background-color: #3A4455;
-  color: white;
-  text-align: center;
-  padding: 1.5rem;
-  margin: .75rem auto;
-  border-radius: .5rem .5rem 0 0;
-}
-
-footer a {
-  color: white;
-  text-decoration: underline solid #e0995e;
-}
-
-footer a:hover {
-  background-color: #e0ebf5;
-  color: #3A4455;
-}
-
 .gallery {
   border-radius: 0 0 .5rem .5rem;
   background-color: #3A4455;
@@ -381,4 +348,41 @@ section p {
 
 .article-events {
   background-color: #3A4455;
+}
+
+/*Footer on all pages*/
+footer {
+  background-color: #3A4455;
+  color: white;
+  text-align: center;
+  padding: .5rem;
+  border-radius: .5rem .5rem 0 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline solid #e0995e;
+}
+
+footer a:hover {
+  background-color: #e0ebf5;
+  color: #3A4455;
+}
+
+.contact {
+  background-color: #4f5d73;
+  color: white;
+  border-radius: .5rem;
+  margin-bottom: .75rem;
+  padding: .2rem;
+}
+
+.contact p {
+  line-height: 1.4;
+}
+
+.contact h3 {
+  padding-bottom: .5rem;
+  font-size: 1.3rem;
+  border-bottom: 3px solid #e0995e;
 }

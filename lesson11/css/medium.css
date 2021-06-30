@@ -62,34 +62,6 @@
     width: 75%;
   }
 
-  .map {
-    display: block;
-  }
-
-  .contact {
-    background-color: #4f5d73;
-    color: white;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-  }
-
-  .contact h3 {
-    grid-column: 1 / 3;
-    grid-row: 1 / 2;
-  }
-
-  .map {
-    grid-row: 2 / 3;
-    grid-column: 1 / 2;
-  }
-
-  .contact p {
-    grid-row: 2 / 3;
-    grid-column: 2 / 3;
-    font-size: 1.1rem;
-  }
-
   .firstdiv {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -151,6 +123,38 @@
   .article img {
     float: left;
     margin: .5rem .7rem 0 0;
+  }
+  /*Footer on all pages*/
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 1.5rem;
+    row-gap: 0;
+  }
+
+  .contact-header {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .contact h3 {
+    font-size: 1.5rem;
+    border-bottom: 3.5px solid #e0995e;
+  }
+
+  .map {
+    display: block;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    padding: .5rem;
+  }
+
+  .contact p {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    font-size: 1rem;
+    text-align: left;
   }
 
 }

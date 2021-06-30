@@ -20,12 +20,6 @@ let dateDisplay = days[today.getDay()] + ", " + today.getDate() + " " + months[t
 document.querySelector("#year").textContent = today.getFullYear();
 document.querySelector("#currentDate").textContent = dateDisplay;
 
-//Pancake banner
-if (today.getDay() == 5) {
-  let banner = document.querySelector("aside");
-  banner.setAttribute("class", "banner");
-}
-
 //The following code is for the days since last visit to the site
 var currentTime = today.getTime();
 

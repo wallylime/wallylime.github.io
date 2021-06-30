@@ -1,5 +1,11 @@
 //JS specific to the Preston page
 
+//Pancake banner
+if (today.getDay() == 5) {
+  let banner = document.querySelector("aside");
+  banner.setAttribute("class", "banner");
+}
+
 //This code is for filling in the weather summary
 const weatherURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=10fc032484daf74e68e4eb98c9bc0ad7&units=imperial";
 fetch(weatherURL)

@@ -68,8 +68,10 @@
   .towngrid {
     display: block;
   }
+  
+ /*Footer on all pages*/
+ .contact {
+   column-gap: 2rem;
+ }
 
-  .contact p {
-    font-size: 1.5rem;
-  }
 }
