@@ -1,7 +1,7 @@
 //JS specific to the Soda Springs page
 
 //This code is for filling in the weather summary
-const weatherURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=10fc032484daf74e68e4eb98c9bc0ad7&units=imperial";
+const weatherURL = "https://api.openweathermap.org/data/2.5/weather?id=5607916&appid=10fc032484daf74e68e4eb98c9bc0ad7&units=imperial";
 fetch(weatherURL)
   .then((response) => response.json())
   .then((ssWeather) => { 
@@ -12,7 +12,7 @@ fetch(weatherURL)
   })
 
 //This code is for filling in the 5-day forecast
-const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=10fc032484daf74e68e4eb98c9bc0ad7&units=imperial";
+const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5607916&appid=10fc032484daf74e68e4eb98c9bc0ad7&units=imperial";
 fetch(forecastURL)
   .then((response) => response.json())
   .then ((ssForecast) => {
