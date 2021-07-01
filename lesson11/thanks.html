@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Southeast Idaho News</title>
-  <meta name="description" content="News and weather for Preston, Soda Springs, and Fish Haven Idaho. ">
+  <title>Thank You Page</title>
+  <meta name="description" content="Thanks for submitting the storm center report!">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/verysmall.css" rel="stylesheet">
   <link href="css/small.css" rel="stylesheet">
@@ -26,26 +26,18 @@
   <nav>
     <button onclick="toggleMenu()">&#9776; Menu</button>
     <ul id="navigation" class="hide">
-      <li class="active"><a href="index.html">Home</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="preston.html">Preston</a></li>
       <li><a href="sodasprings.html">Soda Springs</a></li>
       <li><a href="fishhaven.html">Fish Haven</a></li>
-      <li><a href="stormcenter.html">Storm Center</a></li>
+      <li class="active"><a href="stormcenter.html">Storm Center</a></li>
       <li><a href="gallery.html">Gallery</a></li>
     </ul>
   </nav>
   <main>
-    <div class="heroimage">
-      <img src="images/heroimage.jpg" alt="beautiful mountain scene" title="Photo by Alex Bertha on Unsplash">
-    </div>
-    <div class="towns"></div>
-    <h2>Extreme Heat Continues in Southeast Idaho</h2>
-    <div class="article">
-      <img src="images/sunshinefield.jpg" alt="sun shining on a dry field" title="Photo by Ruben Engel on Unsplash">
-
-      <p>Forget the barbeque and pull out the popsicles and ice cream this 4th of July! The current heat wave is expected to continue through the July 4th weekend. Record-setting temperatures are possible and residents are advised to use caution in any outdoor activities. Furthermore, residents are asked to reduce energy consumption between 4-9pm in order to avoid power outages. Read more about it in this article: <a href="https://www.idahostatejournal.com/freeaccess/scorching-heat-wave-to-continue-in-east-idaho-could-last-through-july-4-weekend/article_7ca23f86-8e3b-5cdd-86bc-73eb957541da.html">"Scorching Heat Wave to Continue in East Idaho, Could Last Through July 4 Weekend" by Shelbie Harris.</a></p>
-
-    </div>
+   <div id="thanks">
+     <p>Your storm report has been submitted! Thank you!</p>
+   </div>
   </main>
   <footer>
     <div class="contact">
@@ -61,14 +53,12 @@
     </div>
     &copy; <span id="year"></span> Southeast Idaho News | Emily Wall | <a href="https://wallylime.github.io">WDD
       230 Portal</a>
-    <p>
-      <span id="currentDate"></span> |
+    <p><span id="currentDate"></span> | 
       <span id="days-since-last-visit"></span>
     </p>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
   <script src="js/javascript.js"></script>
-  <script src="js/homepagetowninfo.js"></script>
 </body>
 
 </html>

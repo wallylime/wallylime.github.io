@@ -8,6 +8,7 @@
   <title>Preston Idaho News</title>
   <meta name="description" content="News, community events, and weather for Preston, Idaho.">
   <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/verysmall.css" rel="stylesheet">
   <link href="css/small.css" rel="stylesheet">
   <link href="css/medium.css" rel="stylesheet">
   <link href="css/large.css" rel="stylesheet">
@@ -18,7 +19,7 @@
   <header class="header">
     <aside>Preston Pancakes in the Park!<br>
       9:00am Saturday at the city park!</aside>
-    <img class="logo" src="images/weather-icon-150.png" alt="weather icon">
+    <img class="logo" src="images/weather-icon-140.png" alt="weather icon">
     <div class="name-motto">
       <h1>Southeast Idaho News</h1>
       <p>Where you go to be in the know! Serving Preston, Soda Springs, and Fish Haven Idaho.</p>
@@ -38,9 +39,8 @@
 
   <main>
     <h2>Preston, Idaho</h2>
-    <div class="firstdiv">
-      <img src="images/preston.jpg" alt="picture of small town"
-        title="photo by Louise Tollisen on Unsplash">
+    <div class="img-and-summary">
+      <img src="images/preston.jpg" alt="picture of small town" title="photo by Louise Tollisen on Unsplash">
       <div class="weather-summary">
         <h3>Weather Summary</h3>
         <p>Currently: <span id="current-temp"></span>&deg;F</p>
@@ -50,8 +50,9 @@
         <p>Humidity: <span id="humidity"></span>%</p>
       </div>
     </div>
+    
     <div class="forecast">
-      <h3>5 Day Forecast</h3>
+      <h2>5 Day Forecast</h2>
       <div>
         <h4 id="day1">#</h4>
         <img id="icon1" src="#" alt="#">
@@ -78,6 +79,7 @@
         <p><span id="day5temp"></span>&deg;F</p>
       </div>
     </div>
+    <h2>Recent News & Events</h2>
     <div class="article-events">
       <div class="townarticle">
         <h3>Preston Man Shoots Trespasser</h3>

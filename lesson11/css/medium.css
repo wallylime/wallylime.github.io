@@ -1,43 +1,47 @@
-@media only screen and (min-width: 40em) {
+@media only screen and (min-width: 550px) {
 
-  nav button {
-    display: none;
+/*-----General CSS for all pages-----*/
+h1 {
+  font-size: 2.5rem;
+}
+
+/*-----Header on all pages-----*/
+  header {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: .5rem;
   }
 
-  nav ul li a {
-    border-top: none;
+  header p {
+    margin-left: 0;
+    padding-left: 0;
   }
 
-  nav ul.hide {
-    display: flex;
+  .logo {
+    grid-column: 1 / 2;
+    max-width: 8em;
+    align-self: center;
+    justify-self: center;
+  }
+  .name-motto {
+    grid-column: 2 / 3;
   }
 
-  nav ul li {
-    flex: 1 1 100%;
-  }
-
-  nav a:hover {
-    border-left: .2rem solid #e0995e;
-    border-right: .2rem solid #e0995e;
-  }
-
-  h1 {
-    font-size: 2.5rem;
-  }
-
+/*-----CSS for town pages-----*/
   .forecast {
     background-color: #4f5d73;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
   }
 
-  .forecast h3 {
+  .forecast h2 {
     color: white;
     grid-column: 1 / 6;
     grid-row: 1 / 2;
   }
 
   .forecast div {
+    margin-top: .5rem;
     grid-row: 2 / 3;
   }
 
@@ -62,25 +66,19 @@
     width: 75%;
   }
 
-  .firstdiv {
+  .img-and-summary {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    max-height: 485px;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
   }
 
-  .firstdiv img {
-    grid-column: 1 / 3;
-    grid-row: 1 / 3;
+  .img-and-summary img {
     justify-self: center;
   }
 
   .weather-summary {
-   grid-column: 2 / 3;
-   grid-row: 2 / 3;
-   z-index: 2;
-   justify-self: center;
-   margin: 1rem;
+    z-index: 2;
+    justify-self: center;
   }
 
   .weather-summary h3, .townevents h3 {
@@ -93,10 +91,18 @@
     font-size: 1.25rem;
   }
 
+  .article-events {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+  }
+
+/*-----CSS for Gallery Page-----*/
   .gallery {
     grid-template-columns: 1fr 1fr;
   }
 
+/*-----CSS for home page-----*/
   .towngrid {
     font-size: 1.2rem;
     display: grid;
@@ -114,16 +120,12 @@
     grid-row: 1;
   }
 
-  .article-events {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 1rem;
-  }
-
   .article img {
     float: left;
-    margin: .5rem .7rem 0 0;
+    max-width: 400px;
+    margin: .5rem .7rem .7rem 0;
   }
+
   /*Footer on all pages*/
   .contact {
     display: grid;
