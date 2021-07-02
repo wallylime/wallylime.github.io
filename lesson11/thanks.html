@@ -43,7 +43,11 @@
     <div class="contact">
       <div class="contact-header">
       <h3>Contact Information</h3></div>
-      <img class="map" src="images/preston-map.jpg" alt="map of Preston, Idaho">
+      <picture>
+        <source srcset="images/preston-map-smaller.jpg" media="(max-width: 839px)">
+        <source srcset="images/preston-map.jpg" media="(min-width: 840px)">
+        <img class="map" src="images/preston-map-smaller.jpg" alt="map of Preston, Idaho">
+      </picture>
       <p><strong>Southeast Idaho News</strong><br>
         555 State St.<br>
         Preston, ID 83263<br>
