@@ -1,13 +1,398 @@
-@media only screen and (min-width: 390px) {
+/*Smallest screen size for screens up to 390px*/
 
-/*-----Header on all pages-----*/
-header p {
-  margin-left: 5rem;
-  }
-
-/*-----CSS for home page-----*/
-section {
-  padding: .75rem;
+/*-----General CSS for all pages-----*/
+body {
+  width: 100%;
+  max-width: 1100px;
+  background-color: #e0ebf5;
+  font-family: "Spartan", Helvetica, sans-serif;
+  font-size: 14px;
+  margin: 0 auto;
 }
 
+main {
+  padding: .1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+main div {
+  padding: .75rem;
+  background-color: white;
+  border: 1px solid #4f5d73;
+  border-radius: .5rem;
+  margin-bottom: .5rem;
+}
+
+h2 {
+  background-color: #4f5d73;
+  border-radius: .5rem .5rem 0 0;
+  padding: .5rem;
+  color: white;
+  margin-bottom: 0;
+  margin-top: .5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "New Tegomin", serif;
+  border-bottom: .2rem solid #e0995e;
+}
+
+
+img {
+  max-width: 100%;
+  border-radius: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: blur(0rem);
+  transition: filter 2s;
+}
+
+/*-----Header on all pages-----*/
+header {
+  background-color: #3A4455;
+}
+
+header h1 {
+  color: #e0ebf5;
+  margin-bottom: 0;
+}
+
+.logo {
+  float: left;
+  padding: .5rem;
+  max-width: 5rem;
+}
+
+header p {
+  color: white;
+  padding-left: 1rem;
+  line-height: 1.5;
+}
+
+.name-motto {
+  padding: .2rem;
+}
+
+/*-----Nav menu on all pages-----*/
+nav {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  border: .3rem solid #4f5d73;
+  border-radius: 0 0 .5rem .5rem;
+}
+
+nav button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+nav ul.hide {
+  display: none;
+}
+
+nav ul li a {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #3A4455;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  padding: .4rem;
+  border-top: 1px solid #4f5d73;
+}
+
+nav ul li.active a {
+  background-color: #4f5d73;
+  color: white;
+}
+
+nav a:hover {
+  background-color: #e0ebf5;
+  border-left: .1rem solid #e0995e;
+  border-right: .1rem solid #e0995e;
+  text-decoration: underline;
+}
+
+/*-----Footer on all pages-----*/
+footer {
+  background-color: #3A4455;
+  color: white;
+  text-align: center;
+  padding: .5rem;
+  border-radius: .5rem .5rem 0 0;
+}
+
+footer a {
+  color: #E1C27A;
+  text-decoration: underline solid #e0995e;
+}
+
+footer a:hover {
+  background-color: #e0ebf5;
+  color: #3A4455;
+}
+
+.contact {
+  background-color: #4f5d73;
+  color: white;
+  border-radius: .5rem;
+  margin-bottom: .75rem;
+  padding: .2rem;
+}
+
+.contact p {
+  line-height: 1.4;
+}
+
+.contact h3 {
+  margin-top: 0;
+  padding-bottom: .5rem;
+  font-size: 1.3rem;
+  border-bottom: 3px solid #e0995e;
+}
+
+.map {
+  display: none;
+}
+
+/*-----Aside/banner for display on Preston page on Fridays only-----*/
+aside {
+  display: none;
+}
+
+.banner {
+  display: block;
+  background-color: #e0ebf5;
+  color: #3A4455;
+  font-family: "New Tegomin", serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: .3rem;
+  margin-top: .5rem;
+  border: .3rem solid #e0995e;
+  border-radius: 3rem;
+}
+
+/*-----CSS for Gallery Page-----*/
+img[data-src] {
+  filter: blur(.3rem);
+}
+
+.attribution {
+  text-align: center;
+  margin-top: .25rem;
+  font-size: .8rem;
+}
+
+.gallery {
+  border-radius: 0 0 .5rem .5rem;
+  background-color: #3A4455;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.descriptions {
+  text-align: center;
+}
+
+/*-----CSS for town pages-----*/
+.img-and-summary {
+  background-color: #3A4455;
+  border-radius: 0 0 .5rem .5rem;
+}
+
+.weather-summary h3, .townevents h3 {
+  background-color: #e0ebf5;
+  color: #3A4455;
+  border-top: .1rem solid #e0995e;
+  border-bottom: .1rem solid #e0995e;
+  margin-top: -1rem;
+  margin-bottom: .5rem;
+  margin-left: -2rem;
+  margin-right: -2rem;
+  padding: .5rem;
+}
+
+.weather-summary, .townevents {
+  margin-top: .75rem;
+  background-color: #4f5d73;
+  padding: 2rem;
+  padding-bottom: .75rem;
+  border: .1rem solid #e0995e;
+}
+
+.weather-summary p, .townevents p {
+  background-color: white;
+  color: #3A4455;
+  padding: 1rem;
+  margin: 0 -2rem .3rem -2rem;
+}
+
+.weather-summary span {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.forecast {
+  display: none;
+}
+
+.article-events {
+  background-color: #3A4455;
+  border-radius: 0 0 .5rem .5rem;
+}
+
+.townevents p {
+  line-height: 2;
+}
+
+.date {
+  font-weight: bold;
+}
+
+ /*-----CSS for stormcenter page-----*/
+.storm-form {
+  border-radius: 0 0 .5rem .5rem;
+  grid-column: 1 / 2;
+  max-width: 100%;
+}
+
+form {
+  background-color: #e0ebf5;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: .5rem;
+  padding: 1rem;
+}
+
+label {
+  display: block;
+}
+
+input, textarea, select {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  margin-top: .3rem;
+  margin-bottom: 2rem;
+  padding: .8rem;
+  border-radius: .25rem;
+}
+
+input:required {
+  border: 2px solid #e0995e;
+}
+
+.asterisk {
+  font-size: 2rem;
+  color: darkred;
+}
+
+.inline {
+  display: inline-block;
+  width: auto;
+  padding-left: .5rem;
+  margin-bottom: .2rem;
+}
+
+#rating {
+  width: 60%;
+}
+
+.submit-button {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+  border: 4px solid #e0995e;
+  border-radius: .5rem;
+}
+
+.submit-button:hover {
+  background-color: #3A4455;
+  color: white;
+}
+
+#thanks {
+  border: 4px solid #e0995e;
+  margin-top: 1rem;
+  border-radius: .5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem;
+  text-align: center;
+}
+
+/*-----CSS for home page-----*/
+.towns {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.towns img {
+  box-shadow: 0 .5rem .5rem #4f5155;
+}
+
+section {
+  background-color: #e0ebf5;
+  padding: .7rem;
+  border-radius: 1rem;
+  border: 2px solid #3A4455;
+}
+
+section p {
+  padding-left: .5rem;
+}
+
+.infoHeadings {
+  font-weight: bold;
+}
+
+.heroimage {
+  background-color: #3A4455;
+  margin-top: .5rem;
+}
+
+.article {
+  border-radius: 0 0 .5rem .5rem;
+}
+
+.article img {
+  box-shadow: 0 .5rem .5rem #3A4455;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: .5rem;
+}
+
+.data {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.towngrid h2 {
+  background-color: transparent;
+  color: #4f5d73;
+  margin-top: 0;
 }
