@@ -369,12 +369,8 @@ section p {
 }
 
 .heroimage {
-  background-color: #4f5d73;
+  background-color: #3A4455;
   margin-top: .5rem;
-}
-
-.heroimage img {
-  box-shadow: 0 .25rem .5rem white;
 }
 
 .article {
