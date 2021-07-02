@@ -32,6 +32,7 @@ fetch(townListURL)
         let image = document.createElement("img");
         image.setAttribute("src", `images/${towns[i].photo}`);
         image.setAttribute("alt", `picture of ${towns[i].name}`);
+        image.setAttribute("loading", "lazy");
         if (towns[i].name == "Preston") {
           image.setAttribute("title", "photo by Louise Tollisen on Unsplash");
         }
