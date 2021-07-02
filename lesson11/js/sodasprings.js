@@ -52,18 +52,18 @@ fetch(townListURL)
   })
   .then(function (townlist) {
     const towns = townlist["towns"];
-
     for (i=0; i < towns.length; i++) {
       if (towns[i].name == "Soda Springs") {
         let h3 = document.createElement("h3");
         h3.textContent = "Soda Springs Events:";
-        document.querySelector("div.townevents").appendChild(h3);
+        let p = document.createElement("p");
         let ssEvents = towns[i].events;
         for (j=0; j < ssEvents.length; j++) {
-          let p = document.createElement("p");
-          p.innerHTML = ssEvents[j];
-          document.querySelector("div.townevents").appendChild(p);
+          let event = ssEvents[j];
+          let eventSplit = event.split(":");
+          p.innerHTML += `<span class="date">${eventSplit[0]}:</span>  ${eventSplit[1]} <br>`;
         }
-      }
+        document.querySelector("div.townevents").append(h3, p);
     }
+  }
   })

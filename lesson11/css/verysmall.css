@@ -30,7 +30,7 @@ h2 {
   padding: .5rem;
   color: white;
   margin-bottom: 0;
-  margin-top: 0;
+  margin-top: .5rem;
 }
 
 h1,
@@ -179,16 +179,16 @@ aside {
 
 .banner {
   display: block;
-  justify-self: center;
   background-color: #e0ebf5;
   color: #3A4455;
   font-family: "New Tegomin", serif;
   font-weight: bold;
   font-size: 1.5rem;
   text-align: center;
-  padding: 1rem;
-  grid-column: 1 / 3;
-  width: 98%;
+  padding: .3rem;
+  margin-top: .5rem;
+  border: .3rem solid #e0995e;
+  border-radius: 3rem;
 }
 
 /*-----CSS for Gallery Page-----*/
@@ -233,9 +233,8 @@ img[data-src] {
 }
 
 .weather-summary, .townevents {
-  margin-top: 1rem;
+  margin-top: .75rem;
   background-color: #4f5d73;
-  color: white;
   padding: 2rem;
   padding-bottom: .75rem;
   border: .1rem solid #e0995e;
@@ -246,11 +245,11 @@ img[data-src] {
   color: #3A4455;
   padding: 1rem;
   margin: 0 -2rem .3rem -2rem;
-  font-weight: bold;
 }
 
 .weather-summary span {
   font-size: 1rem;
+  font-weight: bold;
 }
 
 .forecast {
@@ -260,6 +259,14 @@ img[data-src] {
 .article-events {
   background-color: #3A4455;
   border-radius: 0 0 .5rem .5rem;
+}
+
+.townevents p {
+  line-height: 2;
+}
+
+.date {
+  font-weight: bold;
 }
 
  /*-----CSS for stormcenter page-----*/

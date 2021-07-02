@@ -69,16 +69,20 @@ h1 {
   .img-and-summary {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 1rem;
+    gap: .5rem;
   }
 
   .img-and-summary img {
     justify-self: center;
+    max-width: 100%;
+  }
+
+  .weather-summary, .townevents {
+    margin-top: 0;
   }
 
   .weather-summary {
     z-index: 2;
-    justify-self: center;
   }
 
   .weather-summary h3, .townevents h3 {
@@ -91,10 +95,8 @@ h1 {
     font-size: 1.25rem;
   }
 
-  .article-events {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 1rem;
+  .townevents p {
+    font-size: 1rem;
   }
 
 /*-----CSS for Gallery Page-----*/

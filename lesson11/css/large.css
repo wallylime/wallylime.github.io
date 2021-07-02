@@ -72,6 +72,10 @@
     color: #3A4455;
   }
 
+  .townevents p {
+    font-size: 1.2rem;
+  }
+
 /*-----CSS for Gallery Page-----*/
   .gallery {
     grid-template-columns: 1fr 1fr 1fr;
