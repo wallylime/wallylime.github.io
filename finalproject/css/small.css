@@ -105,17 +105,18 @@ section.weather {
   color: white;
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 2fr;
-  gap: .5rem;
+  grid-template-rows: .5fr 2fr;
   align-content: center;
   justify-content: center;
 }
 
 section.weather h3 {
-  grid-area: 1 / 1 / 2 / 6;
+  grid-area: 1 / 1 / 2 / 5;
+  margin: 0;
 }
 
 section.weather p {
+  margin-top: 0;
   border: 1px solid white;
   padding: .5rem;
 }
