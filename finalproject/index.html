@@ -17,10 +17,10 @@
 <body>
   <header>
     <picture>
-      <source srcset="images/logo550x220.jpg" media="(max-width: 550px)">
-      <source srcset="images/logo750x300.jpg" media="(min-width: 551px) and (max-width: 750px)">
-      <source srcset="images/logo1000x400.jpg" media="(min-width: 751px)">
-      <img src="images/logo550x220.jpg" alt="Meridian Chamber of Commerce logo">
+      <source srcset="images/smalllogo.jpg" media="(max-width: 549px)">
+      <source srcset="images/mediumlogo.jpg" media="(min-width: 550px) and (max-width: 749px)">
+      <source srcset="images/largelogo.jpg" media="(min-width: 750px)">
+      <img src="images/smalllogo.jpg" alt="Meridian Chamber of Commerce logo">
     </picture>
     
     <nav>
@@ -36,20 +36,34 @@
       </div>
     </nav>
 
-    <h1>> Home Page for Meridian Chamber of Commerce</h1>
+    <h1>> Home Page for Meridian, Idaho Chamber of Commerce</h1>
   </header>
 
   <main>
-   <section class="weather">
-     <h3>Weather in Meridian, Idaho</h3>
-     <p id="current-weather"><img id="weather-icon" src="#" alt="#"></p>
-     <p id="forecast-1"></p>
-     <p id="forecast-2"></p>
-     <p id="forecast-3"></p>
-   </section>
+    
+    <!-- <aside class="join">
+      <a href="join.html">Join the Chamber!</a>
+    </aside> -->
+   <!-- <aside class="weather">
+     <div class="current">
+      <h4>Currently:</h4>
+      <p id="current-weather"></p>
+      </div>
+      <div class="forecast">
+      <h4>Three-day forecast:</h4>
+      <p id="forecast1"></p>
+      <p id="forecast2"></p>
+      <p id="forecast3"></p>
+      </div>
+   </aside> -->
+   
   </main>
   <footer>
-    <p>&copy; <span id="year"></span> | Emily Wall | <a href="attributions.html">Attributions</a> | Last Updated: <span id="update"></span></p>
+    <div class="contact-info">
+      <p>215 E. Franklin Road, Meridian, Idaho 83642 | Phone: (208) 888-2817 | Fax: (208) 888-2682 | Email: info@meridianchamber.org<br>
+      <br><a href="https://www.facebook.com"><img src="images/fbicon.png" alt="Facebook icon"></a> <a href="https://twitter.com/?lang=en"><img src="images/ticon.png" alt="Twitter icon"></a></p>
+    </div>
+    <p>&copy; <span id="year"></span> | Emily Wall | Last Updated: <span id="update"></span> | <a href="attributions.html">Attributions Page</a></p>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
   <script>

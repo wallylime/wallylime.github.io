@@ -1,4 +1,6 @@
 @media only screen and (min-width: 550px) {
-  
+  .contact-info img {
+    max-width: 100%;
+  }
  
 }

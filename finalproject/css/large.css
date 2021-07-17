@@ -7,8 +7,11 @@
   nav ul.hide {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    align-content: center;
-    justify-content: center;
+  }
+
+  nav ul li {
+    border-right: .1rem solid white;
+    border-left: .1rem solid white;
   }
 
   nav ul li a {
