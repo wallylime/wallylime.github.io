@@ -17,4 +17,17 @@
   nav ul li a {
     border-top: none;
   }
+
+  .contact-page {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+  }
+
+  .map {
+    border-top: none;
+    border-bottom: none;
+    border-right: .2rem solid var(--cadet);
+    border-left: .2rem solid var(--cadet);
+  }
+
 }

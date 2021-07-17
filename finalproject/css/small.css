@@ -198,9 +198,10 @@ div.forecast h4 {
   border-radius: 1rem;
 }
 
-.contact-page {
-  display: grid;
-  grid-template-columns: 1fr 1.5fr 1fr;
+.map {
+  border-top: .2rem solid var(--cadet);
+  border-bottom: .2rem solid var(--cadet);
+  padding: .5rem;
 }
 
 form {
@@ -208,12 +209,6 @@ form {
 }
 
 .contact-page section {
-  padding: .5rem;
-}
-
-.map {
-  border-right: .2rem solid var(--cadet);
-  border-left: .2rem solid var(--cadet);
   padding: .5rem;
 }
 
