@@ -203,7 +203,6 @@ div.forecast h4 {
 }
 
 .map {
-  border-top: .2rem solid var(--cadet);
   border-bottom: .2rem solid var(--cadet);
   padding: .5rem;
 }
@@ -220,7 +219,6 @@ form {
   border-radius: .5rem;
   max-width: 100%;
   display: block;
-  margin: 0 auto;
 }
 
 label {

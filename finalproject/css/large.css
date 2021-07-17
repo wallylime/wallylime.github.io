@@ -19,15 +19,15 @@
   }
 
   .contact-page {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .map {
-    border-top: none;
-    border-bottom: none;
     border-right: .2rem solid var(--cadet);
-    border-left: .2rem solid var(--cadet);
+    border-bottom: none;
   }
 
+  .contact-page section:nth-child(1) {
+    border-bottom: none;
+  }
 }
