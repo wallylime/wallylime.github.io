@@ -250,36 +250,35 @@ input, textarea {
   border-radius: .5rem;
 }
 
-.submit-button:hover {
+p#thanks {
+  text-align: center;
+  margin: 0 .5rem 1rem .5rem;
+  border: .2rem solid var(--cadet);
+  border-radius: 1rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--cadet);
+}
+
+#thanks a {
+  text-decoration: none;
+  color: var(--cadet);
+  border: .2rem solid var(--cadet);
+  border-radius: .5rem;
+  padding: .4rem;
+  font-size: 1.2rem;
+  background-color: lightgrey;
+}
+
+.submit-button:hover, #thanks a:hover {
   background-color: var(--cadet);
   color:white;
 }
 
 .asterisk {
-  font-weight: bold;
-  color: var(--flame);
-}
-
-/*Thank You Page*/
-#thanks {
-  text-align: center;
-  margin: 0 .5rem 1rem .5rem;
-  padding: 1rem;
-  background-color: var(--cadet);
-  color: white;
   font-size: 1.5rem;
-  border-radius: 1rem;
+  font-weight: bold;
+  color: var(--cadet);
 }
 
-#thanks a {
-  text-decoration: none;
-  background-color: white;
-  padding: .6rem;
-  border-radius: 2rem;
-  color: var(--flame);
-}
-
-#thanks a:hover {
-  background-color: var(--onyx);
-  color: white;
-}
