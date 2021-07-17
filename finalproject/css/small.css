@@ -52,6 +52,10 @@ img {
   max-width: 100%;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 h1, h2.send-message {
   padding: .5rem;
   padding-left: 1rem;
