@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thanks for Joining the Meridian Chamber of Commerce</title>
+  <meta name="description" content="Thanks for joining the Meridian, Idaho Chamber of Commerce.">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/small.css" rel="stylesheet">
+  <link href="css/medium.css" rel="stylesheet">
+  <link href="css/large.css" rel="stylesheet">
+  <link href="favicon.ico" rel="shortcut icon">
+</head>
+
+<body>
+  <header>
+    <picture>
+      <source srcset="images/smalllogo.jpg" media="(max-width: 549px)">
+      <source srcset="images/mediumlogo.jpg" media="(min-width: 550px) and (max-width: 749px)">
+      <source srcset="images/largelogo.jpg" media="(min-width: 750px)">
+      <img src="images/smalllogo.jpg" alt="Meridian Chamber of Commerce logo">
+    </picture>
+    
+    <nav>
+      <div class="navbox">
+      <button onclick="toggleMenu()">&#9776; Menu</button>
+      <ul id="navigation" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="meridian.html">About Meridian</a></li>
+        <li><a href="directory.html">Business Directory</a></li>
+        <li class="active"><a href="join.html">Join</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      </div>
+    </nav>
+
+    <h1>Thank You!</h1>
+  </header>
+
+  <main>
+ <p id="thanks">Your membership application has been received. Thanks for joining the Meridian Chamber of Commerce!<br><br><a href="index.html">Return to Home Page</a></p>
+  </main>
+  <footer>
+    <div class="contact-info">
+      <p>215 E. Franklin Road, Meridian, Idaho 83642 | Phone: (208) 888-2817 | Fax: (208) 888-2682 | Email: info@meridianchamber.org<br>
+      <br><a href="https://www.facebook.com"><img src="images/fbicon.png" alt="Facebook icon"></a> <a href="https://twitter.com/?lang=en"><img src="images/ticon.png" alt="Twitter icon"></a></p>
+    </div>
+    <p>&copy; <span id="year"></span> | Emily Wall | Last Updated: <span id="update"></span> | <a href="attributions.html">Attributions Page</a></p>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>
+  WebFont.load({
+    google: {families: ["IBM Plex Serif", "Arima Madurai"]
+    }
+  });</script>
+  <script src="js/javascript.js"></script>
+</body>
+
+</html>

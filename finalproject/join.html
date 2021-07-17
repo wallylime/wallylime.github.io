@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Join the Meridian Chamber of Commerce</title>
+  <title>Join the Meridian, Idaho Chamber of Commerce</title>
   <meta name="description" content="Fill out an application to join the Meridian, Idaho Chamber of Commerce.">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/small.css" rel="stylesheet">
@@ -22,40 +22,111 @@
       <source srcset="images/largelogo.jpg" media="(min-width: 750px)">
       <img src="images/smalllogo.jpg" alt="Meridian Chamber of Commerce logo">
     </picture>
-    
+
     <nav>
       <div class="navbox">
-      <button onclick="toggleMenu()">&#9776; Menu</button>
-      <ul id="navigation" class="hide">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="meridian.html">About Meridian</a></li>
-        <li><a href="directory.html">Business Directory</a></li>
-        <li class="active"><a href="join.html">Join</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="navigation" class="hide">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="meridian.html">About Meridian</a></li>
+          <li><a href="directory.html">Business Directory</a></li>
+          <li class="active"><a href="join.html">Join</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
       </div>
     </nav>
 
-    <h1>> Join the Meridian, Idaho Chamber of Commerce</h1>
+    <h1>Join the Chamber of Commerce</h1>
   </header>
 
   <main>
- 
+    <section class="membership-benefits">
+      <h2>Benefits of Joining</h2>
+      <div class="general-benefits">
+        <p>The Chamber of Commerce helps businesses in Meridian to thrive through networking, mentorship, advertising, and community outreach. Join today to help your business succeed!</p>
+        <img src="images/collaboration.jpg" alt="picture of arms linked together showing collaboration"
+          title="Photo by krakenimages on Unsplash">
+      </div>
+      <div class="membership-levels">
+        <h3>Non-Profit Membership - $100</h3>
+        <ul>
+          <li>your business will be listed in our directory</li>
+          <li>you can attend Chamber of Commerce meetings and vote on Chamber of Commerce leadership</li>
+        </ul>
+        <h3>Bronze Membership - $200</h3>
+        <ul>
+          <li>all the benefits of the Non-Profit Membership</li>
+          <li>free admission to Chamber-sponsored business seminars</li>
+        </ul>
+        <h3>Silver Membership - $400</h3>
+        <ul>
+          <li>all the benefits of the Non-Profit and Bronze Membership Levels</li>
+          <li>your business will be featured on the Chamber's home page for two months</li>
+          <li>one social media post from the Chamber of Commerce highlighting your business</li>
+          <li>50% discount on admission to weekly networking luncheon</li>
+        </ul>
+        <h3>Gold Membership - $1000</h3>
+        <ul>
+          <li>all the benefits of the Non-Profit, Bronze, and Silver Membership Levels</li>
+          <li>your business will be featured on the Chamber's home page for the duration of your membership</li>
+          <li>free admission to weekly networking luncheon</li>
+        </ul>
+      </div>
+    </section>
+    <form method="get" action="confirmation-page.html">
+      <h2>Membership Application</h2>
+      <label>First Name<span class="asterisk">*</span><input type="text" pattern="[A-Za-z ]{1,}" required
+          name="first-name"></label>
+      <label>Last Name<span class="asterisk">*</span><input type="text" pattern="[A-Za-z ]{2,}" required
+          name="last-name"></label>
+      <label>Title<input type="text" pattern="[A-Za-z ]" name="title"></label>
+      <label>Email<input type="email" placeholder="janedoe@gmail.com" name="email"></label>
+      <label>Mobile Phone<input type="tel" name="phone"></label>
+      <label>Business Name<span class="asterisk">*</span><input type="text" pattern="[A-Za-z 0-9]{1,}" required
+          name="business-name"></label>
+      <label>Business Address<input type="text" pattern="[A-Za-z 0-9]{1,}" required name="business-address"></label>
+      <label>Business Website<input type="url" name="website"></label>
+      <label>Business Description<textarea name="business-description"></textarea></label>
+      <fieldset>
+        <legend>Membership Level</legend>
+        <input class="inline" type="radio" id="non-profit" value="non-profit" name="membership-level"><label
+          class="inline" for="non-profit"
+          title="&squf; your business will be listed in our directory&NewLine;&squf; you can attend Chamber of Commerce meetings and vote on Chamber of Commerce leadership">Non-Profit
+          - $100</label><br>
+        <input class="inline" type="radio" id="bronze" value="bronze" name="membership-level"><label class="inline"
+          for="bronze"
+          title="&squf; all the benefits of the Non-Profit Membership&NewLine;&squf; free admission to Chamber-sponsored business seminars">Bronze
+          - $200</label><br>
+        <input class="inline" type="radio" id="silver" value="silver" name="membership-level"><label class="inline"
+          for="silver"
+          title="&squf; all the benefits of the Non-Profit and Bronze Membership Levels&NewLine;&squf; your business will be featured on the Chamber's home page for two months&NewLine;&squf; one social media post from the Chamber of Commerce highlighting your business&NewLine;&squf; 50% discount on admission to weekly networking luncheon">Silver
+          - $400</label><br>
+        <input class="inline" type="radio" id="gold" value="gold" name="membership-level"><label class="inline"
+          for="gold"
+          title="&squf; all the benefits of the Non-Profit, Bronze, and Silver Membership Levels&NewLine;&squf; your business will be featured on the Chamber's home page for the duration of your membership&NewLine;&squf; free admission to weekly networking luncheon">Gold
+          - $1000</label>
+      </fieldset>
+      <input class="submit-button" type="submit" value="Submit Application">
+    </form>
   </main>
   <footer>
     <div class="contact-info">
-      <p>215 E. Franklin Road, Meridian, Idaho 83642 | Phone: (208) 888-2817 | Fax: (208) 888-2682 | Email: info@meridianchamber.org<br>
-      <br><a href="https://www.facebook.com"><img src="images/fbicon.png" alt="Facebook icon"></a> <a href="https://twitter.com/?lang=en"><img src="images/ticon.png" alt="Twitter icon"></a></p>
+      <p>215 E. Franklin Road, Meridian, Idaho 83642 | Phone: (208) 888-2817 | Fax: (208) 888-2682 | Email:
+        info@meridianchamber.org<br>
+        <br><a href="https://www.facebook.com"><img src="images/fbicon.png" alt="Facebook icon"></a> <a
+          href="https://twitter.com/?lang=en"><img src="images/ticon.png" alt="Twitter icon"></a></p>
     </div>
-    <p>&copy; <span id="year"></span> | Emily Wall | Last Updated: <span id="update"></span> | <a href="attributions.html">Attributions Page</a></p>
+    <p>&copy; <span id="year"></span> | Emily Wall | Last Updated: <span id="update"></span> | <a
+        href="attributions.html">Attributions Page</a></p>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
   <script>
-  WebFont.load({
-    google: {families: ["IBM Plex Serif", "Arima Madurai"]
-    }
-  });</script>
-  <script src="js/weather.js"></script>
+    WebFont.load({
+      google: {
+        families: ["IBM Plex Serif", "Arima Madurai"]
+      }
+    });
+  </script>
   <script src="js/javascript.js"></script>
 </body>
 

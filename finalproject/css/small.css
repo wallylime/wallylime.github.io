@@ -48,6 +48,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "IBM Plex Serif", serif;
 }
 
+h2, h3, h4, h5, h6 {
+  color: var(--cadet);
+}
+
 img {
   max-width: 100%;
 }
@@ -60,7 +64,6 @@ h1, h2.send-message {
   padding: .5rem;
   padding-left: 1rem;
   margin: 0;
-  font-size: 1.5rem;
   color: var(--flame);
 }
 
@@ -195,23 +198,16 @@ div.forecast h4 {
   font-weight: bold;
   color: var(--cadet);
 }
-/*Contact Page*/
-.contact-page, form {
+
+.contact-page, form, .membership-benefits {
   margin: 0 .5rem 1rem .5rem;
   border: .2rem solid var(--cadet);
   border-radius: 1rem;
+  padding: .7rem;
 }
 
 .map {
   border-bottom: .2rem solid var(--cadet);
-}
-
-form {
-  padding: 1rem;
-}
-
-.contact-page div {
-  padding: .5rem;
 }
 
 .contact-page iframe {
@@ -236,7 +232,9 @@ input, textarea {
 }
 
 .submit-button {
+  min-width:fit-content;
   width: 50%;
+  margin-top: 1rem;
   margin-left: auto;
   margin-right: auto;
   font-weight: bold;
@@ -278,3 +276,35 @@ p#thanks {
   color: var(--cadet);
 }
 
+.inline {
+  display:inline-block;
+  width:auto;
+  padding-left:.5rem;
+  margin-bottom:.2rem;
+  font-weight: normal;
+}
+
+legend {
+  font-weight: bold;
+  padding: .2rem;
+}
+
+fieldset {
+  border-radius: .2rem;
+}
+
+.membership-benefits h2, form h2 {
+  border-bottom: .1rem solid var(--cadet);
+}
+
+.membership-benefits h3 {
+  margin-bottom: 0;
+}
+
+.membership-benefits ul {
+  margin-top: .2rem;
+}
+
+.membership-benefits img {
+  border-radius: .5rem; 
+}

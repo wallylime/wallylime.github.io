@@ -20,5 +20,9 @@
   .contact-page iframe {
     margin: 0 auto;
   }
+
+  .contact-page, form, .membership-benefits {
+    padding: 1rem;
+  }
  
 }
