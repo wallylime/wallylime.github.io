@@ -199,7 +199,7 @@ div.forecast h4 {
   color: var(--cadet);
 }
 
-.contact-page, form, .membership-benefits {
+.contact-page, form, .membership-benefits, div.cards {
   margin: 0 .5rem 1rem .5rem;
   border: .2rem solid var(--cadet);
   border-radius: 1rem;
@@ -307,4 +307,57 @@ fieldset {
 
 .membership-benefits img {
   border-radius: .5rem; 
+}
+
+.cards {
+  background-color: var(--cadet);
+}
+
+.cards h2 {
+  background-color: var(--onyx);
+  margin: 0;
+  padding: .5rem;
+  border-radius: .7rem .7rem 0 0;
+}
+
+.cards h2 a {
+  font-weight: normal;
+  text-decoration: none;
+  color: white;
+}
+
+.cards section {
+  background-color: white;
+  border: .2rem solid var(--davys-grey);
+  border-radius: 1rem;
+  margin-bottom: .5rem;
+}
+
+.cards section p a {
+  color: var(--cadet);
+  font-weight: bold;
+}
+
+.cards section p a:hover {
+  background-color: var(--cadet);
+  padding: .5rem;
+  border-radius: .3rem;
+  color: white;
+}
+
+.cards section p {
+  padding: 0 .5rem 0 .5rem;
+}
+
+.description {
+  margin-top: 0;
+  color: var(--cadet);
+  font-size: 1.3rem;
+  font-family: "Arima Madurai", Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.grid-button, div.buttons {
+  display: none;
 }

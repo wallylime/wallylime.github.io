@@ -1,0 +1,80 @@
+{
+  "businesses": [
+    {
+    "name": "Tin Roof Tacos",
+    "description": "Local restaurant serving a wide variety of delicious, fresh tacos.",
+    "address": {
+      "street": "1750 W McMillan Dr",
+      "city": "Meridian, ID  83646"
+    },
+    "phone": "(208) 336-6461",
+    "website": "https://www.tinrooftacos.com"
+    },
+
+    {
+    "name": "Lytle Signs",
+    "description": "Business creating signs of all types for other businesses.",
+    "address": {
+      "street": "2070 E. Commercial",
+      "city": "Meridian, ID  83642"
+    },
+    "phone": "(208) 388-1739",
+    "website": "https://lytlesigns.com"
+    },
+
+    {
+    "name": "UltraClean",
+    "description": "Cleaning and restoration company that cleans up after fire, water, or mold damage.",
+    "address": {
+      "street": "627 N Linder Rd",
+      "city": "Meridian, ID  83642"
+    },
+    "phone": "(208) 606-3243",
+    "website": "https://www.ultracleanpro.com"
+    },
+
+    {
+    "name": "Eaglewood Homes",
+    "description": "Construction company that builds beautiful homes.",
+    "address": {
+      "street": "2490 E Gala St.",
+      "city": "Meridian, ID  83642"
+    },
+    "phone": "(208) 855-0502",
+    "website": "https://www.eaglewood.com"
+    },
+
+    {
+    "name": "Idaho Gift Baskets",
+    "description": "Business selling unique gift baskets filled with local products.",
+    "address": {
+      "street": "760 E King Street Suite 102",
+      "city": "Meridian, ID  83642"
+    },
+    "phone": "(208) 484-0124",
+    "website": "https://www.idahogiftbaskets.net"
+    },
+
+    {
+    "name": "Meridian Meadows Assisted Living",
+    "description": "Assisted living facility in Meridian.",
+    "address": {
+      "street": "2584 E. Magic View Drive",
+      "city": "Meridian, ID  83642"
+    },
+    "phone": "(208) 996-2801",
+    "website": "https://tanabell.com/meridianmeadowsassistedliving"
+    },
+
+    {
+    "name": "Children's Museum of Idaho",
+    "description": "Fun children's museum allowing children to learn through play.",
+    "address": {
+      "street": "790 S. Progress Avenue",
+      "city": "Meridian, ID  83642"
+    },
+    "phone": "(208) 345-1920",
+    "website": "https://www.cmidaho.org"
+    }
+  ]
+}
