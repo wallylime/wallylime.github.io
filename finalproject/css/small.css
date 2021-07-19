@@ -16,7 +16,19 @@ body {
   background-color: white;
 }
 
+a {
+  color: var(--cadet);
+  font-weight: bold;
+}
+
 a:hover {
+  background-color: var(--cadet);
+  padding: .5rem;
+  border-radius: .2rem;
+  color: white;
+}
+
+nav a:hover {
   background-color: #60646C;
   text-decoration: underline;
   border: .1rem solid white;
@@ -41,6 +53,7 @@ footer a {
 }
 
 .contact-info img {
+  display: inline;
   max-width: 2rem;
 }
 
@@ -54,10 +67,17 @@ h2, h3, h4, h5, h6 {
 
 img {
   max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: .5rem;
 }
 
 .bold {
   font-weight: bold;
+}
+
+.flame {
+  color: var(--flame);
 }
 
 h1, h2.send-message {
@@ -199,13 +219,13 @@ div.forecast h4 {
   color: var(--cadet);
 }
 
-.contact-page, form, .membership-benefits, div.cards {
-  margin: 0 0 .5rem 0;
+.contact-page, form, .membership-benefits, div.cards, div.about-meridian {
+  margin: 0 .1rem .5rem .1rem;
   border: .2rem solid var(--cadet);
   border-radius: 1rem;
 }
 
-.contact-page, form, .membership-benefits {
+.contact-page, form, .membership-benefits, div.about-meridian {
   padding: .7rem;
 }
 
@@ -297,7 +317,7 @@ fieldset {
   border-radius: .2rem;
 }
 
-.membership-benefits h2, form h2 {
+.membership-benefits h2, form h2, .about-meridian h2 {
   border-bottom: .1rem solid var(--cadet);
 }
 
@@ -307,10 +327,6 @@ fieldset {
 
 .membership-benefits ul {
   margin-top: .2rem;
-}
-
-.membership-benefits img {
-  border-radius: .5rem; 
 }
 
 div.cards {
@@ -334,18 +350,6 @@ div.cards {
   overflow-wrap: break-word;
 }
 
-.cards section p a {
-  color: var(--cadet);
-  font-weight: bold;
-}
-
-.cards section p a:hover {
-  background-color: var(--cadet);
-  padding: .5rem;
-  border-radius: .3rem;
-  color: white;
-}
-
 .cards section p {
   padding: 0 .5rem 0 .5rem;
 }
@@ -361,4 +365,58 @@ div.cards {
 
 .grid-button, div.buttons {
   display: none;
+}
+
+.sources ul {
+  list-style-type: none;
+  line-height: 1.5;
+}
+
+a.heading-anchor {
+  font-size: 1rem;
+}
+
+div.events-section {
+  background-color: var(--cadet);
+  border-radius: 1rem;
+  padding: .3rem;
+}
+
+div.event {
+  background-color: white;
+  border-radius: 1rem;
+  padding: .5rem;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: .7rem;
+  align-items: center;
+}
+
+table {
+  border: .2rem solid var(--cadet);
+  border-collapse: collapse;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th, td {
+  border: .1rem solid var(--cadet);
+  padding: .3rem;
+}
+
+th {
+  background-color: #60646C;
+  text-align: left;
+  color: white;
+}
+
+#no-color {
+  background-color: white;
+}
+
+tr.first-row th, td {
+  text-align: center;
 }

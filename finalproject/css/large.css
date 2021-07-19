@@ -54,4 +54,12 @@
   .membership-levels {
     grid-area: 2 / 2 / 3 / 3;
   }
+
+  div.events-section {
+    padding: .7rem;
+  }
+  
+  div.event {
+    grid-template-columns: 1fr 2fr;
+  }
 }

@@ -21,7 +21,7 @@
     margin: 0 auto;
   }
 
-  .contact-page, form, .membership-benefits {
+  .contact-page, form, .membership-benefits, div.about-meridian {
     margin: 0 .5rem 1rem .5rem;
     padding: 1rem;
   }
@@ -60,5 +60,12 @@
     grid-template-columns: minmax(5rem, 1fr) minmax(5rem, 1fr);
     column-gap: .5rem;
   }
- 
+
+  div.events-section {
+    padding: .5rem;
+  }
+  
+  div.event {
+    grid-template-columns: 1fr 1fr;
+  }
 }
