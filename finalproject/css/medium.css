@@ -57,7 +57,7 @@
 
   .grid-view {
     display: grid;
-    grid-template-columns: 1fr minmax(5rem, 1fr);
+    grid-template-columns: minmax(5rem, 1fr) minmax(5rem, 1fr);
     column-gap: .5rem;
   }
  
