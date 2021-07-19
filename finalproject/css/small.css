@@ -17,7 +17,7 @@ body {
 }
 
 a:hover {
-  background-color: #60646C;
+  background-color: #374766;
   text-decoration: underline;
   border: .1rem solid white;
 }
@@ -200,11 +200,15 @@ div.forecast h4 {
 }
 
 .contact-page, form, .membership-benefits, div.cards {
-  margin: 0 .5rem 1rem .5rem;
+  margin: 0;
   border: .2rem solid var(--cadet);
   border-radius: 1rem;
+}
+
+.contact-page, form, .membership-benefits {
   padding: .7rem;
 }
+
 
 .map {
   border-bottom: .2rem solid var(--cadet);
@@ -309,8 +313,9 @@ fieldset {
   border-radius: .5rem; 
 }
 
-.cards {
+div.cards {
   background-color: var(--cadet);
+  padding: .1rem;
 }
 
 .cards h2 {
@@ -318,11 +323,6 @@ fieldset {
   margin: 0;
   padding: .5rem;
   border-radius: .7rem .7rem 0 0;
-}
-
-.cards h2 a {
-  font-weight: normal;
-  text-decoration: none;
   color: white;
 }
 
@@ -331,6 +331,7 @@ fieldset {
   border: .2rem solid var(--davys-grey);
   border-radius: 1rem;
   margin-bottom: .5rem;
+  overflow-wrap: break-word;
 }
 
 .cards section p a {

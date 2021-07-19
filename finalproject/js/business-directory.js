@@ -9,7 +9,7 @@ fetch(businessesURL)
       let card = document.createElement("section");
       
       let h2 = document.createElement("h2");
-      h2.innerHTML = `<a href="${businesses[i].website}">${businesses[i].name}</a>`;
+      h2.innerHTML = businesses[i].name;
 
       let p1 = document.createElement("p");
       p1.innerHTML = `<span class="description">${businesses[i].description}</span>`;
