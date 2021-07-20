@@ -21,7 +21,7 @@
     margin: 0 auto;
   }
 
-  .contact-page, form, .membership-benefits, div.about-meridian {
+  .contact-page, form, .membership-benefits, div.about-meridian, div.source-page {
     margin: 0 .5rem 1rem .5rem;
     padding: 1rem;
   }
