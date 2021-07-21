@@ -128,88 +128,33 @@ nav ul li.active {
   background-color: var(--cadet);
 }
 
-/*Join the chamber section*/
-aside.join a {
+a.join {
+  display: block;
+  min-width: min-content;
+  max-width: 40%;
+  text-align: center;
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: bold;
-  padding: 1rem;
-  background-color: var(--flame);
+  padding: .5rem;
+  background-color: var(--cadet);
   color: white;
   border-radius: 1rem;
-  border: .2rem ridge white;
-  box-shadow: 0 .5rem .5rem var(--davys-grey);
-  margin: .5rem;
+  border: .1rem ridge white;
+  box-shadow: 0 .2rem .3rem var(--davys-grey);
+  margin: .5rem auto .7rem auto;
 }
 
-aside.join a:hover {
-  background-color: #C7421A;
-  border: .4rem ridge white;
-
+a.join:hover {
+  padding: .7rem;
+  background-color: #60646C;
 }
 
-/*Weather section*/
-aside.weather {
-  background-color: var(--davys-grey);
-  display: grid;
-  grid-template-columns: 2fr 3fr;
-}
-
-aside.weather h4 {
-  color: white;
-  padding: .3rem;
-  margin: 0;
-}
-
-aside.weather p {
-  background-color: white;
-  margin: .2rem;
-  padding: .5rem;
-  border-radius: .2rem;
-}
-
-div.current, div.forecast {
-  background-color: var(--cadet);
-  padding: .2rem;
-  margin: .5rem;
-  display: grid;
-  border-radius: .2rem;
-}
-
-div.current {
-  grid-template-columns: 1fr;
-}
-
-div.current h4 {
-  grid-area: 1 / 1 / 2 / 2;
-}
-
-div.current p {
-  grid-area: 2 / 1 / 3 / 2;
-}
-
-div.forecast {
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-div.forecast h4 {
-  grid-area: 1 / 1 / 2 / 4;
-}
-
-#forecast1 {
-  grid-area: 2 / 1 / 3 / 2;
-}
-
-#forecast2 {
-  grid-area: 2 / 2 / 3 / 3;
-}
-
-#forecast3 {
-  grid-area: 2 / 3 / 3 / 4;
+.weather {
+  background-color: ;
 }
 
 .weather-numbers {
-  font-size: 1.2rem;
   font-weight: bold;
   color: var(--flame);
 }
@@ -219,13 +164,14 @@ div.forecast h4 {
   color: var(--cadet);
 }
 
-.contact-page, form, .membership-benefits, div.cards, div.about-meridian, div.source-page {
+.contact-page, form, .membership-benefits, div.cards, div.about-meridian, div.source-page, div.home-page {
   margin: 0 .1rem .5rem .1rem;
   border: .2rem solid var(--cadet);
   border-radius: 1rem;
 }
 
-.contact-page, form, .membership-benefits, div.about-meridian {
+
+.contact-page, form, .membership-benefits, div.about-meridian, div.home-page {
   padding: .7rem;
 }
 
@@ -354,13 +300,20 @@ div.cards {
   padding: 0 .5rem 0 .5rem;
 }
 
+.description, .join-chamber p {
+  color: var(--cadet);
+  font-size: 1.2rem;
+  font-family: "Arima Madurai", Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.join-chamber p {
+  border-bottom: .1rem solid var(--cadet);
+}
+
 .description {
   margin-top: 0;
-  color: var(--cadet);
-  font-size: 1.3rem;
-  font-family: "Arima Madurai", Helvetica, sans-serif;
   font-style: italic;
-  font-weight: bold;
 }
 
 .grid-button, div.buttons {
@@ -419,4 +372,105 @@ th {
 
 tr.first-row th, td {
   text-align: center;
+}
+
+div.images, div.weather {
+  margin-left: -.7rem;
+  margin-right: -.7rem;
+  padding: .5rem;
+  background-color: var(--davys-grey);
+}
+
+div.images img {
+  box-shadow: 0 .2rem .3rem var(--onyx);
+}
+
+#spirit-of-boise, #skyline {
+  display: none;
+}
+
+div.carousel-events {
+  background-color: var(--davys-grey);
+  display: grid;
+  grid-template-columns: 2rem 1fr 2rem;
+}
+
+#left-arrow {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+#right-arrow {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+div.carousel-events div {
+  margin: .5rem;
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+div.weather {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: .5rem;
+}
+
+div.weather div {
+  background-color: white;
+  padding: .2rem .5rem;
+}
+
+.weather-header {
+  margin-top: 0;
+  background-color: var(--onyx);
+  color: white;
+  padding: .5rem;
+}
+div.three-day {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.three-day h3 {
+  grid-area: 1 / 1 / 2 / 4;
+}
+
+#forecast1 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+#forecast2 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+#forecast3 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+#forecast1, #forecast2, #forecast3 {
+  justify-self: center;
+  text-align: center;
+}
+
+div.ads {
+  margin-top: .5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: .5rem;
+}
+
+.small-ads {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: .3rem;
+  border-bottom: .1rem solid var(--cadet);
+  align-items: center;
+  padding: .4rem;
+}
+
+.small-ads picture{
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.small-ads div {
+  grid-area: 1 / 2 / 2 / 3;
 }

@@ -62,4 +62,46 @@
   div.event {
     grid-template-columns: 1fr 2fr;
   }
+
+  div.images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: .5rem;
+    align-items: center;
+  }
+  
+  #spirit-of-boise {
+    display: block;
+    grid-area: 1 / 1 / 2 / 3;
+    margin: 0;
+    justify-self: left;
+  }
+  
+  div.images picture {
+    grid-area: 1 / 1 / 2 / 4;
+    z-index: 1;
+  }
+  
+  #skyline {
+    display: block;
+    grid-area: 1 / 2 / 2 / 4;
+    margin: 0;
+    justify-self: right;
+  }
+  a.join {
+    max-width: 30%;
+  }
+
+  div.ads {
+    border-top: .1rem solid var(--cadet);
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .small-ads {
+    display: block;
+    border-bottom: none;
+    align-items: center;
+    padding: .4rem;
+  }
+
 }

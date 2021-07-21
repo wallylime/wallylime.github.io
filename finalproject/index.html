@@ -36,27 +36,135 @@
       </div>
     </nav>
 
-    <h1>> Home Page for Meridian, Idaho Chamber of Commerce</h1>
+    <h1>Home Page: Meridian, Idaho Chamber of Commerce</h1>
   </header>
 
   <main>
-    
-    <!-- <aside class="join">
-      <a href="join.html">Join the Chamber!</a>
-    </aside> -->
-   <!-- <aside class="weather">
-     <div class="current">
-      <h4>Currently:</h4>
+    <div class="home-page">
+    <div class="image-join">
+    <div class="images">
+      <img id="spirit-of-boise" src="images/spiritofboiselarge.jpg" alt="Spirit of Boise hot air balloon festival" title="photo by Bryce Boehler on Unsplash">
+      <picture>
+        <source srcset="images/kleinerparklarge.jpg" media="(max-width: 549px)">
+        <source srcset="images/kleinerparkmedium.jpg" media="(min-width: 550px) and (max-width: 749px)">
+        <source srcset="images/kleinerparklarge.jpg" media="(min-width: 750px)">
+        <img id="kleiner-park" src="images/kleinerparklarge.jpg" alt="Julius M. Kleiner Memorial Park in Meridian" title="photo by Ryan Fish on Unsplash">
+      </picture>
+      <img id="skyline" src="images/skylinelarge.jpg" alt="Boise, Idaho skyline" title="photo by Click Sluice on Unsplash">
+  </div>
+  <div class="join-chamber">
+    <p>The Chamber of Commerce is dedicated to helping the community of Meridian and the businesses within it to thrive. Become a member today to enjoy the benefits of networking, mentorship, advertising, and community outreach.<br>
+      <a class="join" href="join.html">Join Now!</a></p>
+  </div>
+  <div class="weather">
+    <div>
+      <h3 class="weather-header">Current Weather:</h3>
       <p id="current-weather"></p>
-      </div>
-      <div class="forecast">
-      <h4>Three-day forecast:</h4>
+    </div>
+    <div class="three-day">
+      <h3 class="weather-header">3-Day Forecast:</h3>
       <p id="forecast1"></p>
       <p id="forecast2"></p>
       <p id="forecast3"></p>
+    </div>    
+    </div>
+
+    
+    <h2>Upcoming Events</h2>
+    <div class="carousel-events">
+    <button id="left-arrow" onclick="leftArrow()">&lt;</button> 
+    <div id="event"></div>
+    
+    <div class="event" id="event5">
+      <img src="images/concert.jpg" alt="jazz musicians performing" title="photo by Jens Thekkeveettil on Unsplash">
+      <div>
+        <h3><span class="flame">August 28, 2021: </span>Concerts on Broadway - The Kings of Swing</h3>
+        <p>
+        <span class="bold">When:</span> 7pm-8:30pm<br>
+        <span class="bold">Where:</span> Meridian City Hall Outdoor Plaza<br>
+        <span class="bold">What:</span> Bring a blanket or lawn chairs and come enjoy this free outdoor concert series!</p>
       </div>
-   </aside> -->
-   
+      </div>
+
+      <div class="event" id="event4">
+        <img src="images/teens.jpg" alt="teens having fun" title="photo by Patrick Buck on Unsplash">
+        <div>
+          <h3><span class="flame">August 6, 2021: </span>Teen Night</h3>
+          <p>
+          <span class="bold">When:</span> 7pm-10pm<br>
+          <span class="bold">Where:</span> Meridian Homecourt<br>
+          <span class="bold">What:</span> Teens 13-18 are invited to come hang out. Free pizza for the first 50 teens to arrive!</p>
+        </div>
+        </div>
+      
+        <div class="event" id="event3">
+          <img src="images/townhall.jpg" alt="town hall meeting" title="photo by Wan San Yip on Unsplash">
+          <div>
+            <h3><span class="flame">August 4, 2021: </span>Meridian Town Hall Meeting</h3>
+            <p>
+            <span class="bold">When:</span> 6pm-7:30pm<br>
+            <span class="bold">Where:</span> Meridian City Hall<br>
+            <span class="bold">What:</span> Come prepared to talk about the general city election requirements.</p>
+          </div>
+        </div>
+
+        <div class="event" id="event2"><img src="images/movienight.jpg" alt="movie director's clapper with popcorn" title="photo by GR Stocks on Unsplash">
+          <div>
+            <h3><span class="flame">July 30, 2021: </span>Sparklight Movie Night - "Tangled"</h3>
+            <p>
+            <span class="bold">When:</span> 7pm-11:30pm<br>
+            <span class="bold">Where:</span> Settlers Park<br>
+            <span class="bold">What:</span> Bring lawn chairs or blankets and come enjoy the movie "Tangled" with your family! The movie will begin at dusk but there will be fun activities preceding the show.</p>
+          </div>
+        </div>
+  
+      <div class="event" id="event1">
+        <img src="images/movienight.jpg" alt="movie director's clapper with popcorn" title="photo by GR Stocks on Unsplash">
+        <div>
+        <h3><span class="flame">July 23, 2021: </span>Sparklight Movie Night - "Onward"</h3>
+        <p>
+        <span class="bold">When:</span> 7pm-11:30pm<br>
+        <span class="bold">Where:</span> Settlers Park<br>
+        <span class="bold">What:</span> Bring lawn chairs or blankets and come enjoy the movie "Onward" with your family! The movie will begin at dusk but there will be fun activities preceding the show.</p>
+      </div>
+      </div>    
+        <button id="right-arrow" onclick="rightArrow()">&gt;</button>
+  </div>
+  <div class="ads">
+    <div class="small-ads">
+      <picture>
+        <source srcset="images/tacossmall.jpg" media="(max-width: 749px)">
+        <source srcset="images/tacos.jpg" media="(min-width: 750px">
+        <img src="images/tacos.jpg" alt="tacos" title="photo by Jeswin Thomas on Unsplash">
+      </picture>
+      <div>
+      <h3>Tin Roof Tacos</h3>
+      <p>Try one of our delicious tacos! Mention this ad and get $1 off.</p>
+      </div>
+    </div>
+    <div class="small-ads">
+      <picture>
+        <source srcset="images/childplayingsmall.jpg" media="(max-width: 749px)">
+        <source srcset="images/childplaying.jpg" media="(min-width: 750px)">
+        <img src="images/childplaying.jpg" alt="child playing" title="photo by Jeremiah Lawrence on Unsplash">
+      </picture>
+      <div>
+      <h3>Children's Museum of Idaho</h3>
+      <p>Learning is a fun adventure at the Children's Museum of Idaho!</p>
+      </div>
+    </div>
+    <div class="small-ads">
+      <picture>
+        <source srcset="images/giftbasketsmall.jpg" media="(max-width: 749px)">
+        <source srcset="images/giftbasket.jpg" media="(min-width: 750px)">
+        <img src="images/giftbasket.jpg" alt="gift basket" title="photo by Freddie Collins on Unsplash">
+      </picture>
+      <div><h3>Idaho Gift Baskets</h3>
+      <p>Give a gift that helps support local businesses! All of our gift baskets are filled with locally-made products.</p>
+      </div>
+    </div>
+  </div>
+</div>
   </main>
   <footer>
     <div class="contact-info">
@@ -71,6 +179,7 @@
     google: {families: ["IBM Plex Serif", "Arima Madurai"]
     }
   });</script>
+  <script src="js/events-carousel.js"></script>
   <script src="js/weather.js"></script>
   <script src="js/javascript.js"></script>
 </body>
