@@ -150,10 +150,6 @@ a.join:hover {
   background-color: #60646C;
 }
 
-.weather {
-  background-color: ;
-}
-
 .weather-numbers {
   font-weight: bold;
   color: var(--flame);
