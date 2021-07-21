@@ -80,6 +80,11 @@ img {
   color: var(--flame);
 }
 
+.bigger {
+  font-size: 1.5rem;
+  color: var(--cadet);
+}
+
 h1, h2.send-message {
   padding: .5rem;
   padding-left: 1rem;
@@ -148,16 +153,6 @@ a.join {
 a.join:hover {
   padding: .7rem;
   background-color: #60646C;
-}
-
-.weather-numbers {
-  font-weight: bold;
-  color: var(--flame);
-}
-
-.weather-words {
-  font-weight: bold;
-  color: var(--cadet);
 }
 
 .contact-page, form, .membership-benefits, div.cards, div.about-meridian, div.source-page, div.home-page {
@@ -259,7 +254,7 @@ fieldset {
   border-radius: .2rem;
 }
 
-.membership-benefits h2, form h2, .about-meridian h2 {
+.membership-benefits h2, form h2, .about-meridian h2, .home-page h2 {
   border-bottom: .1rem solid var(--cadet);
 }
 
@@ -344,33 +339,38 @@ div.event {
 }
 
 table {
-  border: .2rem solid var(--cadet);
-  border-collapse: collapse;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
-th, td {
-  border: .1rem solid var(--cadet);
+table, td, th {
+  border: .2rem solid var(--onyx);
+  border-collapse: collapse;
   padding: .3rem;
 }
 
 th {
-  background-color: #60646C;
+  background-color: #4e5157;
   text-align: left;
   color: white;
+}
+
+td {
+  font-weight: bold;
+  color: var(--cadet);
 }
 
 #no-color {
   background-color: white;
 }
 
-tr.first-row th, td {
+th#current, th#forecast {
+  background-color: var(--cadet);
   text-align: center;
 }
 
-div.images, div.weather {
+div.images {
   margin-left: -.7rem;
   margin-right: -.7rem;
   padding: .5rem;
@@ -385,70 +385,13 @@ div.images img {
   display: none;
 }
 
-div.carousel-events {
+div.events {
   background-color: var(--davys-grey);
   display: grid;
-  grid-template-columns: 2rem 1fr 2rem;
-}
-
-#left-arrow {
-  grid-area: 1 / 1 / 2 / 2;
-}
-
-#right-arrow {
-  grid-area: 1 / 3 / 2 / 4;
-}
-
-div.carousel-events div {
-  margin: .5rem;
-  grid-area: 1 / 2 / 2 / 3;
-}
-
-div.weather {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  column-gap: .5rem;
-}
-
-div.weather div {
-  background-color: white;
-  padding: .2rem .5rem;
-}
-
-.weather-header {
-  margin-top: 0;
-  background-color: var(--onyx);
-  color: white;
-  padding: .5rem;
-}
-div.three-day {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.three-day h3 {
-  grid-area: 1 / 1 / 2 / 4;
-}
-
-#forecast1 {
-  grid-area: 2 / 1 / 3 / 2;
-}
-
-#forecast2 {
-  grid-area: 2 / 2 / 3 / 3;
-}
-
-#forecast3 {
-  grid-area: 2 / 3 / 3 / 4;
-}
-
-#forecast1, #forecast2, #forecast3 {
-  justify-self: center;
-  text-align: center;
+  grid-template-columns: 1fr;
 }
 
 div.ads {
-  margin-top: .5rem;
   display: grid;
   grid-template-columns: 1fr;
   gap: .5rem;
@@ -469,4 +412,8 @@ div.ads {
 
 .small-ads div {
   grid-area: 1 / 2 / 2 / 3;
+}
+
+div.table-div {
+  overflow-x: auto;
 }

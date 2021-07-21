@@ -1,7 +1,0 @@
-
-function leftArrow() {
-}
-
-function rightArrow() {
-
-}

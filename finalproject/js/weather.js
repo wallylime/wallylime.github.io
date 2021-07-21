@@ -2,18 +2,25 @@ const weatherURL = "https://api.openweathermap.org/data/2.5/onecall?lat=43.6121&
 fetch(weatherURL)
   .then((response) => response.json())
   .then((meridianWeather) => {
-
-    //For current weather info    
+    //For current weather info
+    let currentCondition = document.getElementById("current-condition");
+    currentCondition.innerHTML = meridianWeather.current.weather[0].description;  
+    
     let currentWeather = document.getElementById("current-weather");
-    currentWeather.innerHTML = `<span class="weather-words">${meridianWeather.current.weather[0].description.toUpperCase()} & </span><span class="weather-numbers">${meridianWeather.current.temp}&deg; F</span> <br> <span class="weather-words">HUMIDITY: </span><span class="weather-numbers">${meridianWeather.current.humidity}%</span>`;
+    currentWeather.innerHTML = `${meridianWeather.current.temp}&deg; F`;
+
+    let currentHumidity = document.getElementById("current-humidity");
+    currentHumidity.innerHTML = `${meridianWeather.current.humidity}%`;
     
     //For three day forecast
-    const dayofweek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    const dayofweek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     let num = 1;
     for (i=1; i < 4; i++) {
       let date = new Date(meridianWeather.daily[i].dt * 1000);
+      let day = document.getElementById("day" + num);
+      day.innerHTML = `${dayofweek[date.getDay()]}`;
       let forecast = document.getElementById("forecast" + num);
-      forecast.innerHTML = `<span class="weather-words">${dayofweek[date.getDay()].toUpperCase()}: <br> </span><span class="weather-numbers">${meridianWeather.daily[i].temp.day}&deg; F</span>`;
+      forecast.innerHTML = `${meridianWeather.daily[i].temp.day}&deg; F`;
       num += 1;
     }
 
