@@ -45,6 +45,10 @@ ul {
   list-style-type: square;
 }
 
+ul.classes {
+  list-style-type: none;
+}
+
 a {
   color: #A31B14;
 }
