@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 1 Notes</title>
+  <meta name="description" content="Week 1 Notes for WDD330.">
+  <meta name="author" content="Emily Wall">
+  <link href="../../css/normalize.css" rel="stylesheet">
+  <link href="../../css/small.css" rel="stylesheet">
+  <link href="../../css/medium.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>Week 1 Notes</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Doing Stuff with Web Things</h2>
+      <p>Here are my takeaways from the reading:</p>
+      <ul>
+        <li>I like the analogy that Javascript variables are like little labeled boxes to hold things in</li>
+        <li>to get an input, use .value</li>
+        <li>to output something, use .innerHTML</li>
+        <li>localStorage can be used to save things for later on the same browser</li>
+        <li>localStorage uses key/value pairs</li>
+        <li>key/value pairs remind me of the analogy used for Javascript variables, only in this case the label on the box = the key and what's in the box = the value</li>
+        <li>when you ask localStorage to retrieve a value(the stuff in the box), it only needs to know the key(the label on the box)</li>
+      </ul>
+    </section>
+    <section>
+     <h2>Mobile First Design</h2>
+     <p>The majority of people use mobile devices and not desktops to view webpages. Get with the times and always design for mobile before you even worry about designing for larger screens. Here are some takeaways:</p> 
+     <ul>
+       <li>low attentions spans/high laziness = make it easy</li>
+       <li>keep reachability in mind & put the most important things closer to the bottom of the screen</li>
+       <li>speed is very very important (cut down on images, improve reachability to change speed perception)</li>
+       <li>make it obvious (the word "menu," for example, is better than the hamburger button icon)</li>
+       <li>designing with mobile in mind forces you to prioritize, cut out unnecessary junk, and simplify (this is especially important with forms)</li>
+       <li>can use placeholder text in input fields rather than labels in order to save space</li>
+     </ul>
+    </section>
+  </main>
+  <footer>&copy; <span id="year"></span> | Emily Wall | Idaho | <a href="https://www.byui.edu/online">BYU-I Online</a>
+    <p>
+      Last modified: <span id="lastmodified"></span>
+    </p>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="../../js/javascript.js"></script>
+  <script> WebFont.load({
+    google: {
+      families: [
+         'Metamorphous'
+      ]
+    }
+  });
+  </script>
+</body>
+
+</html>
