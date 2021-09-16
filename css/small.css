@@ -7,8 +7,11 @@ body {
   border-right: 5px solid #12263A;
 }
 
-h1 {
+h1, h2, h3 {
   font-family: "Metamorphous", Garamond, serif;
+}
+
+h1 {
   font-size: 2em;
   background-color: #12263A;
   color: #E1C27A;
@@ -18,13 +21,18 @@ h1 {
 }
 
 h2 {
-  font-family: "Metamorphous", Garamond, serif;
   color: #12263A;
   background-color: #E1C27A;
   padding: .5em;
   margin-left: -.75em;
   margin-right: -.75em;
   border: 2px solid #12263A;
+}
+
+h3{
+  color: #E1C27A;
+  background-color: #12263A;
+  padding: .5rem;
 }
 
 img {
