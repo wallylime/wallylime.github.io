@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Team Activity Week 2 - Brigham Young University-Idaho" />
+  <title>Team Project - Week 2</title>
+  <style>
+    header {
+      display: block;
+      font-size: 15px;
+      background-color: cadetblue;
+      font-family: Quicksand, Arial, Helvetica, sans-serif;
+      text-align: center;
+      color: white;
+      padding: 10px;
+
+    }
+
+    body {
+      font-family: Quicksand, Arial, Helvetica, sans-serif;
+      padding: 30px;
+      color: cadetblue;
+    }
+
+    h2 {
+      color: rgb(6, 75, 74);
+    }
+  </style>
+</head>
+
+<body>
+  <input type="text" id="userInput" name="textField">
+  <input type="text" id="newInput" name="textField">
+
+  <button id="button" onclick="readContent()">Click Me</button>
+  <button id="add" onclick="addFunction()">+</button>
+  <button id="subtract" onclick="subtract()">-</button>
+  <button id="multiply" onclick="multiply()">*</button>
+  <button id="division" onclick="division()">/</button>
+
+  <div id="userOutput">
+
+  </div>
+</body>
+
+<script>
+  function readContent() {
+    let userInput = parseInt(document.getElementById("userInput").value);
+    let total = getNumber(userInput);
+    document.getElementById("userOutput").innerHTML = total;
+  }
+
+  function getNumber(number) {
+    let sum = 0;
+    for (let i = 1; i <= number; i++) {
+      sum += i;
+    }
+    return sum;
+  }
+
+  function addFunction() {
+    let a = parseInt(document.getElementById("userInput").value);
+    let b = parseInt(document.getElementById("newInput").value);
+    let sum = a + b;
+    document.getElementById("userOutput").innerHTML = sum;
+  }
+</script>
+
+</html>
