@@ -113,16 +113,16 @@
         <li>default parameters should always follow after regular parameters</li>
         <li>arrow functions are a new way of defining a function that goes like this:
           <ul>
-            <li>const variableName = parameter => statementsHere; This is the format if there is only one parameter and one statement. There's no need to include the keyword "return;" it will do that automatically.</li>
-            <li>const variableName = (parameter1, parameter2, etc.) => statementsHere; This is the format for multiple parameters and just one statement.</li>
+            <li>const variableName = parameter => statement here; This is the format if there is only one parameter and one statement. There's no need to include the keyword "return;" it will do that automatically.</li>
+            <li>const variableName = (parameter1, parameter2, etc.) => statement here; This is the format for multiple parameters and just one statement.</li>
             <li>const variableName = (parameter1, parameter2) => {multiple statements} This is the format if there are multiple statements in the block of code. The keyword "return" is needed again.</li>
           </ul></li>
         <li>arrow functions are always anonymmous, so you have to refer to them by the variableName</li>
         <li>arrow functions are best for small functions</li>
-        <li>Function hoisting means that when a function is declared anywhere in the Javascript code, it gets "hoisted" to the top and can be accessed even before it appears in the code. This could allow the coder to group all of their functions together at the end of the code.</li>
-        <li>Variable hoisitng means that variables that are declared with the "var" keyword get hoisted to the top. HOWEVER, the variable assignment does NOT get hoisted to the top which seems problematic and somewhat useless. Be especially aware of this when defining an anonymous function that is assigned to a variable.</li>
+        <li>Function hoisting means that when a function is declared anywhere in the Javascript code, it gets "hoisted" to the top and can be accessed even before it appears in the code. This could allow the coder to group all of their functions together at the beginning or end of the code.</li>
+        <li>Variable hoisting means that variables that are declared with the "var" keyword get hoisted to the top. HOWEVER, the variable assignment does NOT get hoisted to the top which seems problematic and somewhat useless. Be especially aware of this when defining an anonymous function that is assigned to a variable.</li>
         <li>a function can be passed into another function as an argument (this is called a callback)</li>
-        <li>When a function is passed into another function as an argument, it does not need the paranthesis. For it to be invoked, however, it would need to be called with the paranthesis inside of the other function</li>
+        <li>When a function is passed into another function as an argument, it does not need the paranthesis. For it to be invoked, however, it would need to be called with the paranthesis inside of the other function's code block</li>
         <li>.forEach method can be used to loop through an array</li>
         <li>.map method can be used to loop through an array, do something to it, and create a new array</li>
         <li>.reduce method iterates over an array and returns a single value</li>
