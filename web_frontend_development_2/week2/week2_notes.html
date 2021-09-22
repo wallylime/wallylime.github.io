@@ -83,20 +83,51 @@
         <li>for-of loops:</li>
         <ul>
           <li>used to loop through each item in an array</li>
-          <li>format = for(const value of arrayName){bla bla statements}</li>
+          <li>format = for(const variableName of arrayName){bla bla statements}</li>
         </ul>
      </ul>
     </section>
     <section>
       <h2>Ch. 4: Functions</h2>
-      <p></p> 
       <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>functions reduce repetition</li>
+        <li>write a function like this: function functionName() {bla bla block of code}</li>
+        <li>Or write an anonymous function like this: const variableName = function() {bla bla block of code};</li>
+        <li>can assign a named function to a variable too: const variableName = function functionName() {bla bla block of code};</li>
+        <li>when storing a function in a variable, don't forget the semicolon at the end</li>
+        <li>DRY principle of coding stands for "Don't Repeat Yourself"</li>
+        <li>must have paranthesis to invoke a function</li>
+        <li>if you've stored your function in a variable, you can type the variable name followed by paranthesis to invoke the function</li>
+        <li>parameters help define what the argument that will be passed into the function should be and the parameters can be used in the function just like a variable</li>
+        <li>the argument(s) are passed to the function when it is invoked and are used in the place of the parameters</li>
+        <li>example of parameters and arguments: function calculateBodyMassIndex(height, weight) {bla bla} Height and weight are parameters that help define what the arguments should be. When this function is invoked, the actual height and weight of the person are passed in as arguments. For example calculateBodyMassIndex(5'11, 190)</li>
+        <li>when an unknown number of arguments can be passed into a function, use the rest operator (...) in the parameter and the arguments will be stored in an array</li>
+        <li>Here's an example of using the rest operator to calculate the mean of an unknown number of arguments: function mean(...values) {
+          let total = 0;
+          for(const value of values) {
+              total += value;
+          }
+          return total/values.length;
+      } The array that is created from the entered arguments is stored as "values."</li>
+        <li>default parameters can be set like this: function functionName(parameter = "defaultParameter") {bla} If someone does not pass an argument to this function, it will automatically be set to the default parameter</li>
+        <li>default parameters should always follow after regular parameters</li>
+        <li>arrow functions are a new way of defining a function that goes like this:
+          <ul>
+            <li>const variableName = parameter => statementsHere; This is the format if there is only one parameter and one statement. There's no need to include the keyword "return;" it will do that automatically.</li>
+            <li>const variableName = (parameter1, parameter2, etc.) => statementsHere; This is the format for multiple parameters and just one statement.</li>
+            <li>const variableName = (parameter1, parameter2) => {multiple statements} This is the format if there are multiple statements in the block of code. The keyword "return" is needed again.</li>
+          </ul></li>
+        <li>arrow functions are always anonymmous, so you have to refer to them by the variableName</li>
+        <li>arrow functions are best for small functions</li>
+        <li>Function hoisting means that when a function is declared anywhere in the Javascript code, it gets "hoisted" to the top and can be accessed even before it appears in the code. This could allow the coder to group all of their functions together at the end of the code.</li>
+        <li>Variable hoisitng means that variables that are declared with the "var" keyword get hoisted to the top. HOWEVER, the variable assignment does NOT get hoisted to the top which seems problematic and somewhat useless. Be especially aware of this when defining an anonymous function that is assigned to a variable.</li>
+        <li>a function can be passed into another function as an argument (this is called a callback)</li>
+        <li>When a function is passed into another function as an argument, it does not need the paranthesis. For it to be invoked, however, it would need to be called with the paranthesis inside of the other function</li>
+        <li>.forEach method can be used to loop through an array</li>
+        <li>.map method can be used to loop through an array, do something to it, and create a new array</li>
+        <li>.reduce method iterates over an array and returns a single value</li>
+        <li>.filter checks for truthy values in an array using the argument you pass it</li>
+        <li>iterators can be chained together to do cool stuff</li>
       </ul>
      </section>
     <section>
@@ -104,7 +135,7 @@
       <ul>
        <li>I'm completely confused about the primitive data type "symbols." I looked up the other article mentioned in the textbook, but it was still really confusing.</li>
       <li>Bitwise and bases=very confusing</li>
-      <li>Spread method? Huh? What do they mean by spreading out the array?</li>
+      <li>Spread method? Huh? What do they mean by "spreading out" the array?</li>
       </ul>
     </section>
   </main>
