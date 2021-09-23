@@ -24,9 +24,26 @@
        <li>descendant combinator = A B (this will select B anywhere it is nested within A)</li>
        <li>child combinator = A > B (this will select B only if it is a direct child of A)</li>
        <li>adjacent sibling combinator = A + B (this will select B only if it is immediately following A as children of the same parent element</li>
-       <li>general sibling combinator = A ~ B (this will select B if it is following A (does not need to be immediate) as children of the same parent element</li>
+       <li>general sibling combinator = A ~ B (this will select B if it is following A (does not need to be immediate) and they are both children of the same parent element</li>
        <li>there are various attribute selectors, most of which sound lame</li>
-       
+       <li>pseudo-elements that I like:</li>
+       <ul>
+         <li>::first-letter (selects the first letter of the element for styling in an adorable way)</li>
+         <li>::first-line (selects the first line of the element for styling)</li>
+         <li>::selection (can change how it looks when the user highlights something)</li>
+       </ul>
+       <li>pseudo-classes that I like:</li>
+       <ul>
+         <li>:target (use to style jump links--really cool example of using this to create tabs starting on pg. 40)</li>
+         <li>:not(argument) (returns elements without whatever you've put in paranthesis)</li>
+         <li>:first-child, :last-child</li>
+         <li>:nth-child(argument), :nth-last-child(argument) (the argument can be even, odd, the child number, or a step interval --even and odd can be especially useful in styling tables)</li>
+         <li>:required (useful for styling required fields in a form)</li>
+         <li>:valid and :invalid (used on forms)</li>
+       </ul>
+       <li>pseudo-classes can be chained together</li>
+       <li>keep specificity low</li>
+       <li>calculate specificity by the number of id selectors, class/pseudo-class/attribute selectors, and type/pseudo-element selectors</li>
      </ul>
     </section>
        
