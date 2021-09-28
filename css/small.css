@@ -68,7 +68,7 @@ ul {
   list-style-type: square;
 }
 
-ul.classes {
+ul.classes, .weeks {
   list-style-type: none;
 }
 
