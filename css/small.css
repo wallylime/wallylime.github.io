@@ -20,13 +20,28 @@ h1 {
   margin: 0;
 }
 
-h2 {
+h2, h2 a {
   color: #12263A;
   background-color: #E1C27A;
+}
+
+h2 {
   padding: .5em;
   margin-left: -.75em;
   margin-right: -.75em;
   border: 2px solid #12263A;
+}
+
+h2 a {
+  text-decoration: none;
+}
+
+h2 a:hover {
+  text-decoration: underline;
+  padding: .7em;
+  border: 2px solid #12263A;
+  border-radius: 1em;
+  background-color: #E8D19B;
 }
 
 h3{
@@ -55,6 +70,13 @@ ul {
 
 ul.classes {
   list-style-type: none;
+}
+
+.example {
+  padding: .3em;
+  margin: .2em;
+  background-color: #F0E0BC;
+  font-weight: bold;
 }
 
 .bold {

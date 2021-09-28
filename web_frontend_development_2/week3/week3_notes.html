@@ -19,7 +19,7 @@
   </header>
   <main>
     <section>
-      <h2>Object methods, "this"</h2>
+      <h2><a href="https://javascript.info/object-methods">Object methods, "this"</a></h2>
       <ul>
        <li>objects represent info about a person, place, thing, or idea</li>
        <li>you can store functions as a property of an object; they then become called a method</li>
@@ -34,18 +34,49 @@
       </ul>
     </section>
     <section>
-     <h2>Ch. 5: Objects</h2>
+     <h2><a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/5">Ch. 5: Objects</a></h2>
      <ul>
-       <li></li>
-       <li></li>
-       <li></li>
-       <li></li>
-       <li></li>
-       <li></li>
-       <li></li>
-       <li></li>
-       <li></li>
-       <li></li>
+       <li>objects are a way of grouping info together thus making it easier to find what you're looking for</li>
+       <li>objects have properties which store key-value pairs seperated by a comma</li>
+       <li>to write an object literal:
+         <div class="example">const objectLiteral = {name: valueOfName, method() {statements}, array: [value, value, value]};</div>
+       </li>
+       <li>you can create an empty object by just using empty brackets: {}</li>
+       <li>you can access an object's properties with dot notation: object.propertyKey</li>
+       <li>you can also access an object's properties with bracket notation: object["propertyKey"]</li>
+       <li>undefined will be returned if the property doesn't exist</li>
+       <li>to add a property to an object:
+         <div class="example">objectName.newPropertyKey = "newPropertyValue;"</div>
+       </li>
+       <li>to change a property value:
+         <div class="example">objectName.propertyKey = "newPropertyValue";</div>
+       </li>
+       <li>to remove a property:
+         <div class="example">delete objectName.propertyKey;</div>
+       </li>
+       <li>objects can be nested inside of other objects</li>
+       <li>if two or more variables are referencing the same object, any changes made to the object will affect both variables</li>
+       <li>you can use objects as parameters in a function</li>
+       <li>namespacing = by storing functions inside of objects, the possibility of function name clashes is greatly reduced because the function then has to be referred to with dot notation: myObject.functionName()</li>
+       <li>JSON: <a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/5/k01nwtx0?fromShare=true">link to JSON section from textbook</a></li>
+       <ul>
+         <li>functions cannot be stored in JSON format</li>
+         <li>property keys and values need to be double quoted</li>
+         <li>to create an object in JSON:
+           <div class="example">const objectName = '{"keyName": "value","anotherKeyName": "anotherValue", "keyNameArray": ["value","value","value"]}'</div>
+         </li>
+         <li>to take a JSON object and make it a JavaScript object:
+           <div class="example">JSON.parse(objectName);</div>
+           </li>
+         <li>to take a JavaScript object and make it a JSON object:
+           <div class="example">JSON.stringify(objectName);</div>
+         </li>
+         <li>JSON data is easily understood by different programming languages</li>
+       </ul>
+       <li>the math object is built in to JavaScript and has lots of cool properties which can be looked up<a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/5/k01nwtxf?fromShare=true">here</a></li>
+       <li>beware of background rounding errors if you're doing very precise calculations</li>
+       <li>read about the date object and its properties <a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/5/k01nwtza?fromShare=true">here</a></li>
+       <li>read about regular expression objects <a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/5/k01nwu0k?fromShare=true">here</a></li>
      </ul>
     </section>
     <section>
@@ -60,6 +91,10 @@
         <li></li>
         <li></li>
         <li></li>
+        <li></li>
+      </ul>
+      <h3>Questions</h3>
+      <ul>
         <li></li>
       </ul>
      </section>
@@ -77,15 +112,11 @@
         <li></li>
         <li></li>
       </ul>
-     </section>
-    <section>
-      <h2>Questions from This Week's Reading</h2>
+      <h3>Questions</h3>
       <ul>
         <li></li>
-        <li></li>
-        <li></li>
       </ul>
-    </section>
+     </section>
   </main>
   <footer>&copy; <span id="year"></span> | Emily Wall | Idaho | <a href="https://www.byui.edu/online">BYU-I Online</a>
     <p>
