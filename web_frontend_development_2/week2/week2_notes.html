@@ -15,11 +15,11 @@
 
 <body>
   <header>
-    <h1>Week 2 Notes: "Javascript: Novice to Ninja"</h1>
+    <h1>Week 2 Notes</h1>
   </header>
   <main>
     <section>
-      <h2>Ch. 2: Programming Basics</h2>
+      <h2><a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/2">Ch. 2: Programming Basics</a></h2>
       <ul>
         <li>best practice: terminate statements with a semicolon and a new line</li>
         <li>operator=acts, does something; operand=acted upon, the thing the operator is doing something with</li>
@@ -41,7 +41,7 @@
       </ul>
     </section>
     <section>
-     <h2>Ch. 3: Arrays, Logic, and Loops</h2>
+     <h2><a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/3">Ch. 3: Arrays, Logic, and Loops</a></h2>
      <ul>
        <li>use [] to enclose an array</li>
        <li>.pop(removes last item in array)</li>
@@ -66,29 +66,29 @@
        <li>while loops:</li>
         <ul>
           <li>must initialize the variable before the loop</li>
-          <li>format = while(condition) {bla bla}</li>
+          <li><div class="example">format = while(condition) {bla bla}</div></li>
           <li>while loops only run when the condition is still true; beware of creating an infinte loop where the condition is always true</li>
         </ul>
         <li>do-while loops:</li>
         <ul>
-          <li>format = do{bla bla statements} while(condition)</li>
+          <li><div class="example">format = do{bla bla statements} while(condition)</div></li>
           <li>this type of loop will always run the first time because it hasn't checked the condition yet</li>
         </ul>
         <li>for loops:</li>
         <ul>
           <li>most common type of loop</li>
-          <li>format = for(initialization; condition; after) {bla bla statemnents}</li>
+          <li><div class="example">format = for(initialization; condition; after) {bla bla statemnents}</div></li>
           <li>iniitalization = initialize variable; condition = condition that has to be met for the loop to run; after = what to do after running through the statements in the for block (after is usually some kind of counter that increments up or down)</li>
         </ul>
         <li>for-of loops:</li>
         <ul>
           <li>used to loop through each item in an array</li>
-          <li>format = for(const variableName of arrayName){bla bla statements}</li>
+          <li><div class="example">format = for(const variableName of arrayName){bla bla statements}</div></li>
         </ul>
      </ul>
     </section>
     <section>
-      <h2>Ch. 4: Functions</h2>
+      <h2><a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/4">Ch. 4: Functions</a></h2>
       <ul>
         <li>functions reduce repetition</li>
         <li>write a function like this: function functionName() {bla bla block of code}</li>
@@ -102,20 +102,24 @@
         <li>the argument(s) are passed to the function when it is invoked and are used in the place of the parameters</li>
         <li>example of parameters and arguments: function calculateBodyMassIndex(height, weight) {bla bla} Height and weight are parameters that help define what the arguments should be. When this function is invoked, the actual height and weight of the person are passed in as arguments. For example calculateBodyMassIndex(5'11, 190)</li>
         <li>when an unknown number of arguments can be passed into a function, use the rest operator (...) in the parameter and the arguments will be stored in an array</li>
-        <li>Here's an example of using the rest operator to calculate the mean of an unknown number of arguments: function mean(...values) {
+        <li>Here's an example of using the rest operator to calculate the mean of an unknown number of arguments: <div class="example">function mean(...values) {
           let total = 0;
           for(const value of values) {
               total += value;
           }
           return total/values.length;
-      } The array that is created from the entered arguments is stored as "values."</li>
+      } </div>
+      The array that is created from the entered arguments is stored as "values."</li>
         <li>default parameters can be set like this: function functionName(parameter = "defaultParameter") {bla} If someone does not pass an argument to this function, it will automatically be set to the default parameter</li>
         <li>default parameters should always follow after regular parameters</li>
         <li>arrow functions are a new way of defining a function that goes like this:
           <ul>
-            <li>const variableName = parameter => statement here; This is the format if there is only one parameter and one statement. There's no need to include the keyword "return;" it will do that automatically.</li>
-            <li>const variableName = (parameter1, parameter2, etc.) => statement here; This is the format for multiple parameters and just one statement.</li>
-            <li>const variableName = (parameter1, parameter2) => {multiple statements} This is the format if there are multiple statements in the block of code. The keyword "return" is needed again.</li>
+            <li>This is the format if there is only one parameter and one statement: 
+              <div class="example">const variableName = parameter => statement here;</div> There's no need to include the keyword "return;" it will do that automatically.</li>
+            <li>This is the format for multiple parameters and just one statement:
+              <div class="example">const variableName = (parameter1, parameter2, etc.) => statement here;</div> </li>
+            <li>This is the format if there are multiple statements in the block of code. The keyword "return" is needed again:
+              <div class="example">const variableName = (parameter1, parameter2) => {multiple statements}</div></li>
           </ul></li>
         <li>arrow functions are always anonymmous, so you have to refer to them by the variableName</li>
         <li>arrow functions are best for small functions</li>
