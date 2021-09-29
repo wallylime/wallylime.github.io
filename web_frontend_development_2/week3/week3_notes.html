@@ -115,27 +115,42 @@
       </ul>
       <h3>Questions</h3>
       <ul>
-        <li><a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/6/k01nwu99?fromShare=true">"Scripts inserted using innerHTML won't run."</a> What does that mean?</li>
         <li>What is the difference between a live node list and a static node list? <a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/6/k01nwu9a?fromShare=true">Live collections?</a></li>
       </ul>
      </section>
      <section>
-      <h2>Ch. 7: Events</h2>
+      <h2><a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/7">Ch. 7: Events</a></h2>
       <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>event listeners wait for a website's user to interact with the website in some way (hover, click, etc.) before executing the code attached to that event</li>
+        <li>example of how to add an event listener:
+          <div class="example">document.body.addEventListener("click", functionName); (Don't put paranthesis after the function name in the arguments or it will call the function before the event happens)</div>
+        </li>
+        <li>when an event happens, an event object is created that contains information about the event</li>
+        <li>lots of developers abbreviate "event" to "e" when writing their parameters</li>
+        <li>.type will tell what type of event triggered the function</li>
+        <li>.target will tell info about where on the page the event happened</li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/Events">Click here for a complete event refrence chart</a></li>
+        <li>don't put a "click" event and a "doubleclick" event on the same element!</li>
+        <li>.removeEventListener can be used within the function called by the .addEventListener so that the event will only trigger the function once; for example:
+          <div class="example">const onceParagraph = document.getElementById('once');
+            onceParagraph.addEventListener('click', remove);
+            function remove(event) {
+                console.log('Enjoy this while it lasts!');
+                onceParagraph.style.backgroundColor = 'pink';
+                onceParagraph.removeEventListener('click',remove);
+            }</div>
+        </li>
+        <li><a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/7/k01nwuf5?fromShare=true">event propagation</a> means that when you click on an element, you are also clicking on all of its ancestor elements clear up to the html root as long as they also have the "click" event listener</li>
+        <li>bubbling propagation begins with the child element and works its way up to the elements it's nested inside of that also have the "click" event listener (this is by default)</li>
+        <li>capturing propagation does the opposite of bubbling and starts with the distant ancestors and works its way down to the child that was clicked on</li>
+        <li>to use capturing propagation, set the third .addEventListener parameter to "true" which indicates that capturing propagation should be used</li>
+        <li><a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/7/k01nwufv?fromShare=true">event delegation</a> happens when an event listener is added to a parent element so that it triggers on any of the child elements using .target</li>
+        <li>using event delegation saves time and reduces code</li>
+        <li>the textbook has a good example of using this on an unordered list so that you don't have to put an event listener on each list item</li>
       </ul>
       <h3>Questions</h3>
       <ul>
-        <li></li>
+        <li>How is it possible for event propagation to both bubble and capture at the same time? <a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/7/k01nwufn?fromShare=true">Here's the part from the textbook that was confusing</a></li>
       </ul>
      </section>
   </main>
