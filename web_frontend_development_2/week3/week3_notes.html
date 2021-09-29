@@ -53,7 +53,7 @@
        <li>if two or more variables are referencing the same object, any changes made to the object will affect both variables</li>
        <li>you can use objects as parameters in a function</li>
        <li>namespacing = by storing functions inside of objects, the possibility of function name clashes is greatly reduced because the function then has to be referred to with dot notation: myObject.functionName()</li>
-       <li>JSON: <a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/5/k01nwtx0?fromShare=true">link to JSON section from textbook</a></li>
+       <li>JSON: <a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/5/k01nwtx0?fromShare=true">link to JSON section from textbook</a>
        <ul>
          <li>functions cannot be stored in JSON format</li>
          <li>property keys and values need to be double quoted</li>
@@ -67,29 +67,55 @@
            <div class="example">JSON.stringify(objectName);</div>
          </li>
          <li>JSON data is easily understood by different programming languages</li>
-       </ul>
+       </ul></li>
        <li><a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/5/k01nwtxf?fromShare=true">the math object</a> is built into JavaScript and has lots of cool properties that store constant math numbers (like pi) and math operations</li>
        <li><a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/5/k01nwtza?fromShare=true">the date object</a> and its properties</li>
        <li><a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/5/k01nwu0k?fromShare=true">regular expression objects</a> show a pattern that the computer is looking for</li>
      </ul>
     </section>
     <section>
-      <h2>Ch. 6: Document Object Model</h2>
+      <h2><a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/6">Ch. 6: Document Object Model</a></h2>
       <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>everything within an HTML document is represented as nodes in a tree-like structure
+          <img src="../../images/DOM.png" alt="DOM representation" title="diagram from https://en.wikipedia.org/wiki/Document_Object_Model">
+        </li>
+        <li>the DOM can be accessed through the built-in object called "document"</li>
+        <li>when you access elements on the DOM, you will get either a node object or node list</li>
+        <li>any white space in the document is turned into an empty text node</li>
+        <li>node lists are not arrays because you cannot use most of the array methods on them</li>
+        <li>node lists do, however, have a length property and the ability to access a particular item in the list through index notation</li>
+        <li>you can use for loops on node lists</li>
+        <li>in order to turn a node list into an array, you can use the Array.from() method:
+          <div class="example">const imageArray = Array.from(document.images);</div>
+        </li>
+        <li>to access things from the DOM, use:
+          <div class="example">document.getElementByID("idName")<br>
+          document.getElementsByTagName("htmlTagGoesHere") for example, document.getELementsByTagName("p") would return a node list with all of the paragraphs in the document<br>
+          document.getElementsByClassName("classNameHere")<br>
+          document.querySelector("selectorHere") returns the FIRST instance of that query selector<br>
+          document.querySelectorAll("selectorHere") returns a node list of ALL of the instances of that query selector
+        </div>
+        </li>
+        <li>differences between query selectors and get element by id/class/tag:
+          <ul>
+            <li>query selectors can use CSS selectors, including pseudo classes</li>
+            <li>query selectors can be used on things other than the document: <a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/6/k01nwu5m?fromShare=true">here's an example of that from the textbook</a></li>
+            <li>query selectors are not live node lists</li>
+          </ul>
+        </li>
+        <li>you can <a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/6/k01nwu6v?fromShare=true">find and change an element's attributes</a> with:
+          <div class="example">.getAttribute("attributeName") and .setAttribute("attributeName", "newAttributeValue")</div></li>
+          <li><a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/6/k01nwu73?fromShare=true">info about className and classList properties</a></li>
+          <li>the classList.toggle() method is especially useful</li>
+          <li>here's how to <a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/6/k01nwu7o?fromShare=true">creat an element, add text, and append it</a>
+          </li>
+          <li><a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/6/k01nwu90?fromShare=true">.innerHTML</a> is a much better, faster way to edit nodes because it will automatically create element nodes and text nodes from a long string</li>
+          <li>.style property allows you to change the CSS of an element, but it is important to note that any dashes need to be replaced with camelCase; for example: anElement.style.backgroundColor instead of .background-color</li>
       </ul>
       <h3>Questions</h3>
       <ul>
-        <li></li>
+        <li><a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/6/k01nwu99?fromShare=true">"Scripts inserted using innerHTML won't run."</a> What does that mean?</li>
+        <li>What is the difference between a live node list and a static node list? <a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/6/k01nwu9a?fromShare=true">Live collections?</a></li>
       </ul>
      </section>
      <section>

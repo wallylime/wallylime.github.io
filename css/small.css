@@ -49,8 +49,13 @@ h3{
   background-color: #12263A;
   padding: .5rem;
 }
-
 img {
+  max-width: 50%;
+  display: block;
+  margin: 1em;
+}
+
+img#Emily {
   border-radius: 1.25em;
   max-width: 50%;
   margin: 1em;
