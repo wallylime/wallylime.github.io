@@ -73,7 +73,7 @@ ul {
   list-style-type: square;
 }
 
-.classes, .weeks {
+.classes, .weeks, .notes {
   list-style-type: none;
 }
 

@@ -1,0 +1,105 @@
+//Color variables:
+$tanish: #FAEBD7;
+$blueish: #6495ED;
+$main-color: $tanish;
+$secondary-color: $blueish;
+
+//Breakpoint variable:
+$medium-break: 700px;
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+
+@mixin breakpoint($break) {
+  @media only screen and (min-width: $break) {
+    @content;
+  }
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  @include breakpoint($medium-break) {
+    & div {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      grid-template-rows: 1fr;
+    }
+  }
+}
+
+h1, h2 {
+  font-family: 'Lora', serif;
+}
+
+header {
+  background-color: $secondary-color;
+  text-align: right;
+  padding: 2rem;
+  & a {
+    color: $main-color;
+  }
+}
+
+main {
+  background-color: $main-color;
+  padding: .5rem 0;
+  @include breakpoint($medium-break) {
+    padding: 1rem;
+  }
+}
+
+article {
+  background-color: white;
+  padding: 1.5rem;
+  margin: 1rem;
+  border-radius: .2rem;
+  box-shadow: .2rem .2rem .4rem lightgray;
+  @include breakpoint($medium-break) {
+    margin: 2rem;
+  }
+}
+
+div.post-date {
+  color: gray;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+a {
+  color: $secondary-color;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+  &:active {
+    color: #DEB887;
+  }
+}
+
+nav {
+  & ul {
+   list-style-type: none; 
+  }
+  & li {
+    padding-bottom: .5rem;
+  }
+  & a:hover {
+    color: white;
+  }
+}
+
+h2 {
+  & a {
+    color: black;
+  }
+  & a:hover {
+    color: $secondary-color;
+  }
+}
