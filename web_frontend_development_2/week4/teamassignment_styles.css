@@ -36,3 +36,10 @@ button {
   border-radius: .5em;
   box-shadow: .5em .5em 1em gray;
 }
+
+#game-status {
+  font-size: 60px;
+  font-weight: bold;
+  color: blue;
+  padding: 1em;
+}

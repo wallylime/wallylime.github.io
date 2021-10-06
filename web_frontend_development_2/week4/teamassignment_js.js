@@ -1,5 +1,6 @@
 const board = document.getElementById("board");
 board.addEventListener("touchend", makeMove);
+const statusDiv = document.getElementById("game-status");
 let player = true;
 let moves = 0;
 let player1 = [];
@@ -21,36 +22,35 @@ function makeMove(event) {
     event.target.innerHTML = "X";
     player1.push(squareId);
     moves++;
-    player = false;
     //Can't win at tic-tac-toe unless you've had at least 3 moves
     if (player1.length >= 3) {
-      checkForWin(player1);
-    }
+      checkForWin(winKey, player1);
+      }
+    player = false;   
   }
   
   else {
     event.target.innerHTML = "O";
     player2.push(squareId);
     moves++;
-    player = true;
     //Can't win at tic-tac-toe unless you've had at least 3 moves
     if (player2.length >= 3) {
-      checkForWin(player2);
+      checkForWin(winKey, player2);
     }
+    player = true;
   }
 }
 
-function checkForWin(playerArray) {
-  console.log(playerArray);
-  //to be continued...would like to work on later
-  // winKey.forEach(winArray => {
-  //   if (playerArray == winArray) {
-  //     console.log("You won!");
-  //   }
-  // })
+function checkForWin(winKey, playerArray) {
+  for(i=0; i < winKey.length; i++) {
+    let winBoulean = winKey[i].every(val => playerArray.includes(val));
+    if (winBoulean == true) {
+      statusDiv.innerHTML = "You won!"
+    };
+  }
 
   if (moves == 9) {
-    console.log("It was a draw!");
+    statusDiv.innerHTML = "It was a tie!";
   }
 }
 
@@ -62,5 +62,6 @@ function reset() {
     player2 = [];
     player = true;
     moves = 0;
+    statusDiv.innerHTML = "";
   });
 }
