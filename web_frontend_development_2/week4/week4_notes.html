@@ -43,29 +43,33 @@
        <li>prototype properties will be shared by all the objects that share the same class; they are not customizable and are not considered the object's "own" property</li>
        <li>here's the difference between <a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/12/k01nwvc8?fromShare=true">private and public properties/methods</a></li>
        <li>one class can inherit from another using <a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/12/k01nwvdc?fromShare=true">extends</a></li>
-       <li></li>
-       <li></li>
-       <li></li>
+       <li><a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/12/k01nwvf6?fromShare=true">getter and setter methods</a> are especially used when a property value is dependent on other property values</li>
+       <li>getter and setter methods allow more control over property assignment</li>
+       <li>instead of using classes, you can create an exact copy of an object with <a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/12/k01nwvfp?fromShare=true">.create</a>
+      <div class="example">const ObjectYouWantToCopy = {property1: 1, property2: 2, etc.};<br>
+      const newObjectName = Object.create(ObjectYouWantToCopy);
+    </div> </li>
+    <li>if you change the prototype object, it will affect all of the other objects that use it as their prototype</li>
+    <li>the instanceof operator only works on objects built with constructor functions</li>
+    <li>object properties can be given through assignment like this: 
+      <div class="example">const a = {};
+        const b = { name: 'JavaScript' };
+        Object.assign(a,b)
+        << { name: 'JavaScript' }
+        a.name
+        << 'JavaScript'</div></li>
+    <li>the problem with assignment is that arrays and functions that are stored as properties only REFERENCE the original; they don't store their own copy of the property value</li>
+    <li><a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/12/k01nwvh7?fromShare=true">mixins</a> are functions that can be used to assign "deep" object properties (properties that aren't just REFERENCING)</li>
+    <li>the variable "this" can get messy and refer to the wrong object</li>
+    <li>there are several methods for pinpointing what "this" is referring to, including using <a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/12/k01nwviz?fromShare=true">that = this</a></li>
+    <li>try to make objects like small, reusable blocks that can be used to build bigger things</li>
      </ul>
-     <h3>Questions</h3>
-      <ul>
-        <li></li>
-        <li></li>
-      </ul>
     </section>
     <section>
       <h2><a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/15/k01nwvxr">Modular JavaScript</a></h2>
       <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-      <h3>Questions</h3>
-      <ul>
-        <li></li>
-        <li></li>
+        <li>you can organize different parts of Javascript into files called modules</li>
+        <li>the keywords <a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/15/k01nwvxy?fromShare=true">"export" and "import" </a>are used to actually access the code from another file</li>
       </ul>
      </section>
   </main>
