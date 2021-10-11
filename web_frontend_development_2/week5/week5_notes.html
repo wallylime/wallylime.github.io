@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 5 Notes</title>
+  <meta name="description" content="Week 5 Notes for WDD330.">
+  <meta name="author" content="Emily Wall">
+  <link href="../../css/normalize.css" rel="stylesheet">
+  <link href="../../css/small.css" rel="stylesheet">
+  <link href="../../css/medium.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>Week 5 Notes</h1>
+  </header>
+  <main>
+    <section>
+     <h2><a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/10">Ch. 10: Testing and Debugging</a></h2>
+    <ul>
+      <li>warnings won't immediately cause the program to crash, but can come back to bite you later</li>
+      <li>code in strict mode which will follow coding best practices and throw errors instead of warnings</li>
+      <li>to code in strict mode, just write the string "use strict" at the top of the file or within a function that contains all of your code:
+        <div class="example">(function() {
+          'use strict';
+          // All your code would go inside this function 
+      }());</div>
+      </li>
+      <li>the main reason for using "use strict" within a function instead of at the top of the file is that if you are collaborating on code, someone else might not have used strict mode and if you put it at the top of the file, strict mode will be imposed on their code as well</li>
+      <li>linting tools are even more strict than "use strict"</li>
+      <li>using <a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/10/k01nwuuh?fromShare=true">feature detection</a> inside of an if statement helps the program to "fail gracefully" if the user's browser doesn't support the feature in question</li>
+      <li>use the console rather than the alert box for debugging purposes</li>
+      <li>using the debugger tool is even more efficient than using console.log</li>
+      <li>info on how to use <a href="https://developer.chrome.com/docs/devtools/javascript/">debugger in Chrome</a></li>
+      <li>you can use the keyword <a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/10/k01nwuvr?fromShare=true">throw</a> to create your own errors if a certain situation occurs</li>
+      <li><a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/10/k01nwuw1?fromShare=true">try, catch, and finally</a> can be used to deal with errors</li>
+      <li>"try" is for the code that you want to run but might cause an error</li>
+      <li>"catch" is for the code to run if the code in "try" does cause an error</li>
+      <li>"finally" is the code that should be run regardless of whether the code from "try" or the code from "catch" was used</li>
+      <li>TDD stands for test-driven development</li>
+      <li>start with test cases before actually writing any code</li>
+      <li><a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/10/k01nwuwq?fromShare=true">JEST</a> is a testing framework that works on files ending with .test.js</li>
+    </ul>
+     </section>
+  </main>
+  <footer>&copy; <span id="year"></span> | Emily Wall | Idaho | <a href="https://www.byui.edu/online">BYU-I Online</a>
+    <p>
+      Last modified: <span id="lastmodified"></span>
+    </p>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="../../js/javascript.js"></script>
+  <script> WebFont.load({
+    google: {
+      families: [
+         'Metamorphous'
+      ]
+    }
+  });
+  </script>
+</body>
+
+</html>
