@@ -3,52 +3,72 @@ body {
   font-size: 16px;
   max-width: 960px;
   margin: 1em auto;
-  border-left: 5px solid #12263A;
-  border-right: 5px solid #12263A;
+  border-left: 5px solid #12263a;
+  border-right: 5px solid #12263a;
 }
 
-h1, h2, h3 {
-  font-family: "Metamorphous", Garamond, serif;
+a {
+  color: #a31b14;
 }
 
-h1 {
-  font-size: 2em;
-  background-color: #12263A;
-  color: #E1C27A;
-  padding: .5em;
-  margin-top: 1em;
-  margin: 0;
-}
-
-h2, h2 a {
-  color: #12263A;
-  background-color: #E1C27A;
-}
-
-h2 {
-  padding: .5em;
-  margin-left: -.75em;
-  margin-right: -.75em;
-  border: 2px solid #12263A;
+h2,
+h2 a {
+  color: #12263a;
+  background-color: #e1c27a;
 }
 
 h2 a {
   text-decoration: none;
 }
 
-h2 a:hover {
-  text-decoration: underline;
-  padding: .7em;
-  border: 2px solid #12263A;
-  border-radius: 1em;
-  background-color: #E8D19B;
+footer a {
+  color: #e1c27a;
 }
 
-h3{
-  color: #E1C27A;
-  background-color: #12263A;
-  padding: .5rem;
+h1,
+h2,
+h3 {
+  font-family: "Metamorphous", Garamond, serif;
 }
+
+h1 {
+  font-size: 2em;
+  background-color: #12263a;
+  color: #e1c27a;
+  padding: 0.5em;
+  margin: 0;
+}
+
+a:hover {
+  background-color: #e1c27a;
+  color: #12263a;
+}
+
+h2 {
+  padding: 0.5em;
+  margin-left: -0.75em;
+  margin-right: -0.75em;
+  border: 2px solid #12263a;
+}
+
+h2 a:hover {
+  text-decoration: underline;
+  padding: 0.7em;
+  border: 2px solid #12263a;
+  border-radius: 1em;
+  background-color: #e8d19b;
+}
+
+footer a:hover {
+  background-color: #06bcc1;
+}
+
+h3 {
+  color: #e1c27a;
+  background-color: #12263a;
+  padding: 0.5rem;
+}
+
 img {
   max-width: 50%;
   display: block;
@@ -59,55 +79,40 @@ img#Emily {
   border-radius: 1.25em;
   max-width: 50%;
   margin: 1em;
-  border: 1.5px solid #12263A;
+  border: 1.5px solid #12263a;
 }
 
 main {
   padding: 1em;
-  padding-top: .5em;
-  padding-bottom: .5em;
-  color: #12263A;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  color: #12263a;
 }
 
 ul {
   list-style-type: square;
 }
 
-.classes, .weeks, .notes {
+.classes,
+.weeks,
+.notes {
   list-style-type: none;
 }
 
 .example {
-  padding: .3em;
-  margin: .2em;
-  background-color: #F0E0BC;
+  padding: 0.3em;
+  margin: 0.2em;
+  background-color: #f0e0bc;
   font-weight: bold;
 }
 
 .bold {
   font-weight: bold;
-  padding-top: .5rem;
-}
-
-a {
-  color: #A31B14;
-}
-
-a:hover {
-  background-color: #E1C27A;
-  color: #12263A;
+  padding-top: 0.5rem;
 }
 
 footer {
-  background-color: #12263A;
-  color: #E1C27A;
+  background-color: #12263a;
+  color: #e1c27a;
   padding: 1.5em;
-}
-
-footer a {
-  color: #E1C27A;
-}
-
-footer a:hover {
-  background-color: #06BCC1;
 }

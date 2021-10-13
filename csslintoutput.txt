@@ -1,0 +1,49 @@
+
+css/small.css
+   6:26  ×  Expected "#12263A" to be "#12263a"                                  color-hex-case                                   
+   7:27  ×  Expected "#12263A" to be "#12263a"                                  color-hex-case                                   
+  10:3   ×  Expected newline after ","                                          selector-list-comma-newline-after                
+  10:7   ×  Expected newline after ","                                          selector-list-comma-newline-after                
+  16:21  ×  Expected "#12263A" to be "#12263a"                                  color-hex-case                                   
+  17:10  ×  Expected "#E1C27A" to be "#e1c27a"                                  color-hex-case                                   
+  18:12  ×  Expected a leading zero                                             number-leading-zero                              
+  20:3   ×  Unexpected shorthand "margin" after "margin-top"                    declaration-block-no-shorthand-property-overrides
+  23:3   ×  Expected newline after ","                                          selector-list-comma-newline-after                
+  24:10  ×  Expected "#12263A" to be "#12263a"                                  color-hex-case                                   
+  25:21  ×  Expected "#E1C27A" to be "#e1c27a"                                  color-hex-case                                   
+  29:12  ×  Expected a leading zero                                             number-leading-zero                              
+  30:17  ×  Expected a leading zero                                             number-leading-zero                              
+  31:18  ×  Expected a leading zero                                             number-leading-zero                              
+  32:21  ×  Expected "#12263A" to be "#12263a"                                  color-hex-case                                   
+  41:12  ×  Expected a leading zero                                             number-leading-zero                              
+  42:21  ×  Expected "#12263A" to be "#12263a"                                  color-hex-case                                   
+  44:21  ×  Expected "#E8D19B" to be "#e8d19b"                                  color-hex-case                                   
+  47:2   ×  Expected single space before "{"                                    block-opening-brace-space-before                 
+  48:10  ×  Expected "#E1C27A" to be "#e1c27a"                                  color-hex-case                                   
+  49:21  ×  Expected "#12263A" to be "#12263a"                                  color-hex-case                                   
+  50:12  ×  Expected a leading zero                                             number-leading-zero                              
+  52:1   ×  Expected empty line before rule                                     rule-empty-line-before                           
+  62:23  ×  Expected "#12263A" to be "#12263a"                                  color-hex-case                                   
+  67:16  ×  Expected a leading zero                                             number-leading-zero                              
+  68:19  ×  Expected a leading zero                                             number-leading-zero                              
+  69:10  ×  Expected "#12263A" to be "#12263a"                                  color-hex-case                                   
+  76:9   ×  Expected newline after ","                                          selector-list-comma-newline-after                
+  76:17  ×  Expected newline after ","                                          selector-list-comma-newline-after                
+  81:12  ×  Expected a leading zero                                             number-leading-zero                              
+  82:11  ×  Expected a leading zero                                             number-leading-zero                              
+  83:21  ×  Expected "#F0E0BC" to be "#f0e0bc"                                  color-hex-case                                   
+  89:16  ×  Expected a leading zero                                             number-leading-zero                              
+  92:1   ×  Expected selector "a" to come before selector "h2 a"                no-descending-specificity                        
+  92:1   ×  Expected selector "a" to come before selector "h2 a"                no-descending-specificity                        
+  92:1   ×  Expected selector "a" to come before selector "h2 a:hover"          no-descending-specificity                        
+  93:10  ×  Expected "#A31B14" to be "#a31b14"                                  color-hex-case                                   
+  96:1   ×  Expected selector "a:hover" to come before selector "h2 a:hover"    no-descending-specificity                        
+  97:21  ×  Expected "#E1C27A" to be "#e1c27a"                                  color-hex-case                                   
+  98:10  ×  Expected "#12263A" to be "#12263a"                                  color-hex-case                                   
+ 102:21  ×  Expected "#12263A" to be "#12263a"                                  color-hex-case                                   
+ 103:10  ×  Expected "#E1C27A" to be "#e1c27a"                                  color-hex-case                                   
+ 107:1   ×  Expected selector "footer a" to come before selector "h2 a:hover"   no-descending-specificity                        
+ 107:1   ×  Expected selector "footer a" to come before selector "a:hover"      no-descending-specificity                        
+ 108:10  ×  Expected "#E1C27A" to be "#e1c27a"                                  color-hex-case                                   
+ 112:21  ×  Expected "#06BCC1" to be "#06bcc1"                                  color-hex-case
+
