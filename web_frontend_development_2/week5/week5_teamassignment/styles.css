@@ -7,6 +7,7 @@ body {
 
 h1, h2 {
   text-align: center;
+  background-color: lightgray;
 }
 
 img {
@@ -16,8 +17,8 @@ img {
 li {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(2, 50%);
-  column-gap: 2em
+  grid-template-columns: repeat(2, 49%);
+  column-gap: 2%;
 }
 
 li h2 {
