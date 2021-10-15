@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css2?family=Coming+Soon&family=Fredericka+the+Great&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -45,121 +46,16 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/* -------------------------------- 
+/*-----------------------
 
-xBackground 
+xTypography
 
--------------------------------- */
-body {
-  /* this is the page background */
-  background-color: #ffffff;
-}
-/* -------------------------------- 
-
-xPatterns
-
--------------------------------- */
-.cd-box {
-  /* this is the container of various design elements - i.e. the 2 logo of the branding section */
-  border: 1px solid #e6e6e6;
-  border-radius: 3px;
-  background: #ffffff;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-  padding: 6px;
-}
-/* -------------------------------- 
-
-xNavigation 
-
--------------------------------- */
-header {
-  background-color: #19191a;
-}
-.cd-logo {
-  /* logo box style */
-  background-color: #5f8ee4;
-  width: 120px;
-}
-@media only screen and (min-width: 1024px) {
-  .cd-logo {
-    width: 180px;
-  }
-}
-.cd-main-nav {
-  /* main navigation background color - full screen on small devices */
-  background: #19191a;
-}
-.cd-main-nav li a {
-  color: #ffffff;
-  border-color: #262627;
-}
-@media only screen and (min-width: 1024px) {
-  .cd-main-nav li a {
-    color: #7d7d82;
-  }
-  .cd-main-nav li a.selected {
-    color: #ffffff;
-    box-shadow: 0 2px 0 #5f8ee4;
-  }
-  .cd-main-nav li a:hover {
-    color: #ffffff;
-  }
-}
-.cd-nav-trigger span {
-  /* hamburger menu */
-  background-color: #ffffff;
-}
-.cd-nav-trigger span::before, .cd-nav-trigger span::after {
-  /* upper and lower lines */
-  background-color: #ffffff;
-}
-.nav-is-visible .cd-nav-trigger span {
-  /* hide line in the center on mobile when nav is visible */
-  background-color: rgba(255, 255, 255, 0);
-}
-.nav-is-visible .cd-nav-trigger span::before, .nav-is-visible .cd-nav-trigger span::after {
-  /* preserve visibility of upper and lower lines - close icon */
-  background-color: white;
-}
-.cd-download {
-  /* download button top-right visible on big devices */
-  background-color: #323234;
-}
-.no-touch .cd-download:hover {
-  background-color: #3f3f41;
-}
-.cd-download span {
-  /* tooltip */
-  background: #5f8ee4;
-  color: #ffffff;
-}
-.cd-download span::before {
-  /* right arrow color */
-  border-color: #5f8ee4;
-}
-/* -------------------------------- 
-
-xPage title 
-
--------------------------------- */
-main > h1 {
-  color: #19191a;
-}
-@media only screen and (min-width: 1600px) {
-  main > h1 {
-    /* title goes into the header on big devices */
-    color: #ffffff;
-  }
-}
-/* -------------------------------- 
-
-xTypography 
-
--------------------------------- */
+------------------------*/
 h1,
-h2 {
-  font-family: "Open Sans", sans-serif;
-  color: #19191a;
+h2,
+h3 {
+  font-family: "Fredericka the Great", sans-serif;
+  color: #474747;
 }
 h1 {
   font-size: 2.4rem;
@@ -190,15 +86,15 @@ h2 {
 }
 section > h2::before {
   /* number before each section title */
-  color: silver;
+  color: #fa8d00;
 }
 p {
   font-size: 1.4rem;
   line-height: 1.4;
-  color: #58585b;
+  color: #878787;
 }
 p a {
-  color: #5f8ee4;
+  color: #258fa7;
   text-decoration: underline;
 }
 @media only screen and (min-width: 768px) {
@@ -207,27 +103,106 @@ p a {
     line-height: 1.6;
   }
 }
-/* -------------------------------- 
+/*------------------------
 
-xButtons 
+xColors
 
--------------------------------- */
+-------------------------*/
+/* this is the page background */
+body {
+  background-color: #ffffff;
+}
+header {
+  background-color: #258fa7;
+}
+/*----------------------
+
+xNavigation
+
+----------------------*/
+.cd-logo {
+  /* logo box style */
+  background-color: #258fa7;
+  width: 120px;
+}
+@media only screen and (min-width: 1024px) {
+  .cd-logo {
+    width: 180px;
+  }
+}
+.cd-main-nav {
+  /* main navigation background color - full screen on small devices */
+  background: #474747;
+}
+.cd-main-nav li a {
+  color: #ffffff;
+  border-color: #545454;
+}
+@media only screen and (min-width: 1024px) {
+  .cd-main-nav li a {
+    color: #adadad;
+  }
+  .cd-main-nav li a.selected {
+    color: #ffffff;
+    box-shadow: 0 2px 0 #258fa7;
+  }
+  .cd-main-nav li a:hover {
+    color: #ffffff;
+  }
+}
+.cd-nav-trigger span {
+  /* hamburger menu */
+  background-color: #ffffff;
+}
+.cd-nav-trigger span::before, .cd-nav-trigger span::after {
+  /* upper and lower lines */
+  background-color: #ffffff;
+}
+.nav-is-visible .cd-nav-trigger span {
+  /* hide line in the center on mobile when nav is visible */
+  background-color: rgba(255, 255, 255, 0);
+}
+.nav-is-visible .cd-nav-trigger span::before, .nav-is-visible .cd-nav-trigger span::after {
+  /* preserve visibility of upper and lower lines - close icon */
+  background-color: white;
+}
+.cd-download {
+  /* download button top-right visible on big devices */
+  background-color: #616161;
+}
+.no-touch .cd-download:hover {
+  background-color: #6d6d6d;
+}
+.cd-download span {
+  /* tooltip */
+  background: #258fa7;
+  color: #ffffff;
+}
+.cd-download span::before {
+  /* right arrow color */
+  border-color: #258fa7;
+}
+/*---------------------------
+
+xButtons
+
+---------------------------*/
 .btn {
   border: none;
   box-shadow: none;
   border-radius: 0.25em;
   font-size: 1.4rem;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Fredericka the Great", sans-serif;
   color: #ffffff;
   padding: 0.6em 2.2em;
   cursor: pointer;
-  background: #5f8ee4;
+  background: #258fa7;
 }
 .btn:focus {
   outline: none;
 }
 .no-touch .btn:hover {
-  background: #759de8;
+  background: #2aa1bc;
 }
 .btn.btn-success {
   background: #6fce72;
@@ -236,19 +211,19 @@ xButtons
   background: #82d485;
 }
 .btn.btn-alert {
-  background: #e4655f;
+  background: #ff661f;
 }
 .no-touch .btn.btn-alert:hover {
-  background: #e87a75;
+  background: #ff7739;
 }
 .btn.btn-outline {
-  color: #5f8ee4;
+  color: #258fa7;
   background: transparent;
-  box-shadow: inset 0 0 0 1px #5f8ee4;
+  box-shadow: inset 0 0 0 1px #258fa7;
 }
 .no-touch .btn.btn-outline:hover {
   color: #ffffff;
-  background: #5f8ee4;
+  background: #258fa7;
 }
 @media only screen and (min-width: 768px) {
   .btn {
@@ -257,137 +232,7 @@ xButtons
 }
 .cd-buttons .cd-box:nth-of-type(2) span {
   /* CSS class name color */
-  color: #5f8ee4;
-}
-/* -------------------------------- 
-
-xIcons 
-
--------------------------------- */
-.cd-icons li {
-  /* icons size */
-  width: 32px;
-  height: 32px;
-}
-/* -------------------------------- 
-
-xForm 
-
--------------------------------- */
-input[type=text],
-select {
-  border: 1px solid #e6e6e6;
-  border-radius: 0.25em;
-  background: #ffffff;
-}
-input[type=text]:focus,
-select:focus {
-  outline: none;
-}
-input[type=text] {
-  padding: 0.6em 1em;
-  box-shadow: inset 1px 1px rgba(0, 0, 0, 0.03);
-}
-input[type=text].success {
-  border-color: #6fce72;
-  box-shadow: 0 0 6px rgba(111, 206, 114, 0.2);
-}
-input[type=text].alert {
-  border-color: #e4655f;
-  box-shadow: 0 0 6px rgba(228, 101, 95, 0.2);
-}
-input[type=text]:focus {
-  border-color: #5f8ee4;
-  box-shadow: 0 0 6px rgba(95, 142, 228, 0.2);
-}
-input[type=radio],
-input[type=checkbox] {
-  position: absolute;
-  left: 0;
-  top: 0;
-  margin: 0;
-  padding: 0;
-  opacity: 0;
-}
-.radio-label,
-.checkbox-label {
-  padding-left: 24px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-.radio-label::before, .radio-label::after,
-.checkbox-label::before,
-.checkbox-label::after {
-  /* custom radio and check boxes */
-  content: "";
-  display: block;
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-.radio-label::before,
-.checkbox-label::before {
-  left: 0;
-  border: 1px solid #e6e6e6;
-  box-shadow: inset 1px 1px rgba(0, 0, 0, 0.03);
-}
-.radio-label::after,
-.checkbox-label::after {
-  left: 3px;
-  background: url("icon-check.e36d4d8a.svg") no-repeat center center;
-  display: none;
-}
-.radio-label::before {
-  border-radius: 50%;
-}
-.checkbox-label::before {
-  border-radius: 3px;
-}
-input[type=radio]:checked + label::before,
-input[type=checkbox]:checked + label::before {
-  background-color: #19191a;
-  border: none;
-  box-shadow: none;
-}
-input[type=radio]:checked + label::after,
-input[type=checkbox]:checked + label::after {
-  display: block;
-}
-.cd-select::after {
-  /* switcher arrow for select element */
-  content: "";
-  position: absolute;
-  z-index: 1;
-  right: 14px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  display: block;
-  width: 16px;
-  height: 16px;
-  background: url("icon-select.f8d42744.svg") no-repeat center center;
-  pointer-events: none;
-}
-select {
-  position: relative;
-  padding: 0.6em 2em 0.6em 1em;
-  cursor: pointer;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
+  color: #258fa7;
 }
 /* -------------------------------- 
 
@@ -408,7 +253,7 @@ html {
 }
 body {
   font-size: 1.6rem;
-  font-family: "Merriweather", serif;
+  font-family: "Coming Soon", serif;
 }
 a {
   text-decoration: none;
@@ -417,7 +262,7 @@ img {
   max-width: 100%;
 }
 input, textarea, select {
-  font-family: "Merriweather", serif;
+  font-family: "Coming Soon", serif;
   font-size: 1.6rem;
 }
 header {
@@ -844,40 +689,40 @@ section:nth-of-type(10) h2::before {
   padding: 0.6em 0;
 }
 .cd-colors li:nth-of-type(1) .cd-color-swatch {
-  background: #5f8ee4;
+  background: #258fa7;
 }
 .cd-colors li:nth-of-type(1) .cd-color-swatch::before {
-  background: #759de8;
+  background: #2aa1bc;
 }
 .cd-colors li:nth-of-type(1) .cd-color-swatch::after {
-  background: #497fe0;
+  background: #207d92;
 }
 .cd-colors li:nth-of-type(2) .cd-color-swatch {
-  background: #19191a;
+  background: #474747;
 }
 .cd-colors li:nth-of-type(2) .cd-color-swatch::before {
-  background: #262627;
+  background: #545454;
 }
 .cd-colors li:nth-of-type(2) .cd-color-swatch::after {
-  background: #0d0d0d;
+  background: #3a3a3a;
 }
 .cd-colors li:nth-of-type(3) .cd-color-swatch {
-  background: #e4655f;
+  background: #ff661f;
 }
 .cd-colors li:nth-of-type(3) .cd-color-swatch::before {
-  background: #e87a75;
+  background: #ff7739;
 }
 .cd-colors li:nth-of-type(3) .cd-color-swatch::after {
-  background: #e05049;
+  background: #ff5506;
 }
 .cd-colors li:nth-of-type(4) .cd-color-swatch {
-  background: #e6e6e6;
+  background: #ffaf47;
 }
 .cd-colors li:nth-of-type(4) .cd-color-swatch::before {
-  background: #f3f3f3;
+  background: #ffba61;
 }
 .cd-colors li:nth-of-type(4) .cd-color-swatch::after {
-  background: #d9d9d9;
+  background: #ffa42e;
 }
 .cd-colors li:nth-of-type(5) .cd-color-swatch {
   background: #ffffff;
@@ -918,7 +763,7 @@ section:nth-of-type(10) h2::before {
 /* xTypography section - basic style */
 .cd-typography h1::before {
   content: "Aa - ";
-  color: #5f8ee4;
+  color: #258fa7;
 }
 .cd-buttons .cd-box:first-of-type {
   border-bottom-left-radius: 0;
@@ -988,5 +833,34 @@ section:nth-of-type(10) h2::before {
 }
 .no-csstransitions .cd-select::after {
   display: none;
+}
+/* -------------------------------- 
+
+xPatterns
+
+-------------------------------- */
+.cd-box {
+  /* this is the container of various design elements - i.e. the 2 logo of the branding section */
+  border: 1px solid #ffaf47;
+  border-radius: 3px;
+  background: #ffffff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  padding: 6px;
+}
+/* -------------------------------- 
+
+xPage title 
+
+-------------------------------- */
+main > h1 {
+  background-color: #474747;
+  color: #ffffff;
+  padding: 0.5em;
+}
+@media only screen and (min-width: 1600px) {
+  main > h1 {
+    /* title goes into the header on big devices */
+    color: #ffffff;
+  }
 }
 /*# sourceMappingURL=index.fd58574d.css.map */
