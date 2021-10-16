@@ -1,0 +1,149 @@
+body {
+  margin: auto;
+  max-width: 800px;
+  font-family: "Coming Soon", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #45240c;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "IM Fell English SC", serif;
+  color: #257d93;
+  text-align: center;
+}
+
+h1 span {
+  text-decoration: line-through;
+}
+
+.crossedOff {
+  text-decoration: line-through;
+}
+
+button {
+  background-color: #def1f7;
+  border: .1rem solid #257d93;
+  border-radius: .3rem;
+  padding: .3rem;
+  font-family: "Coming Soon", sans-serif;
+}
+
+button:hover {
+  background-color: #eff8fb;
+  border: .2rem solid #257d93;
+}
+
+.filterButtons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  padding: 1em;
+  border-bottom: 0.1rem solid #31a6c4;
+}
+/*--------------
+List
+--------------*/
+ul {
+  list-style-type: none;
+  margin-top: 0;
+  padding: 0;
+}
+
+li {
+  border-bottom: .1rem solid #31a6c4;
+  display: grid;
+  grid-template-columns: 1fr minmax(min-content, max-content);
+  grid-gap: 2rem;
+  padding: 0 .5rem;
+}
+
+.listBox {
+  border: .3rem solid #31a6c4;
+  border-radius: .5em;
+}
+
+.x {
+  color: #d36622;
+}
+
+.star {
+  color: #257d93;
+}
+
+li .deleteButton {
+  background-color: transparent;
+  border: none;
+  font-size: .8rem;
+  padding: .2rem;
+  margin: .1rem .5rem;
+}
+
+li .deleteButton:hover {
+  font-size: 1rem;
+}
+
+
+/*--------------
+Form
+--------------*/
+form {
+  display: grid;
+  grid-template-columns: .8fr 4fr 1fr;
+  grid-gap: .3rem;
+  align-items: center;
+  padding: .5rem;
+}
+
+label, button {
+  color: #257d93;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+input {
+  box-sizing: border-box;
+  width: 100%;
+  font-family: "Coming Soon", sans-serif;
+  font-size: 1.2rem;
+  color: #45240c;
+  border: .1rem solid #d36622;
+  border-radius: .3rem;
+  padding: .3rem;
+}
+
+input:focus {
+  outline-color: #d36622;
+  border: .2rem solid #d36622;
+}
+
+
+
+/*--------------
+Medium Screen
+--------------*/
+@media only screen and (max-width: 665px) {
+  form {
+    grid-template-columns: 3fr 1fr;
+  }
+
+  label {
+    grid-column: 1 / 3;
+  }
+
+  .filterButtons {
+    grid-gap: .5em;
+    padding: .5em;
+  }
+}
+
+/*--------------
+Small Screen
+--------------*/
+@media only screen and (max-width: 450px) {
+  .filterButtons {
+    grid-gap: .2em;
+    padding: .2em;
+  }
+}

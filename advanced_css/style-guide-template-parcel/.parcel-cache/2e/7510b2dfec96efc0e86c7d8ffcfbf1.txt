@@ -1,4 +1,4 @@
-21941
+21934
 144C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\loader-utils\lib\isUrlRequest.js121436361000000000 0
 122C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\qs\LICENSE130953300300000000 0
 142C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\uri-js\dist\es5\uri.all.js.map121436361000000000 0
@@ -41,7 +41,7 @@
 136C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\restore-cursor\readme.md121436361000000000 0
 125C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\minimist\test132787104490627097 1
 165C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\csso\node_modules\css-tree\lib\syntax\atrule\index.js121436361000000000 0
-104C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\build132787866876772800 1
+104C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\build132788725698641709 1
 143C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\cssstyle\lib\properties\left.js121436361000000000 0
 184C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\stream-http\node_modules\readable-stream\lib\internal\streams\destroy.js121436361000000000 0
 122C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\rgba-regex132787104728804701 1
@@ -87,6 +87,11 @@
 120C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\escalade132787104760328994 1
 136C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\normalize-path\README.md121436361000000000 0
 152C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\highlight.js\scss\atelier-cave-dark.scss121436361000000000 0
+158C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\postcss-modules-scope\node_modules\ansi-styles132787104737605712 1
+183C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\regenerate-unicode-properties\Script_Extensions\Meroitic_Hieroglyphs.js121436361000000000 0
+179C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\postcss-modules-local-by-default\node_modules\ansi-styles\readme.md131628273600000000 0
+143C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\@parcel\source-map\wasm-browser132787104504981357 1
+131C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\src\scss\partials\_branding.scss132788723970778889 0
 116C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\package-lock.json132787104847275150 0
 140C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\css-select-base-adapter\test132787104506171528 1
 126C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\sshpk\man\man1132787104443279803 1
@@ -207,7 +212,7 @@
 183C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\postcss-unique-selectors\node_modules\source-map\dist\source-map.min.js131511695990000000 0
 147C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\postcss-reduce-transforms\README.md121436361000000000 0
 147C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\@babel\helper-wrap-function\LICENSE121012626000000000 0
-129C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\src\scss\partials\_layout.scss132787102578510761 0
+129C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\src\scss\partials\_layout.scss132788721341200921 0
 189C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\postcss-normalize-repeat-style\node_modules\postcss-value-parser\lib\parse.js121436361000000000 0
 191C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\stream-http\node_modules\readable-stream\lib\internal\streams\async_iterator.js121436361000000000 0
 170C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\@babel\types\lib\modifications\appendToMemberExpression.js121012626000000000 0
@@ -219,7 +224,7 @@
 133C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\os-browserify\main.js131371327930000000 0
 118C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\pbkdf2132787104719536840 1
 126C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\node-addon-api132787104750920898 1
-116C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\src\scss\partials132787169796261684 1
+116C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\src\scss\partials132788723533752955 1
 123C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\randombytes132787104728754833 1
 131C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\lodash\upperCase.js121436361000000000 0
 152C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\core-js\features\object\lookup-setter.js121436361000000000 0
@@ -231,7 +236,7 @@
 145C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\har-schema\lib\beforeRequest.json131370181680000000 0
 121C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\src\assets\bigzen1.JPG132786277347861689 0
 152C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\svgo\node_modules\chalk\types\index.d.ts121436361000000000 0
-124C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\src\scss\style-guide.scss132787196679101802 0
+124C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\src\scss\style-guide.scss132788725676369784 0
 175C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\postcss-colormin\node_modules\source-map\dist\source-map.min.js131511695990000000 0
 161C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\terser\node_modules\source-map\dist\source-map.js131709651730000000 0
 148C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\core-js\internals\create-property.js121436361000000000 0
@@ -272,7 +277,7 @@
 157C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\fast-json-stable-stringify\benchmark\index.js121436361000000000 0
 170C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\postcss-svgo\node_modules\postcss-value-parser\lib\walk.js121436361000000000 0
 150C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\node-releases\data\processed\envs.json121436361000000000 0
-134C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\src\scss\partials\_basic-style.scss132787863745247989 0
+134C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\src\scss\partials\_basic-style.scss132788724247803930 0
 166C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\postcss-normalize-unicode\node_modules\postcss\LICENSE121436361000000000 0
 135C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\shebang-command\license131190036810000000 0
 135C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\is-string\.eslintignore121436361000000000 0
@@ -316,7 +321,7 @@
 170C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\regenerate-unicode-properties\Script_Extensions\Tirhuta.js121436361000000000 0
 133C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\lodash\fp\throttle.js121436361000000000 0
 126C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\domelementtype132787104763906556 1
-132C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\src\scss\partials\_variables.scss132787855615796368 0
+132C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\src\scss\partials\_variables.scss132788721226679232 0
 179C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\postcss-normalize-unicode\node_modules\source-map\lib\base64-vlq.js131369414910000000 0
 138C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\lodash\_charsStartIndex.js121436361000000000 0
 134C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\isarray\component.json130942154450000000 0
@@ -401,16 +406,6 @@
 156C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\static-extend\node_modules\kind-of\README.md131523517230000000 0
 144C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\json-schema-traverse\.travis.yml131702814080000000 0
 119C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\src\assets\.DS_Store132787102581009840 0
-150C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\uncss\node_modules\ansi-styles\license131408182550000000 0
-182C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\@parcel\node-libs-browser\node_modules\readable-stream\CONTRIBUTING.md121436361000000000 0
-116C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\.bin132787104796534902 1
-117C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\chalk132787104725923498 1
-135C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\har-schema\lib\index.js131370181680000000 0
-134C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\xml-name-validator\lib132787104419372768 1
-154C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\uncss\node_modules\postcss\docs\guidelines132787104440887659 1
-154C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\base\node_modules\define-property\index.js130854761630000000 0
-172C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\postcss-modules\node_modules\source-map\lib\binary-search.js131369414910000000 0
-127C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\performance-now132787104748472589 1
 157C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\core-js\internals\define-well-known-symbol.js121436361000000000 0
 156C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\caniuse-lite\data\features\resizeobserver.js121436361000000000 0
 176C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\postcss-minify-gradients\node_modules\postcss\lib\declaration.js121436361000000000 0
@@ -622,6 +617,16 @@
 135C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\sprintf-js\package.json132787104727003469 0
 172C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\uncss\node_modules\postcss-selector-parser\dist\processor.js121436361000000000 0
 135C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\src\assets\branding\smallZenLogo.png132787188488806104 0
+150C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\uncss\node_modules\ansi-styles\license131408182550000000 0
+182C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\@parcel\node-libs-browser\node_modules\readable-stream\CONTRIBUTING.md121436361000000000 0
+116C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\.bin132787104796534902 1
+117C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\chalk132787104725923498 1
+135C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\har-schema\lib\index.js131370181680000000 0
+134C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\xml-name-validator\lib132787104419372768 1
+154C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\uncss\node_modules\postcss\docs\guidelines132787104440887659 1
+154C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\base\node_modules\define-property\index.js130854761630000000 0
+172C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\postcss-modules\node_modules\source-map\lib\binary-search.js131369414910000000 0
+127C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\performance-now132787104748472589 1
 168C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\@babel\plugin-transform-block-scoped-functions\README.md121012626000000000 0
 152C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\uncss\node_modules\postcss\lib\result.js121436361000000000 0
 165C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\css-declaration-sorter\node_modules\postcss\README.md121436361000000000 0
@@ -632,12 +637,12 @@
 129C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\csso\dist\csso.js121436361000000000 0
 131C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\lodash\dropRight.js121436361000000000 0
 169C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\regenerate-unicode-properties\Script_Extensions\Yezidi.js121436361000000000 0
-160C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\split2\node_modules\readable-stream\package.json132787104718129893 0
-118C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\@iarna132787104579587006 1
 151C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\postcss-minify-font-values\node_modules132787104622604578 1
 134C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\source-map-url\LICENSE121436361000000000 0
 177C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\hash-base\node_modules\readable-stream\lib\_stream_passthrough.js121436361000000000 0
 134C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\minimist\test\proto.js121436361000000000 0
+160C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\split2\node_modules\readable-stream\package.json132787104718129893 0
+118C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\@iarna132787104579587006 1
 165C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\postcss-modules\node_modules\postcss\lib\container.js121436361000000000 0
 156C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\snapdragon\node_modules\debug\.coveralls.yml131419593830000000 0
 138C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\tr46\node_modules\punycode132787104722402103 1
@@ -2656,7 +2661,7 @@
 149C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\core-js\modules\esnext.promise.any.js121436361000000000 0
 132C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\string-width\license121436361000000000 0
 154C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\resolve\test\resolver\multirepo\lerna.json121436361000000000 0
-131C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\build\icon-download.43a1d2d2.svg132787866876509912 0
+131C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\build\icon-download.43a1d2d2.svg132788725696235414 0
 166C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\@babel\plugin-proposal-nullish-coalescing-operator\lib132787104413281997 1
 133C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\parse-asn1\aesid.json121436361000000000 0
 140C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\postcss-normalize-whitespace132787104731646469 1
@@ -3313,9 +3318,6 @@
 157C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\posthtml\node_modules\domhandler\lib\index.js121436361000000000 0
 194C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\browserify-sign\node_modules\readable-stream\lib\internal\streams\end-of-stream.js121436361000000000 0
 135C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\xmlchars\xml\1.0\ed5.js121436361000000000 0
-181C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\postcss-reduce-transforms\node_modules\postcss-value-parser\README.md121436361000000000 0
-189C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\css-declaration-sorter\node_modules\chalk\node_modules\supports-color\license131408182550000000 0
-132C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\union-value\index.js121436361000000000 0
 143C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\public-encrypt\publicEncrypt.js121436361000000000 0
 140C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\sshpk\lib\formats\rfc4253.js131837759770000000 0
 143C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\xml-name-validator\package.json132787104716440678 0
@@ -3448,7 +3450,6 @@
 153C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\snapdragon\node_modules\kind-of\README.md131523517230000000 0
 125C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\which\LICENSE121436361000000000 0
 149C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\core-js\proposals\keys-composition.js121436361000000000 0
-124C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\build\icon-2.74505a7a.svg132787866876509912 0
 169C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\regenerate-unicode-properties\Binary_Property\ID_Start.js121436361000000000 0
 152C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\source-map-js\dist\source-map.min.js.map121436361000000000 0
 130C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\which\package.json132787104717821933 0
@@ -4041,6 +4042,9 @@
 129C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\uniqs\.travis.yml130461333950000000 0
 148C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\@babel\plugin-syntax-top-level-await132787104714847300 1
 129C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\uniq\package.json132787104721212236 0
+181C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\postcss-reduce-transforms\node_modules\postcss-value-parser\README.md121436361000000000 0
+189C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\css-declaration-sorter\node_modules\chalk\node_modules\supports-color\license131408182550000000 0
+132C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\union-value\index.js121436361000000000 0
 162C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\postcss-reduce-transforms\node_modules\postcss\lib132787104467143925 1
 143C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\@parcel\transformer-postcss\src132787104419316404 1
 131C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\union-value\LICENSE121436361000000000 0
@@ -5068,8 +5072,8 @@
 124C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\once\LICENSE130752545850000000 0
 131C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\lodash\fp\filter.js121436361000000000 0
 140C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\snapdragon-node\package.json132787104727140732 0
-169C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\postcss-modules\node_modules\color-convert\conversions.js121436361000000000 0
 145C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\core-js\features\instance\trim.js121436361000000000 0
+169C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\postcss-modules\node_modules\color-convert\conversions.js121436361000000000 0
 162C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\core-js\internals\object-get-own-property-names.js121436361000000000 0
 137C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\terser\lib\utils\index.js121436361000000000 0
 132C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\terser\dist\.gitkeep121436361000000000 0
@@ -7336,8 +7340,6 @@
 176C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\regenerate-unicode-properties\Script_Extensions\Masaram_Gondi.js121436361000000000 0
 176C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\regenerate-unicode-properties\Script_Extensions\Mende_Kikakui.js121436361000000000 0
 179C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\regenerate-unicode-properties\Script_Extensions\Meroitic_Cursive.js121436361000000000 0
-158C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\postcss-modules-scope\node_modules\ansi-styles132787104737605712 1
-183C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\regenerate-unicode-properties\Script_Extensions\Meroitic_Hieroglyphs.js121436361000000000 0
 171C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\postcss-merge-rules\node_modules\postcss\lib\declaration.js121436361000000000 0
 167C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\regenerate-unicode-properties\Script_Extensions\Miao.js121436361000000000 0
 170C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\regenerate-unicode-properties\Script_Extensions\Myanmar.js121436361000000000 0
@@ -8338,7 +8340,6 @@
 162C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\posthtml\node_modules\domhandler\lib\node.d.ts.map121436361000000000 0
 148C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\es-abstract\2017\IsDataDescriptor.js121436361000000000 0
 169C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\postcss-svgo\node_modules\source-map\lib\binary-search.js131369414910000000 0
-124C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\build\icon-6.259c8c0a.svg132787866876499937 0
 150C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\core-js\features\string\virtual\big.js121436361000000000 0
 131C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\posthtml\lib\api.js121436361000000000 0
 133C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\posthtml\lib\index.js121436361000000000 0
@@ -8732,7 +8733,7 @@
 149C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\color\node_modules\color-name\test.js131446304190000000 0
 180C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\postcss-minify-selectors\node_modules\postcss-selector-parser\API.md121436361000000000 0
 170C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\postcss-reduce-transforms\node_modules\postcss\lib\root.js121436361000000000 0
-111C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\build\assets132787866876712873 1
+111C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\build\assets132788725695337500 1
 156C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\@babel\types\lib\converters\toComputedKey.js121012626000000000 0
 170C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\postcss-normalize-charset\node_modules\ansi-styles\license131408182550000000 0
 177C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\postcss-reduce-transforms\node_modules\postcss\lib\stringifier.js121436361000000000 0
@@ -10965,7 +10966,6 @@
 171C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\postcss-minify-gradients\node_modules\ansi-styles\readme.md131628273600000000 0
 176C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\postcss-modules-local-by-default\node_modules\chalk\package.json132787104737248712 0
 178C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\postcss-modules-local-by-default\node_modules\ansi-styles\index.js131644568170000000 0
-179C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\postcss-modules-local-by-default\node_modules\ansi-styles\readme.md131628273600000000 0
 134C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\postcss\lib\symbols.js121436361000000000 0
 181C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\postcss-merge-rules\node_modules\postcss-selector-parser\CHANGELOG.md121436361000000000 0
 156C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\postcss-modules-extract-imports\node_modules132787104625550735 1
@@ -19337,7 +19337,7 @@
 160C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\caniuse-lite\data\features\css-matches-pseudo.js121436361000000000 0
 161C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\caniuse-lite\data\features\css-descendant-gtgt.js121436361000000000 0
 156C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\caniuse-lite\data\features\css-dir-pseudo.js121436361000000000 0
-125C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\build\bigzen2.ccb2a366.JPG132787866876489961 0
+125C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\build\bigzen2.ccb2a366.JPG132788725696109397 0
 162C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\caniuse-lite\data\features\css-display-contents.js121436361000000000 0
 162C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\caniuse-lite\data\features\css-element-function.js121436361000000000 0
 158C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\caniuse-lite\data\features\css-env-function.js121436361000000000 0
@@ -20421,7 +20421,7 @@
 158C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\@parcel\transformer-js\lib\visitors\process.js121436361000000000 0
 167C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\@babel\runtime\helpers\esm\iterableToArrayLimitLoose.js121012626000000000 0
 156C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\@parcel\transformer-js\lib\visitors\utils.js121436361000000000 0
-131C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\build\a-to-zen-logo.1db98efd.jpg132787866876499937 0
+131C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\build\a-to-zen-logo.1db98efd.jpg132788725696138512 0
 144C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\@parcel\transformer-html\LICENSE121436361000000000 0
 140C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\@parcel\transformer-html\src132787104419362251 1
 159C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\@parcel\transformer-html\src\HTMLTransformer.js121436361000000000 0
@@ -20466,7 +20466,6 @@
 148C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\@parcel\transformer-babel\lib\jsx.js121436361000000000 0
 150C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\@parcel\transformer-babel\lib\types.js121436361000000000 0
 155C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\@parcel\transformer-babel\lib\typescript.js121436361000000000 0
-143C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\@parcel\source-map\wasm-browser132787104504981357 1
 157C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\@parcel\source-map\wasm-browser\source-map.js121436361000000000 0
 159C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\@parcel\source-map\wasm-browser\source-map.wasm121436361000000000 0
 146C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\@parcel\source-map\src\flatbuffers132787104491668881 1
@@ -20488,7 +20487,6 @@
 153C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\@parcel\source-map\src\napi\SourceMap.cpp121436361000000000 0
 162C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\@parcel\source-map\src\flatbuffers\stl_emulation.h121436361000000000 0
 151C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\@parcel\source-map\prebuilds\darwin-x64132787104499087151 1
-124C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\build\icon-1.f09de9b2.svg132787866876509912 0
 150C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\@parcel\source-map\prebuilds\linux-x64132787104504236833 1
 151C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\@parcel\source-map\prebuilds\win32-ia32132787104501210588 1
 150C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\@parcel\source-map\prebuilds\win32-x64132787104502922706 1
@@ -21923,20 +21921,15 @@
 127C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\.bin\terser.ps1132787104794042362 0
 125C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\.bin\uuid.cmd132787104795361043 0
 122C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\node_modules\.bin\which132787104795594082 0
-125C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\build\bigzen1.85b5c320.JPG132787866876489961 0
-124C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\build\icon-3.bcc4af98.svg132787866876499937 0
-124C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\build\icon-4.222e6830.svg132787866876509912 0
-124C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\build\icon-5.dd0f77d5.svg132787866876499937 0
-124C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\build\icon-7.efa0e026.svg132787866876363900 0
-124C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\build\icon-8.ef29f1a8.svg132787866876479990 0
-122C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\build\index.9626f0bb.js132787866876612810 0
-126C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\build\index.9626f0bb.js.map132787866876752745 0
-122C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\build\index.aaafe13f.js132787866876602869 0
-126C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\build\index.aaafe13f.js.map132787866876752745 0
-123C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\build\index.fd58574d.css132787866876602869 0
-127C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\build\index.fd58574d.css.map132787866876732804 0
-115C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\build\index.html132787866876602869 0
-127C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\build\smallzen1.db02f8e7.JPG132787866876363900 0
-127C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\build\smallzen2.23f05e54.JPG132787866876424434 0
-130C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\build\smallZenLogo.ef5e91b4.png132787866876470018 0
-136C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\build\assets\assets-download-file.zip132787866876662977 0
+125C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\build\bigzen1.85b5c320.JPG132788725696119372 0
+122C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\build\index.9626f0bb.js132788725698468237 0
+126C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\build\index.9626f0bb.js.map132788725698606739 0
+122C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\build\index.aaafe13f.js132788725698468237 0
+126C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\build\index.aaafe13f.js.map132788725698606739 0
+123C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\build\index.fd58574d.css132788725698430044 0
+127C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\build\index.fd58574d.css.map132788725698550740 0
+115C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\build\index.html132788725698468237 0
+127C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\build\smallzen1.db02f8e7.JPG132788725695114951 0
+127C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\build\smallzen2.23f05e54.JPG132788725695124912 0
+130C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\build\smallZenLogo.ef5e91b4.png132788725696087717 0
+136C:\Users\emily\Documents\Emily\School\wallylime.github.io\advanced_css\style-guide-template-parcel\build\assets\assets-download-file.zip132788725695279455 0
