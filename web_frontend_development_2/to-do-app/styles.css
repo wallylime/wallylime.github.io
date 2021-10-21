@@ -4,7 +4,7 @@ body {
   font-family: "Coming Soon", sans-serif;
   font-size: 18px;
   font-weight: bold;
-  color: #45240c;
+  color: #257d93;
   box-sizing: border-box;
 }
 
@@ -18,8 +18,17 @@ h1 span {
   text-decoration: line-through;
 }
 
-.crossedOff {
+.instructions {
+  font-size: 1.2em;
+  color: black;
+  border-bottom: 0.2rem solid #31a6c4;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+p.completed {
   text-decoration: line-through;
+  background-color: #eff8fb;
 }
 
 button {
@@ -32,7 +41,7 @@ button {
 
 button:hover {
   background-color: #eff8fb;
-  border: .2rem solid #257d93;
+  border: 0.2rem solid #257d93;
 }
 
 .filterButtons {
@@ -40,7 +49,7 @@ button:hover {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1em;
   padding: 1em;
-  border-bottom: 0.1rem solid #31a6c4;
+  border-bottom: 0.2rem solid #31a6c4;
 }
 /*--------------
 List
@@ -68,11 +77,8 @@ li {
   color: #d36622;
 }
 
-.star {
-  color: #257d93;
-}
 
-li .deleteButton {
+li .removeButton {
   background-color: transparent;
   border: none;
   font-size: .8rem;
@@ -80,7 +86,7 @@ li .deleteButton {
   margin: .1rem .5rem;
 }
 
-li .deleteButton:hover {
+li .removeButton:hover {
   font-size: 1rem;
 }
 

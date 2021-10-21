@@ -1,3 +1,1 @@
-/*input: double click on list item
-  processing: delete one star from html and replace it
-  output: solid star, cross off the words, add a praise statement*/
+//This file is for bits of code that are not project specific and can be resused in other projects

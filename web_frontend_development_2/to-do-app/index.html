@@ -6,11 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>To Do List</title>
-  <meta name="description" content="A to do list with the ability to add new tasks, complete tasks, delete tasks, and filter tasks.">
+  <meta name="description"
+    content="A to-do list with the ability to add new tasks, complete tasks, delete tasks, and filter tasks.">
   <meta name="author" content="Emily Wall">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=IM+Fell+English+SC&display=swap"
+    rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
 </head>
 
@@ -24,17 +26,28 @@
         <button>Show All</button>
         <button>Show Incomplete Tasks</button>
         <button>Show Completed</button>
-      </div>
+    </div>
+    <div class="instructions">
+      <p>Double click on a task to cross it off.</p>
+    </div>
       <ul id="js-toDoList">
-        <li><p><span class="star">&#9734;</span> Task</p><button class="deleteButton"><span class="x">X</span> Remove</button></li>
-        <li><p><span class="star">&#9734;</span> Task</p><button class="deleteButton"><span class="x">X</span> Remove</button></li>
-        <li><p><span class="star">&#9733;</span> <span class="crossedOff">Crossed Off Task Example</span> <span class="star">good job!</span></p><button class="deleteButton"><span class="x">X</span> Remove</button></li>
+        <li>
+          <p>&#9733; Task</p><button class="removeButton"><span class="x">X</span> Remove</button>
+        </li>
+        <li>
+          <p>&#9733; Task</p><button class="removeButton"><span class="x">X</span> Remove</button>
+        </li>
+        <li>
+          <p>&#9733; Task
+          </p><button class="removeButton"><span class="x">X</span> Remove</button>
+        </li>
       </ul>
       <form>
-        <label for="newTask">New Task : </label><input type="text" id="newTask" name="task" placeholder="type a to-do here">
+        <label for="newTask">New Task : </label><input type="text" id="newTask" name="task"
+          placeholder="type a to-do here">
         <button title="put new task on to-do list" onclick="addTask()">+ Add</button>
       </form>
-    </div>   
+    </div>
   </main>
   <footer>
   </footer>

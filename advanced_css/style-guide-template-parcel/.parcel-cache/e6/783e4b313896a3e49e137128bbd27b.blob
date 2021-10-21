@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Merriweather" rel="stylesheet" type="text/css">
+    <link href="9797db890ab115df64f322f6ec8c2cdc" rel="stylesheet" type="text/css">
 
-    <link rel="stylesheet" href="/index.4aa87c9d.css">
+    <link rel="stylesheet" href="8a6060c4610047aa2bf668715f518fcd">
     <!-- Resource style -->
-    <script src="/index.aaafe13f.js"></script>
+    <script src="932d90d3eeeec95f906d78b52546ca5e"></script>
     <!-- Modernizr -->
     <title>Style Guide | CSS Zen Garden</title>
   </head>
   <body>
     <header>
-      <div class="cd-logo"><img src="/smallZenLogo.ef5e91b4.png" alt="Logo"></div>
+      <div class="cd-logo"><img src="37072ee2e2de43ce51cabccb58c8e26b" alt="Logo"></div>
 
       <nav>
         <ul class="cd-main-nav">
@@ -27,7 +27,7 @@
         <!-- cd-main-nav -->
       </nav>
 
-      <a href="/assets/assets-download-file.zip" class="cd-download"><span>Download assets</span></a>
+      <a href="0c1ad1e7b10aa4131796b0da0453a5c6" class="cd-download"><span>Download assets</span></a>
       <a href="#0" class="cd-nav-trigger">Menu<span></span></a>
     </header>
 
@@ -45,7 +45,7 @@
 
         <ul>
           <li class="cd-box">
-            <img src="/a-to-zen-logo.1db98efd.jpg" alt="Logo version 1">
+            <img src="4e0edc2298e0741377c0b016eed8a0f2" alt="Logo version 1">
           </li>
         </ul>
 
@@ -105,15 +105,15 @@
             <h3>Design Gallery</h3>
             <nav class="cd-primary-nav">
               <ul>
-                <li><a href="http://www.csszengarden.com/221/">Mid Century Modern</a></li>
-                <li><a href="http://www.csszengarden.com/220/">Garments</a></li>
-                <li><a href="http://www.csszengarden.com/219/">Steel</a></li>
-                <li><a href="http://www.csszengarden.com/218/">Apothecary</a></li>
-                <li><a href="http://www.csszengarden.com/217/">Screen Filler</a></li>
-                <li><a href="http://www.csszengarden.com/216/">Fountain Kiss</a></li>
-                <li><a href="http://www.csszengarden.com/215/">A Robot Named Jimmy</a></li>
-                <li><a href="http://www.csszengarden.com/214/">Verde Moderna</a></li>
-                <li><a href="http://www.mezzoblue.com/zengarden/alldesigns/">View All Designs</a></li>
+                <li><a href="dcfc209be25f801e480e88f15c134ffb">Mid Century Modern</a></li>
+                <li><a href="515e2b4a7fbd51af1bf334b78353269d">Garments</a></li>
+                <li><a href="7fbf140c10f54429581d248d2836125c">Steel</a></li>
+                <li><a href="4e1c6d750c782f5adc688b6666ed3666">Apothecary</a></li>
+                <li><a href="3372a045f0a322d1433e946214448c7b">Screen Filler</a></li>
+                <li><a href="523c530d578b9a5400a48e219fbefa60">Fountain Kiss</a></li>
+                <li><a href="4ed306861304f5f220bedd52ea2c6422">A Robot Named Jimmy</a></li>
+                <li><a href="53bf21ed786068290f7e7611ecf2f741">Verde Moderna</a></li>
+                <li><a href="556e184f218289f02767a70687d66735">View All Designs</a></li>
               </ul>
             </nav>
           </div>
@@ -122,14 +122,14 @@
             <h3>Designers</h3>
             <nav class="cd-secondary-nav">
               <ul>
-                <li><a href="http://andrewlohman.com/">Andrew Lohman</a></li>
-                <li><a href="http://danielmall.com/">Daniel Mall</a></li>
-                <li><a href="http://steffen-knoeller.de">Steffen Knoeller</a></li>
-                <li><a href="http://trentwalton.com">Trent Walton</a></li>
-                <li><a href="http://elliotjaystocks.com/">Elliot Jay Stocks</a></li>
-                <li><a href="http://jeremycarlson.com">Jeremy Carlson</a></li>
-                <li><a href="http://meltmedia.com/">Meltmedia</a></li>
-                <li><a href="http://www.mezzoblue.com/">Dave Shea</a></li>
+                <li><a href="ba43b4aeffd95f59e850d07608f456dc">Andrew Lohman</a></li>
+                <li><a href="5e744058fb31e34221c702ce0a1cc167">Daniel Mall</a></li>
+                <li><a href="140a8ee10cd1a66debad24e876fe8c83">Steffen Knoeller</a></li>
+                <li><a href="acf438f1066e736409b1e675d6b3298e">Trent Walton</a></li>
+                <li><a href="4cd544a2a56eb5ae3def5b0a02cf13dc">Elliot Jay Stocks</a></li>
+                <li><a href="bbde64d18775ebb453aee24e9c85d631">Jeremy Carlson</a></li>
+                <li><a href="940fde455838ff5a8b610afec010c2c5">Meltmedia</a></li>
+                <li><a href="a56ff474c1b7fa397994413a70df2062">Dave Shea</a></li>
               </ul>
             </nav>
           </div>
@@ -137,10 +137,10 @@
             <br>
             <h3>Other Links</h3>
             <ul>
-              <li><a href="http://www.mezzoblue.com/zengarden/resources/">Resources</a></li>
-              <li><a href="http://www.mezzoblue.com/zengarden/faq/">FAQ</a></li>
-              <li><a href="http://www.mezzoblue.com/zengarden/submit/">Submit a Design</a></li>
-              <li><a href="http://www.mezzoblue.com/zengarden/translations/">Translations</a></li>
+              <li><a href="a3f2655ee082a41afee4a4e2c965822c">Resources</a></li>
+              <li><a href="fa67a90b6e984cd5d42a1a16abe327db">FAQ</a></li>
+              <li><a href="823a98281604f3b35a37669caf7b7409">Submit a Design</a></li>
+              <li><a href="211c7eba42acf3c5981880a7d6274b59">Translations</a></li>
             </ul>
           </div>
         </div>
@@ -150,23 +150,23 @@
         <div class="cd-box">
           <figure>
             <figcaption>Small screen</figcaption>
-            <img src="/smallzen1.db02f8e7.JPG" alt="Small screen wireframe view 1">
+            <img src="08ca8fb05d1e9e1ad5ab0479e70c05b8" alt="Small screen wireframe view 1">
           </figure>
           <figure>
-            <img src="/smallzen2.23f05e54.JPG" alt="Small screen wireframe view 2">
+            <img src="2124c730e1c1d60f9cf4e6dc298654f0" alt="Small screen wireframe view 2">
           </figure>
           <br>
           <figure>
             <figcaption>Large screen</figcaption>
-            <img src="/bigzen1.85b5c320.JPG" alt="Large screen wireframe">
+            <img src="8bfb95fc4978b927c7441987d043686d" alt="Large screen wireframe">
           </figure>
           <figure>
-            <img src="/bigzen2.ccb2a366.JPG" alt="Large screen wireframe">
+            <img src="0080a005c9993bd4720f932fcd1ff26e" alt="Large screen wireframe">
           </figure>
         </div>
       </section>
     </main>
 
-    <script src="/index.9626f0bb.js"></script>
+    <script src="109840a1dc8a9cfb9428801d6c53805a"></script>
   </body>
 </html>

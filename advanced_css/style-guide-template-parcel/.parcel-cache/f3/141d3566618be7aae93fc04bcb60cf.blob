@@ -6,15 +6,15 @@
 
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Merriweather" rel="stylesheet" type="text/css">
 
-    <link rel="stylesheet" href="/index.4aa87c9d.css">
+    <link rel="stylesheet" href="/index.HASH_REF_1b6a65fc7fdcbab2667d37c74aa87c9d.css">
     <!-- Resource style -->
-    <script src="/index.aaafe13f.js"></script>
+    <script src="/index.HASH_REF_d1d6d1f9d6c205aa98cd1216aaafe13f.js"></script>
     <!-- Modernizr -->
     <title>Style Guide | CSS Zen Garden</title>
   </head>
   <body>
     <header>
-      <div class="cd-logo"><img src="/smallZenLogo.ef5e91b4.png" alt="Logo"></div>
+      <div class="cd-logo"><img src="/smallZenLogo.HASH_REF_4cb97b8c4ba283d7d62b893fef5e91b4.png" alt="Logo"></div>
 
       <nav>
         <ul class="cd-main-nav">
@@ -45,7 +45,7 @@
 
         <ul>
           <li class="cd-box">
-            <img src="/a-to-zen-logo.1db98efd.jpg" alt="Logo version 1">
+            <img src="/a-to-zen-logo.HASH_REF_35310af3026a10130d4070371db98efd.jpg" alt="Logo version 1">
           </li>
         </ul>
 
@@ -150,23 +150,23 @@
         <div class="cd-box">
           <figure>
             <figcaption>Small screen</figcaption>
-            <img src="/smallzen1.db02f8e7.JPG" alt="Small screen wireframe view 1">
+            <img src="/smallzen1.HASH_REF_3016e89301b3df8b4abb4c17db02f8e7.JPG" alt="Small screen wireframe view 1">
           </figure>
           <figure>
-            <img src="/smallzen2.23f05e54.JPG" alt="Small screen wireframe view 2">
+            <img src="/smallzen2.HASH_REF_c9ae99cd3bfe59ea2e6ac99a23f05e54.JPG" alt="Small screen wireframe view 2">
           </figure>
           <br>
           <figure>
             <figcaption>Large screen</figcaption>
-            <img src="/bigzen1.85b5c320.JPG" alt="Large screen wireframe">
+            <img src="/bigzen1.HASH_REF_4b6e4256e5f4a28f62ba965585b5c320.JPG" alt="Large screen wireframe">
           </figure>
           <figure>
-            <img src="/bigzen2.ccb2a366.JPG" alt="Large screen wireframe">
+            <img src="/bigzen2.HASH_REF_571433c0edd3fdf33dbc2a6bccb2a366.JPG" alt="Large screen wireframe">
           </figure>
         </div>
       </section>
     </main>
 
-    <script src="/index.9626f0bb.js"></script>
+    <script src="/index.HASH_REF_9c44180a18ad66eda0f30d699626f0bb.js"></script>
   </body>
 </html>
