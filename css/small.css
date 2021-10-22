@@ -99,6 +99,10 @@ ul {
   list-style-type: none;
 }
 
+.weeks {
+  padding: 0.5em;
+}
+
 .example {
   padding: 0.3em;
   margin: 0.2em;
