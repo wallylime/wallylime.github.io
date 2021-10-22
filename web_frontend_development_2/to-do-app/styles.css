@@ -31,6 +31,10 @@ p.completed {
   background-color: #eff8fb;
 }
 
+.hide {
+  display: none;
+}
+
 button {
   background-color: #def1f7;
   border: .1rem solid #257d93;
