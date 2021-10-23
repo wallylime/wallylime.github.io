@@ -18,6 +18,8 @@ p {
   font-size: 1.3em;
   font-family: Garamond, serif;
   color: #3d4651;
+  margin-top: 0.2em;
+  margin-bottom: 0.5em;
 }
 
 .instructions {
@@ -53,6 +55,7 @@ button:hover {
   grid-gap: 1em;
   padding: 1em 0.5em;
   border-top: 0.2rem solid #31a6c4;
+  border-bottom: 0.2rem solid #31a6c4;
   margin-top: 1em;
 }
 

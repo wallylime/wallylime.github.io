@@ -4,7 +4,7 @@ function localSave(key, value) {
 }
 
 function localRetrieve(key) {
-  localStorage.getItem(key);
+  return localStorage.getItem(key);
 }
 
 export {

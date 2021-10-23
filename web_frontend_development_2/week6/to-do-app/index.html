@@ -23,20 +23,17 @@
   <main>
     <div class="listBox">
       <div class="instructions">
-        <p>Enter a list name to save this list for later or retrieve a previously-saved list.</p>
-        <div class="listName">
-          <label for="toDoListName">Name: </label>
-          <input type="text" id="toDoListName" name="listName" placeholder="List Name">
-          <button title="save a to-do list by this name" id="saveList">Save</button>
-          <button title="retrieve a to-do list by this name" id="retrieveList">Retrieve</button>
-        </div>
-        <div>
-          <p>Enter a list item in the "New Task" box and click the "Add" button to add it to your list.</p>
-        </div>
+          <p>Enter a list item in the "New Task" box and click the "Add" button to add it to your list. Double click on an item to cross it off. Double click again to uncross it. Click the remove button to remove it completely.</p>
         </div>
       <ul id="toDoList">
         <li title="Double click to cross this task off. Double click again to uncross it.">
-          &#9733; Example list item (double-click to cross an item off, double-click again to uncross the item, click "Remove" to delete the item)<button class="removeButton" title="Click here to remove this task completely."><span class="x">X</span> Remove</button>
+          &#9733; Example list item (double-click to cross an item off, double-click again to uncross the item, click "Remove" to delete the item)<button class="removeButton"><span class="x">X</span> Remove</button>
+        </li>
+        <li title="Double click to cross this task off. Double click again to uncross it.">
+          &#9733; Example list item <button class="removeButton"><span class="x">X</span> Remove</button>
+        </li>
+        <li title="Double click to cross this task off. Double click again to uncross it.">
+          &#9733; Example list item<button class="removeButton"><span class="x">X</span> Remove</button>
         </li>
       </ul>
       <div class="addTask">
