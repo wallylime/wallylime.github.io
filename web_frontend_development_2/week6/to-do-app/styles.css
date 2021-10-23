@@ -15,12 +15,12 @@ h1 {
 }
 
 p {
-  margin-bottom: 1em;
-  border-bottom:  0.1em solid #31a6c4;
+  font-size: 1.3em;
+  font-family: Garamond, serif;
+  color: #3d4651;
 }
 
 .instructions {
-  font-size: 1.2em;
   border-bottom: 0.2rem solid #31a6c4;
   padding: 0.5em;
 }
@@ -71,7 +71,7 @@ li {
 }
 
 .listBox {
-  border: .3rem solid #31a6c4;
+  border: 0.3rem solid #31a6c4;
   border-radius: 0.5em;
 }
 
@@ -103,6 +103,7 @@ li .removeButton:hover {
   display: grid;
   grid-template-columns: minmax(min-content, 0.3fr) 2fr minmax(min-content, 0.5fr) minmax(min-content, 0.5fr);
   grid-gap: 0.3em;
+  align-items: center;
 }
 
 label, button {
@@ -151,9 +152,6 @@ Medium Screen
     grid-gap: 0.5em;
   }
 
-  p {
-    margin: 0.4em;
-  }
 }
 
 /*--------------
