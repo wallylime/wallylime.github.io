@@ -14,23 +14,20 @@ h1 {
   text-align: center;
 }
 
-h1 span {
-  text-decoration: line-through;
-}
-
 p {
-  padding-left: 0.5em;
-  padding-right: 0.5em;
+  margin-bottom: 1em;
+  border-bottom:  0.1em solid #31a6c4;
 }
 
 .instructions {
   font-size: 1.2em;
-  color: black;
   border-bottom: 0.2rem solid #31a6c4;
+  padding: 0.5em;
 }
 
 .completed {
-  background-color: #eff8fb;
+  text-decoration: line-through;
+  background-color: lightgray;
 }
 
 .hide {
@@ -75,7 +72,7 @@ li {
 
 .listBox {
   border: .3rem solid #31a6c4;
-  border-radius: .5em;
+  border-radius: 0.5em;
 }
 
 .x {
@@ -87,28 +84,25 @@ li .removeButton {
   background-color: transparent;
   border: none;
   font-size: .8rem;
-  padding: .2rem;
-  margin: .1rem .5rem;
+  padding: 0.2rem;
 }
 
 li .removeButton:hover {
   font-size: 1rem;
 }
 
-
-/*--------------
-Forms
---------------*/
-form {
+.addTask {
   display: grid;
   grid-template-columns: 0.8fr 4fr 1fr;
-  grid-gap: .3rem;
+  grid-gap: 0.3rem;
   align-items: center;
   padding: 0.5rem;
 }
 
-form.listName {
+.listName {
+  display: grid;
   grid-template-columns: minmax(min-content, 0.3fr) 2fr minmax(min-content, 0.5fr) minmax(min-content, 0.5fr);
+  grid-gap: 0.3em;
 }
 
 label, button {
@@ -123,9 +117,9 @@ input {
   font-family: "Coming Soon", sans-serif;
   font-size: 1.2rem;
   color: black;
-  border: .1rem solid #d36622;
-  border-radius: .3rem;
-  padding: .3rem;
+  border: 0.1rem solid #d36622;
+  border-radius: 0.3rem;
+  padding: 0.3rem;
 }
 
 input:focus {
@@ -137,11 +131,11 @@ input:focus {
 Medium Screen
 --------------*/
 @media only screen and (max-width: 665px) {
-  form {
+  .addTask {
     grid-template-columns: 3fr 1fr;
   }
 
-  form.listName {
+  .listName {
     grid-template-columns: 2fr minmax(min-content, 0.5fr) minmax(min-content, 0.5fr);
   }
 
@@ -167,7 +161,7 @@ Small Screen
 --------------*/
 @media only screen and (max-width: 450px) {
   .filterButtons {
-    grid-gap: .2em;
-    padding: .2em;
+    grid-gap: 0.2em;
+    padding: 0.2em;
   }
 }

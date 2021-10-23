@@ -24,30 +24,30 @@
     <div class="listBox">
       <div class="instructions">
         <p>Enter a list name to save this list for later or retrieve a previously-saved list.</p>
-        <form class="listName">
+        <div class="listName">
           <label for="toDoListName">Name: </label>
           <input type="text" id="toDoListName" name="listName" placeholder="List Name">
           <button title="save a to-do list by this name" id="saveList">Save</button>
           <button title="retrieve a to-do list by this name" id="retrieveList">Retrieve</button>
-        </form>
+        </div>
         </div>
       <ul id="toDoList">
         <li title="Double click to cross this task off. Double click again to uncross it.">
-          &#9733; Task <button class="removeButton" title="Click here to remove this task completely."><span class="x">X</span> Remove</button>
+          &#9733; Task 1<button class="removeButton" title="Click here to remove this task completely."><span class="x">X</span> Remove</button>
         </li>
         <li>
-          &#9733; Task<button class="removeButton"><span class="x">X</span> Remove</button>
+          &#9733; Task 2<button class="removeButton"><span class="x">X</span> Remove</button>
         </li>
         <li>
-          &#9733; Task
+          &#9733; Task 3
           <button class="removeButton"><span class="x">X</span> Remove</button>
         </li>
       </ul>
-      <form>
+      <div class="addTask">
         <label for="newTask">New Task : </label><input type="text" id="newTask" name="task"
           placeholder="type a to-do here">
         <button title="put new task on to-do list" id="addTask">+ Add</button>
-        </form>
+      </div>
         <div class="filterButtons">
           <button id="showAll">Show All</button>
           <button id="showIncomplete">Show Incomplete Tasks</button>

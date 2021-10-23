@@ -2,7 +2,7 @@
 import { createElement, removeHide, addHide } from "./utilities.js";
 import { localSave, localRetrieve } from "./localStorage.js";
 
-//Global variables for elements in the DOM
+//Variables for elements in the DOM
 const h1 = document.querySelector("h1");
 const toDoList = document.querySelector("ul#toDoList");
 const listItems = document.querySelectorAll("li");
@@ -92,9 +92,3 @@ function showComplete() {
     }
   })
 }
-/*List of things that I still need to figure out:
--How can I do line-through on the li without also having it on the remove text?
-    IDEAS: If desperate, maybe don't use line through, just background color and animation that moves the item to the bottom of the list
--How to get items on my list & how to get the list title to display
--Test local storage
-*/
