@@ -22,36 +22,42 @@
   </header>
   <main>
     <div class="listBox">
-      <div class="filterButtons">
-        <button onclick="showAll()">Show All</button>
-        <button onclick="showIncomplete()">Show Incomplete Tasks</button>
-        <button onclick="showComplete()">Show Completed</button>
-    </div>
-    <div class="instructions">
-      <p>Double click on a task to cross it off.</p>
-    </div>
-      <ul id="js-toDoList">
-        <li>
-          <p>&#9733; Task</p><button class="removeButton"><span class="x">X</span> Remove</button>
+      <div class="instructions">
+        <p>Enter a list name to save this list for later or retrieve a previously-saved list.</p>
+        <form class="listName">
+          <label for="toDoListName">Name: </label>
+          <input type="text" id="toDoListName" name="listName" placeholder="List Name">
+          <button title="save a to-do list by this name" id="saveList">Save</button>
+          <button title="retrieve a to-do list by this name" id="retrieveList">Retrieve</button>
+        </form>
+        </div>
+      <ul id="toDoList">
+        <li title="Double click to cross this task off. Double click again to uncross it.">
+          &#9733; Task <button class="removeButton" title="Click here to remove this task completely."><span class="x">X</span> Remove</button>
         </li>
         <li>
-          <p>&#9733; Task</p><button class="removeButton"><span class="x">X</span> Remove</button>
+          &#9733; Task<button class="removeButton"><span class="x">X</span> Remove</button>
         </li>
         <li>
-          <p>&#9733; Task
-          </p><button class="removeButton"><span class="x">X</span> Remove</button>
+          &#9733; Task
+          <button class="removeButton"><span class="x">X</span> Remove</button>
         </li>
       </ul>
       <form>
         <label for="newTask">New Task : </label><input type="text" id="newTask" name="task"
           placeholder="type a to-do here">
-        <button title="put new task on to-do list" onclick="addTask()">+ Add</button>
-      </form>
+        <button title="put new task on to-do list" id="addTask">+ Add</button>
+        </form>
+        <div class="filterButtons">
+          <button id="showAll">Show All</button>
+          <button id="showIncomplete">Show Incomplete Tasks</button>
+          <button id="showComplete">Show Completed Tasks</button>
+      </div>
     </div>
   </main>
   <footer>
   </footer>
-  <script src="ToDos.js"></script>
+  <script type="module" src="ToDos.js"></script>
 </body>
 
 </html>

@@ -1,61 +1,100 @@
-const toDoList = document.querySelector("ul");
-const listItems = toDoList.querySelectorAll("li");
+//Import from modules
+import { createElement, removeHide, addHide } from "./utilities.js";
+import { localSave, localRetrieve } from "./localStorage.js";
 
-//Event listener for crossing items off 
-listItems.forEach(listItem => addEventListener("click", crossOffItem));
+//Global variables for elements in the DOM
+const h1 = document.querySelector("h1");
+const toDoList = document.querySelector("ul#toDoList");
+const listItems = document.querySelectorAll("li");
+const removeButtons = document.querySelectorAll("button.removeButton");
+const showAllButton = document.querySelector("button#showAll");
+const showIncompleteButton = document.querySelector("button#showIncomplete");
+const showCompleteButton = document.querySelector("button#showComplete");
+const addTaskButton = document.querySelector("button#addTask");
+const saveListButton = document.querySelector("button#saveList");
+const retrieveListButton = document.querySelector("button#retrieveList");
 
-//Why is this also crossing off the paragraph?
-//This function crosses off a completed to-do item
-function crossOffItem(event) {
-  event.target.classList.add("completed");
-  event.target.removeEventListener("click", crossOffItem);
-  // event.target.addEventListener("dblclick", uncrossOff);
-};
+//Event listeners
+saveListButton.addEventListener("click", saveList);
+retrieveListButton.addEventListener("click", retrieveList);
+toDoList.addEventListener("dblclick", crossOrUncrossItem);
+showAllButton.addEventListener("click", showAll);
+showIncompleteButton.addEventListener("click", showIncomplete);
+showCompleteButton.addEventListener("click", showComplete);
+addTaskButton.addEventListener("click", addTask);
+removeButtons.forEach(removeButton => removeButton.addEventListener("click", removeTask));
 
 
-// function uncrossOff(event) {
-//   console.log("This part is working");
-//   console.log(event.target);
-//   //why isn't this removing "completed" from the classList?
-//   event.target.classList.remove("completed");
-//   console.log(event.target.classList);
-// };  
+//Functions
 
-// const removeButtons = document.getElementsByClassName("removeButton");
+//Creates a new li from the user's input that includes a remove button
+function addTask() {
+  let newTask = document.querySelector("#newTask").value;
+  let li = createElement("li", `&#9733; ${newTask} <button class="removeButton" title="click here to remove this task completely"><span class="x">X</span> Remove </button>`);
+  li.setAttribute("title", "Double click to cross this task off. Double click again to uncross it.");
+  toDoList.append(li);
+}
 
-// removeButtons.forEach(removeButton => addEventListener("dblclick", removeTask));
+//Saves a to-do list
+function saveList() {
+  let listName = document.querySelector("#toDoListName").value;
+  h1.innerHTML = `${listName}`;
+  localSave(listName, toDoList);
+}
 
-//This function removes a list item
-// function removeTask(event) {
-//   let li = event.target.parentElement;
-//   li.remove();
-// }
+//Retrieves a to-do list
+function retrieveList() {
+  let listName = document.querySelector("#toDoListName").value;
+  let retrievedList = localRetrieve(listName);
+  toDoList.value = retrievedList;
+  h1.innerHTML = `${listName}`;
+}
 
-// listItems.forEach(listItem => {
-//     let completed = listItem.classList.includes("completed")
-//     if (listItem !== completed) {
-//       listItem.classList.add("hide");
-//     }
-//   }
-// };
+//Removes a list item
+function removeTask(event) {
+  let li = event.target.parentNode;
+  toDoList.removeChild(li);
+}
 
-/*function addTask() {
-  let toDoList = document.getElementById("js-toDoList");
-  toDoList.appendChild(createLi());
-};
+//Crosses off or uncrosses a to-do list item
+function crossOrUncrossItem(event) {
+  event.target.classList.toggle("completed");
+  }
 
-This function creates a li with two children: p & button
-function createLi() {
-  let li = document.createElement("li");
-  let p = document.createElement("p");
-  //adds the "incomplete" star and the new list item
-  p.innerHTML = `<span class="star incomplete">&#9734;</span> ${document.getElementById("newTask").value}`;
-  //adds a remove button to each list item
-  let button = document.createElement("button");
-  button.setAttribute("class", "deleteButton");
-  button.setAttribute("onclick", "deleteItem()");
-  button.innerHTML = `<span class="x">X</span> Remove`;
-  li.append(p, button);
-  return li;}
+
+//Functions for hiding or displaying content based on user's button choice:
+
+//Shows every item on the list whether it is complete or incomplete
+function showAll() {
+  listItems.forEach(listItem => removeHide(listItem));
+}
+
+//Shows only incomplete list items
+function showIncomplete() {
+  listItems.forEach(listItem => {
+    if (listItem.classList.contains("completed")) {
+      addHide(listItem);
+    }
+    else {
+      removeHide(listItem);
+    }
+  })
+}
+
+//Shows only complete list items
+function showComplete() {
+  listItems.forEach(listItem => {
+    if (listItem.classList.contains("completed") === false) {
+      addHide(listItem);
+  }
+    else {
+      removeHide(listItem);
+    }
+  })
+}
+/*List of things that I still need to figure out:
+-How can I do line-through on the li without also having it on the remove text?
+    IDEAS: If desperate, maybe don't use line through, just background color and animation that moves the item to the bottom of the list
+-How to get items on my list & how to get the list title to display
+-Test local storage
 */
-

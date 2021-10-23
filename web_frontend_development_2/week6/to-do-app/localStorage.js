@@ -1,11 +1,13 @@
-function saveToDo(){
-  var task = document.getElementsByTagName("li");
-  var newToDo = document.getElementById("newTask").value;
-  localStorage.setItem(task, newToDo);
+//These functions are for saving and retrieving things in local storage
+function localSave(key, value) {
+  localStorage.setItem(key, value);
 }
 
-function displayStory(){
-  var storyTitle = document.getElementById("storyName").value
-  var yourStory = document.getElementById("storyEditor").value
-  document.getElementById("storyDisplay").innerHTML = storyTitle + "<br><br>" + yourStory
+function localRetrieve(key) {
+  localStorage.getItem(key);
+}
+
+export {
+  localSave,
+  localRetrieve
 }
