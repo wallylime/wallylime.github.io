@@ -8,11 +8,13 @@ const showAllButton = document.querySelector("button#showAll");
 const showIncompleteButton = document.querySelector("button#showIncomplete");
 const showCompleteButton = document.querySelector("button#showComplete");
 const addTaskButton = document.querySelector("button#addTask");
+const deleteButtons = document.querySelectorAll("button.removeButton");
 
 
 //Event listeners
 
-/*The next three lines of code and the updateNodeLists function are so that when the ul has a new li added, I can find the list item's remove button and add an event listener to it. I was having a problem with finding all of the remove buttons with querySelectorAll. It could find everything that was already listed in the html, but couldn't find any from newly-added list items since querySelectors return a static node list. I tried using getElementsByClass, but then it wouln't let me use the forEach method to put an event listener on every button. So, I researched and found this solution which looks for changes to the DOM in the area that I choose. I'm pretty sure that there must be a better solution than this, but I'm not sure what it is.*/
+deleteButtons.forEach(deleteButton => deleteButton.addEventListener("click", removeTask));
+/*The next three lines of code and the updateNodeLists function are so that when the ul has a new li added, I can find the list item's remove button and add an event listener to it. I was having a problem with finding all of the remove buttons with querySelectorAll. It could find everything that was already listed in the html, but couldn't find any from newly-added list items since it's a static node list. I have a feeling that there's probably a more elegant solution than this, but it does seem to do the job.*/
 const observer = new MutationObserver(updateNodeLists);
 const config = { childList: true };
 observer.observe(toDoList, config);
