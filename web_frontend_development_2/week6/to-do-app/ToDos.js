@@ -43,10 +43,11 @@ function updateNodeLists(mutationsList, observer) {
 
 //Creates a new li from the user's input that includes a remove button
 function addTask() {
-  let newTask = document.querySelector("#newTask").value;
-  let li = createElement("li", `&#9733; ${newTask} <button class="removeButton"><span class="x">X</span> Remove </button>`);
+  let newTask = document.querySelector("#newTask");
+  let li = createElement("li", `&#9733; ${newTask.value} <button class="removeButton"><span class="x">X</span> Remove </button>`);
   li.setAttribute("title", "Double click to cross this task off. Double click again to uncross it.");
   toDoList.append(li);
+  newTask.value = " ";
 }
 
 //Removes a list item
