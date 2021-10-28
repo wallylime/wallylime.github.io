@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 7 Notes</title>
+  <meta name="description" content="Week 7 Notes for WDD330.">
+  <meta name="author" content="Emily Wall">
+  <link href="../../css/normalize.css" rel="stylesheet">
+  <link href="../../css/small.css" rel="stylesheet">
+  <link href="../../css/medium.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>Week 7 Notes</h1>
+  </header>
+  <main>
+    <section>
+     <h2><a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/11">Ch. 11: Further Functions</a></h2>
+    <ul>
+      <li>a function's length property returns the number of parameters that it has</li>
+      <li>when calling a function, it's first argument is always the value of "this"; other arguments can follow</li>
+      <li><a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/11/k01nwuzm?fromShare=true">memoization</a> is basically saving the results of an operation as a property of the function so that if the function is called again with the same argument, it can get the answer that has been stored as a property without having to calculate it again</li>
+      <li><a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/11/k01nwuzs?fromShare=true">immediately invoked function expressions</a> (IIFE's) sound like a bad idea to me; the only use case that seems to make sense is coding in strict mode for your own code without affecting others' code</li>
+     <li>functions can <a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/11/k01nwv0h?fromShare=true"> redefine themselves</a> by using an anonymous function</li>
+     <li>recursive functions keep going until a condition is met</li>
+     <li>here's a video explaining <a href="https://www.youtube.com/watch?v=8aGhZQkoFbQ">the Javascript event loop</a></li>
+     <li>Javascript can only do one thing at a time</li>
+     <li>the results of an asynchronous operation is called a <a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/11/k01nwv27?fromShare=true">promise</a></li>
+     <li>promises are either resolved or rejected</li>
+     <li>the promise is "pending" while it's waiting to be resolved or rejected</li>
+     <li>the ".then" method says what to do next after the results of a promise are in</li>
+     <li>you can chain promises together in a sequential way using the ".then" method</li>
+     <li>when functions are nested inside of each other, the inner functions have access to the variables that are scoped for the outer function</li>
+     <li><a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/11/k01nwv4f?fromShare=true">Here is a confusing part of the textbook about closures</a></li>
+     <li><a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/11/k01nwv5c?fromShare=true">generators</a> are called like this: 
+    <div class="example">function* exampleGenerator() {
+      // code for the generator goes here
+      }</div></li>
+     <li>generators use the keyword "yield" instead of "return"; this allows the yield result to be available the next time the generator is used</li>
+     <li>".next" method is used to pass through the generator again</li>
+     <li>here's a list of criteria for <a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/11/k01nwv5v?fromShare=true">pure functions</a></li>
+     <li>a programming style that uses single-purpose pure functions as building blocks for other functions is called functional programming</li>
+    </ul>
+     </section>
+     <section>
+      <h2><a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/13">Ch. 13: AJAX</a></h2>
+     <ul>
+       <li>AJAX = asynchronous Javascript and XML</li>
+       <li>JSON is used more than XML now</li>
+       <li>here's an example of using the <a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/13/k01nwvlu?fromShare=true">fetch() method: </a>
+      <div class="example">
+        fetch('https://example.com/data')<br>
+        .then( // code that handles the response )<br>
+        .catch( // code that runs if the server returns an error )</div></li>
+       <li>rather than creating a new Request object, you can put it directly in the fetch request as one of the arguments, like this: 
+         <div class="example">fetch('https://example.com/data', {<br>
+          method: 'GET',<br>
+          mode: 'cors',<br>
+          redirect: 'follow',<br>
+          cache: 'no-cache'<br>
+      })<br>
+      .then( // do something with the response )<br>
+      .catch( // handle any errors)</div> </li>
+       <li><a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/13/k01nwvp6?fromShare=true">the FormData interface</a> simplifies submitting form data</li>
+     </ul>
+      </section>
+  </main>
+  <footer>&copy; <span id="year"></span> | Emily Wall | Idaho | <a href="https://www.byui.edu/online">BYU-I Online</a>
+    <p>
+      Last modified: <span id="lastmodified"></span>
+    </p>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="../../js/javascript.js"></script>
+  <script> WebFont.load({
+    google: {
+      families: [
+         'Metamorphous'
+      ]
+    }
+  });
+  </script>
+</body>
+
+</html>
