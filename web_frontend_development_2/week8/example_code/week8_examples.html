@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 8 Code Examples</title>
+  <meta name="description" content="How to use CSS transforms.">
+  <meta name="author" content="Emily Wall">
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>How to Use CSS Transforms</h1>
+  </header>
+  <main>
+    <section id="translate">
+      <h2>Translate</h2>
+      <p>Hover on these boxes. The first box has negative values in its translate function. This moves the box to the left and up. The second box has positive values, so it moves to the right and down.</p>    
+      <div class="box-1"></div>
+      <div class="box-2"></div>
+    </section>
+    <section id="scale">
+      <h2>Scale</h2>
+      <p>Hover on the boxes. The first one will grow. The second one will shrink.</p>
+      <div class="box-1"></div>
+      <div class="box-2"></div>
+    </section>
+    <section id="rotate">
+      <h2>Rotate</h2>
+      <p>Hover on the boxes. The first one will rotate clockwise because a positive number of degrees has been provided (20deg). The second will rotate counterclockwise because a negative number of degrees has been provided (-20deg). </p>
+      <div class="box-1"></div>
+      <div class="box-2"></div>
+    </section>
+    <section id="skew">
+      <h2>Skew</h2>
+      <p>Hover on the boxes. The first one is set to skew(20deg, 5deg) and the second one is set to skew(-20deg, -5deg).</p>
+      <div class="box-1"></div>
+      <div class="box-2"></div>
+    </section>
+    <section id="transform-origin">
+      <h2>Transform-Origin</h2>
+      <p>Hover on the boxes. They are both set to rotate by 20deg, but the first box has transform-origin: 10% 10% and the second box has transform-origin: bottom right.</p>
+      <div class="box-1"></div>
+      <div class="box-2"></div>
+    </section>
+    <section id="transitions">
+      <h2>Transitions</h2>
+      <p>Hover on the boxes. The first one has a very slow transition to make the transition more visible. The second one has a normal transition speed of .2s.</p>
+      <div class="box-1"></div>
+      <div class="box-2"></div>
+    </section>
+  </main>
+  <footer>
+  </footer>
+  <script> WebFont.load({
+    google: {
+      families: [
+         'Metamorphous'
+      ]
+    }
+  });
+  </script>
+</body>
+
+</html>

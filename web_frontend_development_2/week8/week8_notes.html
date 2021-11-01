@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 8 Notes</title>
+  <meta name="description" content="Week 8 Notes for WDD330.">
+  <meta name="author" content="Emily Wall">
+  <link href="../../css/normalize.css" rel="stylesheet">
+  <link href="../../css/small.css" rel="stylesheet">
+  <link href="../../css/medium.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>Week 8 Notes</h1>
+  </header>
+  <main>
+    <section>
+     <h2><a href="https://www.sitepoint.com/premium/books/html5-css3-for-the-real-world-2nd-edition/read/8">Ch. 8: CSS Transforms and Transitions</a></h2>
+    <ul>
+      <li>the CSS transform property lets you change things like size, positioning, and orientation of an element</li>
+      <li>transforms are applied in the order that they are provided</li>
+      <li>the translate function allows you to move an item but does not work on inline elements</li>
+      <li>scaling an element allows it to grow or shrink by the specified amount</li>
+      <li>the growing or shrinking happens from the center of the element unless you use transform-origin</li>
+      <li>if using more than one transform on the same element, use a space separated list, DO NOT re-declare the transform property because it will overide the previous transform</li>
+      <li>the rotate function will rotate by a specified number of degrees from the element's center</li>
+      <li>transform-origin changes the starting point of the transforms; default is from the center</li>
+      <li>CSS transitions provide a simple animation and can be activated by hover or by Javascript changing an element's class or state</li>
+      <li>transition properties are applied to the first block of code (the default code before any changes)</li>
+      <li>not all properties can be animated; here's a list of <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties">animatable properties</a></li>
+      <li>.2 seconds (200 milliseconds) is usually considered an ideal transition time</li>
+      <li>read here for some things that can be done with the <a href="https://www.sitepoint.com/premium/books/html5-css3-for-the-real-world-2nd-edition/read/8/jzj69acn?fromShare=true">transition-timing-function</a></li>
+      <li>be careful naming keyframes so that your name doesn't conflict with animation property values such as forwards, running, or alternate</li>
+    </ul>
+     </section>
+     <section>
+      <h2><a href="https://www.sitepoint.com/premium/books/html5-css3-for-the-real-world-2nd-edition/read/12">Ch. 12: Canvas, SVG, and Drag and Drop</a></h2>
+     <ul>
+  
+     </ul>
+      </section>
+  </main>
+  <footer>&copy; <span id="year"></span> | Emily Wall | Idaho | <a href="https://www.byui.edu/online">BYU-I Online</a>
+    <p>
+      Last modified: <span id="lastmodified"></span>
+    </p>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="../../js/javascript.js"></script>
+  <script> WebFont.load({
+    google: {
+      families: [
+         'Metamorphous'
+      ]
+    }
+  });
+  </script>
+</body>
+
+</html>

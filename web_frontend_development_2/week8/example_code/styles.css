@@ -1,0 +1,141 @@
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  max-width: 960px;
+  margin: 1em auto;
+  border-left: 5px solid #12263a;
+  border-right: 5px solid #12263a;
+}
+
+h2 {
+  color: #12263a;
+  background-color: #e1c27a;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Metamorphous", Garamond, serif;
+}
+
+h1 {
+  font-size: 2em;
+  background-color: #12263a;
+  color: #e1c27a;
+  padding: 0.5em;
+  margin: 0;
+}
+
+h2 {
+  padding: 0.5em;
+  margin-left: -0.75em;
+  margin-right: -0.75em;
+  border: 2px solid #12263a;
+}
+
+h3 {
+  color: #e1c27a;
+  background-color: #12263a;
+  padding: 0.5rem;
+}
+
+img {
+  max-width: 50%;
+  display: block;
+  margin: 1em;
+}
+
+main {
+  padding: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  color: #12263a;
+}
+
+footer {
+  background-color: #12263a;
+  color: #e1c27a;
+  padding: 1.5em;
+}
+
+.box-1,
+.box-2 {
+  width: 50px;
+  height: 50px;
+  margin: 0.5em;
+}
+
+.box-1 {
+  background-color: #12263a;
+}
+
+.box-2 {
+  background-color: #284f77;
+}
+#translate .box-1:hover {
+  transform: translate(-20px, -20px);
+}
+
+#translate .box-2:hover {
+  transform: translate(100px, 100px);
+}
+
+#scale .box-1:hover {
+  transform: scale(3);
+}
+
+#scale .box-2:hover {
+  transform: scale(0.5);
+}
+
+#rotate .box-1:hover {
+  transform: rotate(20deg);
+}
+
+#rotate .box-2:hover {
+  transform: rotate(-20deg);
+}
+
+#skew .box-1:hover {
+  transform: skew(20deg, 5deg);
+}
+
+#skew .box-2:hover {
+  transform: skew(-20deg, -5deg);
+}
+
+#transform-origin .box-1:hover {
+  transform: rotate(20deg);
+  transform-origin: 10% 10%;
+}
+
+#transform-origin .box-2:hover {
+  transform: rotate(20deg);
+  transform-origin: bottom right;
+}
+
+#transitions .box-1 {
+  background-color: #12263a;
+  border-radius: 0;
+  transition: all 2s;
+}
+
+#transitions .box-1:hover {
+  background-color: #51a4f7;
+  border-radius: 10%;
+  transform: scale(1.5) rotate(-45deg);
+  transform-origin: top right;
+}
+
+#transitions .box-2 {
+  background-color: #284f77;
+  border-radius: 0;
+  transition: all .2s;
+}
+
+#transitions .box-2:hover {
+  background-color: #51a4f7;
+  border-radius: 10%;
+  transform: scale(1.5) rotate(-45deg);
+  transform-origin: top right;
+}
