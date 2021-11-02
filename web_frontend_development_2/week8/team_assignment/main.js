@@ -52,7 +52,7 @@ fetch(url)
       <p>Mass: ${person.mass}</p>
       <p>Eye Color: ${person.eye_color}</p>
       <p>Hair Color: ${person.hair_color}</p>`;
-      //newDiv.addEventListener("click", showMoreDetails);
+      // newDiv.addEventListener("click", showMoreDetails);
      return newDiv;
    }
 
