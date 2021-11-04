@@ -1,44 +1,58 @@
-let url = "https://swapi.dev/api/people";
+function getJSON(url) {
+  return fetch(url)
+    .then(response => {
+      if (!response.ok) {
+        throw Error(response.statusText);
+      } else {
+        return response.json();
+      }
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+}
 
-fetch(url)
-  .then((response) => response.json())
-  .then((peopleList) => {
+function showPeople(url = "https://swapi.dev/api/people") {
+  getJSON(url)
+  .then(peopleList => {
     //Building the list of 10 Star Wars people
     const div = document.querySelector("div.people");
+    div.innerHTML = " ";
     peopleList.results.forEach(person => {
       let personCard = renderOnePerson(person);
       div.append(personCard);
     })
     
-    //Finding the next and previous buttons and attaching event listeners
+    //Finding the next and previous buttons
     const previousButton = document.querySelector("#previous"); 
     const nextButton = document.querySelector("#next");
-    previousButton.addEventListener("click", getPrevious);
-    nextButton.addEventListener("click", getNext);
+    
+    //If this is the first page and there are no previous pages, disable the previous button; otherwise add an event listener to it.
+    if (peopleList.previous == null) {
+      previousButton.disabled = true;
+    } else {
+      previousButton.disabled = false;
+      previousButton.onclick = () => getPrevious();
+    }
+    
+    //If this is the last page and there are no next pages, disable the next button; otherwise add an event listener to it.
+    if (peopleList.next == null) {
+      nextButton.disabled = true;
+    } else {
+      nextButton.disabled = false;
+      nextButton.onclick = () => getNext();
+    }
 
     //Function for getting the previous page's results
     function getPrevious() {
-      if (peopleList.previous != null) {
-        let previousUrl = peopleList.previous;
-        url = previousUrl;
-        fetch(url);
-    }
-      else {
-        alert("This is the first page of results.");
-      }
+      console.log(peopleList.previous);
+      showPeople(peopleList.previous);
     }
     
     //Function for getting the next page's results
     function getNext() {
-      fetch(nextUrl);
-      // if (peopleList.next != null) {
-      //   let nextUrl = peopleList.next;
-      //   url = nextUrl;
-      //   fetch(url);
-      // }
-      // else {
-      //   alert("This is the last page of results.")
-      // }
+      console.log(peopleList.next);
+      showPeople(peopleList.next);
     }
 
    //Function for rendering each Star Wars person in the HTML
@@ -55,7 +69,26 @@ fetch(url)
       <p>Hair Color: ${person.hair_color}</p>
       <p>Skin Color: ${person.skin_color}</p>
       </div>`;
-      // newDiv.addEventListener("click", showMoreDetails);
+      newDiv.addEventListener("click", () => {
+        const hiddenDiv = newDiv.querySelector("div");
+        hiddenDiv.classList.toggle("hidden");
+      });
      return newDiv;
    }
+
   })
+}
+
+function getPageUrls() {
+  let pageDiv = document.querySelector("#pages");
+  for(let i=1; i < 10; i++) {
+    let link = document.createElement("a");
+    link.addEventListener("click", () => showPeople("https://swapi.dev/api/people/?page=" + i));
+    link.innerHTML = i;
+    pageDiv.append(link);
+  }
+
+}
+
+showPeople();
+getPageUrls();
