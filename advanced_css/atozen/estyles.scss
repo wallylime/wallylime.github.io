@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Fredericka+the+Great&display=swap');
+
+//color variables
+$color-1: #2B4162; //indigo dye
+$color-2: #247BA0; // celedon blue
+$color-3: #FE9000; // yellow orange color wheel
+$color-4: #F04819; // coquelicot
+$color-5: #333333; // jet
+$color-6: #ffffff; // white
+
+//font variables
+$main-font: "Coming Soon", Helvetica, sans-serif;
+$header-font: "Fredericka the Great", Georgia, serif;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 60em;
+  margin: auto;
+  font-family: $main-font;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-family: $header-font;
+  font-weight: normal;
+  background-color: $color-5;
+  color: $color-6;
+  padding: 1em;
+  border-radius: 2%;
+}
+
+h3::first-letter {
+  font-size: 2em;
+}
+
+//Can we add an image or just a background image? Go find jpg
+h1::before {
+  content: url(assets/zengarden.jpg);
+}
+
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+
