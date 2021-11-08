@@ -7,27 +7,15 @@
 }
 
 body {
+  font-family: "Coming Soon", sans-serif;
+  font-size: 12px;
   max-width: 1100px;
   margin: auto;
-  font-family: "Coming Soon", Helvetica, sans-serif;
-  font-size: 14px;
-  font-weight: bold;
 }
 
-h3 {
-  font-size: 1.5em;
-  font-family: "Fredericka the Great", Georgia, serif;
-  color: #247BA0;
-  padding: 0 0.5em;
-}
-
-h3::first-letter {
-  font-size: 2em;
-  font-weight: normal;
-}
-
+/*Added this to get our A to Zen banner*/
 header {
-  height: 40vw;
+  height: 35vw;
   width: 100%;
   background: url(assets/header.svg);
   background-color: #333333;
@@ -42,53 +30,365 @@ h2 {
   display: none;
 }
 
+/*Added this padding to my section*/
+.summary,
+  .preamble {
+    padding-left: 0.5em;
+  }
+/*End of part I added here*/
+
+.main h3 {
+  background-color: #2B4162;
+  color: #FE9000;
+  padding: 2em 0;
+  margin-top: 0;
+  text-align: center;
+}
+
+.explanation, .participation, .benefits, .requirements {
+  border: 0.25em solid #2B4162;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  position: relative;
+}
+
+.explanation h3::after {
+  content: "";
+  background-color: #247BA0;
+  float: right;
+  width: 40vw;
+  height: 50vw;
+  background-color: #247BA0;
+  margin: 4em 0.5em 0 0.5em;
+}
+
+.participation h3::after {
+  content: "";
+  float: left;
+  width: 40vw;
+  height: 60vw;
+  background-color: #247BA0;
+  margin: 4em 0.5em 0 0.5em;
+}
+
+.benefits h3::after {
+  content: "";
+  width: 60vw;
+  height: 36vw;
+  background-color: #247BA0;
+  float: left;
+  margin: 4em 0.5em 0 0.5em;
+}
+
 p {
   padding: 0 0.5em;
+  text-align: justify;
 }
 
-.page-wrapper {
+.design-selection nav {
+  margin: auto;
+}
+
+.wrapper {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
-
-/* @media only screen and (min-width: 23em) and (max-width: 30em) {
-  
-  header {
-    height: 12em;
-    border: 0.4em solid #FE9000;
-  }
-
+.design-selection {
+  grid-column: 1/3;
+  border-top: 0.25em solid #2B4162;
+  border-left: 0.25em solid #2B4162;
+  border-right: 0.25em solid #2B4162;
+  margin: 2em 0 0 0;
+}
+.design-selection nav {
+  margin: auto;
+}
+.design-selection ul {
+  list-style: none;
+  border-bottom: 10px solid transparent;
+  height: 96vw;
+  width: 96vw;
+  margin: auto;
+  padding: 0;
+  -webkit-perspective: 2500;
+  -webkit-transform-origin: center top 0;
+  -webkit-transform: translateY(250px);
+}
+.design-selection li {
+  width: 12vw;
+  height: 96vw;
+  float: left;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  cursor: pointer;
+  -webkit-transform: rotateX(0deg) translateY(-250px);
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition-property: transform;
+  -webkit-transition-duration: 100ms;
+}
+.design-selection a {
+  -webkit-transform-origin: 0 0 0;
+  -webkit-transform: rotateZ(90deg) translateY(-12vw);
+  margin: 0;
+  position: absolute;
+  line-height: 5vw;
+  width: 96vw;
+  height: 10vw;
+  padding: 6vw 10vw;
+  box-sizing: border-box;
+}
+.design-selection li:nth-child(1) {
+  z-index: 1;
+  background-color: #2B4162;
+}
+.design-selection li:nth-child(2) {
+  z-index: 1;
+  background-color: #247BA0;
+}
+.design-selection li:nth-child(3) {
+  z-index: 1;
+  background-color: #FE9000;
+}
+.design-selection li:nth-child(4) {
+  z-index: 1;
+  background-color: #F04819;
+}
+.design-selection li:nth-child(5) {
+  z-index: 1;
+  background-color: #333333;
+}
+.design-selection li:nth-child(6) {
+  z-index: 1;
+  background-color: #ffffff;
+}
+.design-selection li:nth-child(7) {
+  z-index: 1;
+  background-color: #247BA0;
+}
+.design-selection li:nth-child(8) {
+  z-index: 1;
+  background-color: #FE9000;
 }
 
-@media only screen and (min-width: 30.01em) and (max-width: 40em) {
-  
+.design-archives {
+  border: 0.25em solid #2B4162;
+}
+
+.design-archives ul {
+  max-width: 100%;
+  margin: 2em;
+  padding: 3.5em 0;
+  background-color: #247BA0;
+}
+
+.design-archives li {
+  text-align: center;
+  list-style: none;
+}
+
+.zen-resources {
+  border-top: 0.25em solid #2B4162;
+  border-bottom: 0.25em solid #2B4162;
+  border-right: 0.25em solid #2B4162;
+}
+
+@media only screen and (min-width: 550px) {
   body {
     font-size: 16px;
   }
 
+  .requirements h3::after {
+    content: "";
+    width: 50vw;
+    height: 50vw;
+    background-color: #247BA0;
+    float: right;
+    margin: 4em 0.5em 0 0.5em;
+  }
+}
+@media only screen and (min-width: 725px) {
+  /*Added & adjusted this part for layout. This is the best that I could do without being able to add any html*/
+  .page-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1em;
+  }
+
+  .intro {
+    grid-area: 1/1/2/3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1em;
+  }
+
   header {
-    height: 14em;
-    border: 0.5em solid #FE9000;
+    grid-column: 1/3;
+  }
+
+  .summary,
+  .preamble {
+    grid-column: 1/2;
+  }
+
+  .summary p:first-of-type {
+    margin-top: 1em;
+  }
+
+  .main {
+    grid-column: 2/1/3/2;
+  }
+
+  .sidebar {
+    margin-top: 36vw;
+    grid-area: 1/2/3/3;
+  }
+/*End of the part I added/changed here.*/
+  .wrapper {
+    border: 0.25em solid #2B4162;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    display: block;
+  }
+
+  .design-selection {
+    font-size: 12px;
+    border: 0.25em solid transparent;
+    margin: 1em;
+  }
+  .design-selection nav {
+    margin: auto;
+  }
+  .design-selection ul {
+    list-style: none;
+    border-bottom: 10px solid transparent;
+    height: 26.88vw;
+    width: 26.88vw;
+    margin: auto;
+    padding: 0;
+    -webkit-perspective: 2500;
+    -webkit-transform-origin: center top 0;
+    -webkit-transform: translateY(250px);
+  }
+  .design-selection li {
+    width: 3.36vw;
+    height: 26.88vw;
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    cursor: pointer;
+    -webkit-transform: rotateX(0deg) translateY(-250px);
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition-property: transform;
+    -webkit-transition-duration: 100ms;
+  }
+  .design-selection a {
+    -webkit-transform-origin: 0 0 0;
+    -webkit-transform: rotateZ(90deg) translateY(-3.36vw);
+    margin: 0;
+    position: absolute;
+    line-height: 1.4vw;
+    width: 26.88vw;
+    height: 2.8vw;
+    padding: 1.68vw 2.8vw;
+    box-sizing: border-box;
+  }
+  .design-selection li:nth-child(1) {
+    z-index: 1;
+    background-color: #2B4162;
+  }
+  .design-selection li:nth-child(2) {
+    z-index: 1;
+    background-color: #247BA0;
+  }
+  .design-selection li:nth-child(3) {
+    z-index: 1;
+    background-color: #FE9000;
+  }
+  .design-selection li:nth-child(4) {
+    z-index: 1;
+    background-color: #F04819;
+  }
+  .design-selection li:nth-child(5) {
+    z-index: 1;
+    background-color: #333333;
+  }
+  .design-selection li:nth-child(6) {
+    z-index: 1;
+    background-color: #ffffff;
+  }
+  .design-selection li:nth-child(7) {
+    z-index: 1;
+    background-color: #247BA0;
+  }
+  .design-selection li:nth-child(8) {
+    z-index: 1;
+    background-color: #FE9000;
+  }
+
+  .design-selection h3 {
+    font-size: 19px;
+  }
+
+  .design-archives, .zen-resources {
+    border: 0.25em solid #2B4162;
+    margin: 1em;
+  }
+
+  .explanation h3::after {
+    content: "";
+    background-color: #247BA0;
+    float: left;
+    width: 270px;
+    height: 360px;
+    background-color: #247BA0;
+    margin: 4em 0.5em 0 0.5em;
+  }
+
+  .participation h3::after {
+    content: "";
+    float: right;
+    width: 360px;
+    height: 216px;
+    background-color: #247BA0;
+    margin: 4em 0.5em 0 0.5em;
+  }
+
+  .benefits h3::after {
+    content: "";
+    width: 252px;
+    height: 144px;
+    background-color: #247BA0;
+    float: left;
+    margin: 4em 0.5em 0 0.5em;
+  }
+
+  .requirements h3::after {
+    content: "";
+    width: 360px;
+    height: 720px;
+    background-color: #247BA0;
+    float: right;
+    margin: 4em 0.5em 0 0.5em;
   }
 }
 
-@media only screen and (min-width: 40.01em) and (max-width: 50em) {
-  
-  header {
-    height: 18em;
-    border: 0.6em solid #FE9000;
-  }
+@media only screen and (min-width: 1200px) {
+  .intro {
+    grid-template-columns: 1.7fr 1fr;
+  }  
 }
 
-@media only screen and (min-width: 50.01em) {
-  
-  body {
-    font-size: 18px;
+@media only screen and (min-width: 1400px) {
+  .intro {
+    grid-template-columns: 1.3fr 1fr;
   }
-  header {
-    height: 20em;
-    border: 0.7em solid #FE9000;
-  }
-} */
-/*# sourceMappingURL=estyles.css.map */
+  .summary p:first-of-type {
+      margin-top: 1.5em;
+    }
+}
+
+
+
