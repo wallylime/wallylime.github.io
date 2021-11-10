@@ -35,7 +35,16 @@
      <section>
       <h2><a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/14">Ch. 14: HTML5 APIs</a></h2>
      <ul>
-       <li></li>
+       <li><a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/14/k01nwvqq?fromShare=true">local storage </a>allows us to save any Javascript object in local storage by saving it as a JSON object:
+      <div class="example">localStorage.setItem("keyName", JSON.stringify(objectName));</div></li>
+      <li>we can retrieve a Javascript object from local storage like this:
+        <div class="example">object = JSON.parse(localStorage.getItem("keyName"));</div>
+      </li>
+      <li>web workers help keep a page from freezing while some large time-consuming calculation is taking place</li>
+      <li>you can use <a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/14/k01nwvu1?fromShare=true">system notifications </a>if you obtain permission</li>
+      <li><a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/14/k01nwvui?fromShare=true">the audio and video html tags</a> can now be used and come with a whole bunch of built-in methods which are pretty darn neat</li>
+      <li>the canvas element allows javascript to draw in whatever space has been blocked out for it through the canvas' width and heighth attributes</li>
+      <li>shims and polyfills help people with older browsers to have an experience consistent with up-to-date browsers that do support a particular API</li>
      </ul>
       </section>
   </main>
