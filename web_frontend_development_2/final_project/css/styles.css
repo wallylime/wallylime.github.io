@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Kite+One&display=swap');
+
+:root {
+  --dark-gray: #3c3d3e;
+  --light-gray: #8a8e91;
+  --pink: #fabfb3;
+  --border-gray: 0.5vw solid var(--light-gray);
+  --border-big-pink: 1vw solid var(--pink);
+  --border-small-pink: 0.2vw solid var(--pink);
+  box-sizing: border-box;
+  font-family: "Kite One", sans-serif;
+  font-size: 18px;
+  background-color: var(--light-gray);
+}
+
+body {
+  background-color: var(--dark-gray);
+  color: var(--pink);
+  max-width: 1024px;
+  margin: 0 auto;
+  border: var(--border-big-pink);
+}
+
+h1, 
+h2, 
+h3 {
+  font-family: "Fredericka the Great", serif;
+  font-weight: normal;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+.day {
+  padding: 3vw;
+  border-top: var(--border-gray);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2vw;
+  align-items: center;
+}
+
+.planning-square {
+  border-left: var(--border-small-pink);
+  padding-left: 3vw;
+}
+
+input {
+  margin: 1vh;
+  cursor: pointer;
+}
+
+.full-day {
+  display: none;
+}
+
+@media only screen and (min-width: 400px) {
+  .full-day {
+    display: inline;
+  }
+}
