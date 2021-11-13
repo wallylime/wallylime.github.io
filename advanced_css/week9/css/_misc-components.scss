@@ -1,0 +1,50 @@
+/*------------Covid box-----------*/
+.covid {
+  padding: 0.5em;
+  background-color: black;
+  color: white;
+  font-size: 1.5em;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.covid p {
+  margin: 0.3em 0;
+}
+
+.covid button {
+  background-color: $byui-blue;
+  color: white;
+  font-size: 0.7em;
+  font-weight: bold;
+  padding: 0.6em 1.3em;
+  border: none;
+  border-radius: 0.3em;
+  margin-bottom: 0.5em;
+}
+
+
+/*------------Get Information Button------------*/
+.info-button {
+  padding: 0.5em 1em;
+  background-color: $light-gray;
+  display: grid;
+  grid-template-columns: 9fr 1fr;
+  border: 2px solid $med-gray;
+  border-radius: 0.3em;
+  align-items: center;
+  @include breakpoint($sm-break) {
+    grid-area: 1/2/2/3;
+    align-self: start;
+    margin-top: 2em;
+  }
+}
+
+.info-button p {
+  margin: 0;
+  font-weight: 700;
+}
+
+.icon-triangle-down {
+  text-align: right;
+}

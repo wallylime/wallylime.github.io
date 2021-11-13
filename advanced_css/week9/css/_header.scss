@@ -1,0 +1,48 @@
+header {
+  margin: 0;
+}
+
+.site-banner-top {
+  background-color: $byui-blue;
+  display: grid;
+  grid-template-columns: minmax(min-content, 100px) 1fr minmax(min-content, max-content);
+  grid-template-rows: minmax(min-content, max-content) auto;
+  padding: 0;
+  align-items: center;
+}
+
+.site-banner-top a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.logo {
+  margin: 0;
+  padding: 1em;
+  text-align: center;
+  background-color: black;
+  grid-column: 1/2;
+}
+
+.nav-icons {
+  text-align: right;
+  grid-column: 3/4;
+  justify-self: end;
+  padding-right: 1em;
+}
+
+.site-banner-bottom {
+  background-color: $light-gray;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+}
+
+h1 {
+  grid-column: 2 / 3;
+  font-weight: lighter;
+  font-size: 1.2em;
+  color: $body-font;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+}

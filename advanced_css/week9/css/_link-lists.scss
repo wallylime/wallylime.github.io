@@ -1,0 +1,62 @@
+.links {
+  @include breakpoint($sm-break) {
+    grid-area: 1/2/3/3;
+    margin-top: 7em;
+    align-self: start;
+  }
+}
+
+.date-links {
+  @include breakpoint($sm-break) {
+    grid-area: 2/2/4/3;
+    margin-top: 18em;
+    align-self: start;
+  }
+}
+
+.links, 
+.date-links {
+  background-color: $light-gray;
+}
+
+.links h3,
+.date-links h3{
+  background-color: $dark-gray;
+  color: white;
+  font-size: 1.4em;
+  font-weight: normal;
+  padding: 0.5em;
+  margin: 0;
+}
+
+.links div {
+  display: grid;
+  grid-template-columns: 9fr 1fr;
+  border: 1px solid $med-gray;
+  margin: 0;
+}
+
+/*-----Code specific to the list of date links-----*/
+
+.date-links h3 {
+  background-color: $byui-blue;
+}
+
+.date-event {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 0.3fr 3fr;
+  align-items: center;
+  margin: 0;
+  border-bottom: 1px solid $med-gray;
+}
+
+.date-event p {
+  margin: 0;
+  padding: 0.5em;
+  font-size: 0.8em;
+}
+
+.date {
+  font-weight: bold;
+}

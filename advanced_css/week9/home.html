@@ -4,28 +4,25 @@
     <meta charset="utf-8" />
     <title>Brigham Young University - Idaho</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
   </head>
 
   <body>
     <header>
-      <div class="site-banner white-text">
-        <div class="site-banner__left">
+      <div class="site-banner-top">
+        <div class="logo">
           <a href="#"
             ><span aria-hidden="true" class="icon-byui-logo">
               <span class="sr-only">Link to BYU-Idaho home page</span>
-            </span></a
-          >
-          <h1>Home</h1>
+            </span></a>
         </div>
-        <div class="site-banner__right">
+        <div class="nav-icons">
           <a href="http://www.byui.edu/#">
             <span class="icon-search text-white mobile-header-icon">
               <span class="sr-only">Search BYU-I</span>
             </span>
           </a>
-          <a
-            href="https://secure.byui.edu/cas/login?service=https://web.byui.edu/Services/Login/?RedirectURL=https%3a%2f%2fmy.byui.edu%2f"
+          <a href="https://secure.byui.edu/cas/login?service=https://web.byui.edu/Services/Login/?RedirectURL=https%3a%2f%2fmy.byui.edu%2f"
           >
             <span class="icon-audience text-white mobile-header-icon">
               <span class="sr-only">Login</span>
@@ -36,35 +33,128 @@
               <span class="sr-only">Expand Menu</span>
             </span>
           </a>
-        </div>
-        <form
-          aria-label="Search byui.edu"
-          method="get"
-          action="https://www.byui.edu/search/result?"
-          role="search"
-        >
-          <div>
-            <label for="searchDesktop" class="sr-only"
-              >Search BYU-I websites:
-            </label>
-            <input
-              id="searchDesktop"
-              name="q"
-              placeholder="Powered by Google"
-              alt="Search BYU-I websites (powered by Google.com)."
-              type="text"
-            />
-
-            <button type="submit">
-              <span aria-hidden="true" class="icon icon-magnifying-glass ">
-                <span class="sr-only">Submit</span>
-              </span>
-            </button>
           </div>
-        </form>
-      </div>
+        </div>
+        
+        <div class="site-banner-bottom">
+        <h1>Brigham Young University - Idaho</h1>
+        </div>
     </header>
-    <main></main>
+    <main>
+
+      <div class="covid">
+        <p>Latest COVID-19 Information</p>
+        <button>COVID-19 Updates</button>
+      </div>
+      
+      <div class="devotional-pic">
+        <img src="assets/President-message.jpg" alt="President Eyring's devotional">
+      </div>
+      <div class="interest-boxes">
+        <div class="interest-box">
+          <img src="assets/CampusVideos.jpg" alt="watch campus videos">
+          <p class="description">Campus videos</p>
+          <p class="right-arrow">></p>
+        </div>
+
+      <div class="interest-box">
+        <img src="assets/PhotoGallery.jpg" alt="photo gallery">
+        <p class="description">Photo Gallery</p>
+        <p class="right-arrow">></p>
+      </div>
+
+      <div class="interest-box">
+        <img src="assets/ExploreCampus.jpg" alt="explore campus">
+        <p class="description">Explore Campus</p>
+        <p class="right-arrow">></p>
+      </div>
+      </div>
+
+      <div class="info-button">
+      <p>GET INFORMATION FOR: </p>
+      <p class="icon-triangle-down"></p>
+      </div>
+
+      <div class="links">
+        <h3>Resources</h3>
+        <div>
+				<p class="description">Apply Now</p>
+        <p class="right-arrow">></p>
+        </div>
+				
+        <div>
+        <p class="description">Financial Aid</p>
+        <p class="right-arrow">></p>
+        </div>
+
+        <div>
+        <p class="description">Degrees and Programs</p>
+        <p class="right-arrow">></p>
+        </div>
+
+        <div>
+        <p class="description">Student Housing</p>
+        <p class="right-arrow">></p>
+				</div>
+
+        <div>
+        <p class="description">Tuition and Fees</p>
+        <p class="right-arrow">></p>
+        </div>
+
+        <div>
+        <p class="description">Academic Deadlines</p>
+        <p class="right-arrow">></p>
+        </div>
+
+      </div>
+
+      <div class="date-links">
+        <h3>Important Dates</h3>
+        <div class="date-event">
+				  <p class="date">Nov. 16</p>
+          <p class="hypen">-</p>
+          <p class="event">Devotional: President Dallin H. Oaks and Sister Kristen Oaks</p>
+        </div>
+      </div>
+
+      <div class="newsroom">
+        <section>
+          <img src="assets/HYMN.jpg" alt="student playing the piano">
+          <p class="newsroom-date">OCTOBER 21, 2021</p>
+          <h3>BYU-Idaho Department of Music announces a call for hymn texts</h3>
+          <p>Requests have been made to submit original hymn texts for use in the seventeenth annual BYU-Idaho Hymn Festival to be held in the spring of 2022.
+          </p>
+        </section>
+
+        <section>
+          <img src="assets/radio-interview.png" alt="the Eyrings giving an interview">
+          <p class="newsroom-date">SEPTEMBER 13, 2021</p>
+          <h3>BYU-Idaho Radio Interview With the Eyrings</h3>
+          <p>President and Sister Eyring discuss their Fall 2021 devotional message to students.
+          </p>
+        </section>
+
+        <section>
+          <img src="assets/Study.jpg" alt="student studying">
+          <p class="newsroom-date">AUGUST 30, 2021</p>
+          <h3>Students Take Advantage of Summer Term Offerings</h3>
+          <p>BYU-Idaho continues to support students during the 2021 Summer Session through on-campus and online classes.
+          </p>
+        </section>
+        <div class="newsroom-button">
+        <button>Newsroom</button>
+        </div>
+        </div>
+      <div class="devotional">
+        <img src="assets/Devo_ElderSisterOaks.jpg" alt="President Oaks & Sister Oaks">
+        <h3>BYU-Idaho Devotional</h3>
+        <p class="date-time">Tuesday, November 16, 2021 at 11:30 AM</p>
+        <p>Elder Dallin H. and Sister Kristen Oaks will be speaking on faith</p>
+        <button>Get Your Ticket</button>
+      </div>
+
+    </main>
     <footer></footer>
   </body>
 </html>

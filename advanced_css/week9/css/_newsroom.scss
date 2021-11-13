@@ -1,0 +1,63 @@
+.newsroom section {
+  border-top: 1px solid $med-gray;
+  @include breakpoint($sm-break) {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    column-gap: 1.5em;
+  }
+  & img {
+    display: none;
+    @include breakpoint($sm-break) {
+      padding-top: 1.5em;
+      display: block;
+      grid-area: 1/1/3/2;
+    }
+  }
+  & p {
+    font-weight: lighter;
+    color: $dark-gray;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    font-family: "Merriweather", "Book Antiqua", serif;
+    @include breakpoint($sm-break) {
+      grid-area: 3/2/4/3;
+      margin: 0 0 1em 0;
+    }
+  }
+  & .newsroom-date {
+    font-family: "BYUI Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 0.7em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    @include breakpoint($sm-break) {
+      grid-area: 1/2/2/3;
+    }
+  }
+  & h3 {
+    color: $byui-blue;
+    font-size: 1em;
+    margin: 0;
+    @include breakpoint($sm-break) {
+      grid-area: 2/2/3/3;
+    }
+  }
+}
+
+.newsroom-button {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: end;
+}
+
+.newsroom-button button {
+  width: min-content;
+  background-color: $byui-blue;
+  color: white;
+  font-weight: bolder;
+  padding: 0.5em 1em;
+  border-radius: 0.3em;
+  font-family: "BYUI Open Sans", sans-serif;
+  font-size: 1em;
+  margin-bottom: 1.5em;
+}
