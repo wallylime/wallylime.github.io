@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 10 Notes</title>
+  <meta name="description" content="Week 10 Notes for WDD330.">
+  <meta name="author" content="Emily Wall">
+  <link href="../../css/normalize.css" rel="stylesheet">
+  <link href="../../css/small.css" rel="stylesheet">
+  <link href="../../css/medium.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>Week 10 Notes</h1>
+  </header>
+  <main>
+    <section>
+     <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation">MDN: Validating Forms</a></h2>
+    <ul>
+     <li><div class="example">Here is some <a href="week10_examples.html">example code for client-side validation</a></div></li>
+     <li>there are a number of form controls available directly through HTML5, such as pattern, required, minlength, maxlength, min, max, and type</li>
+     <li>css pseudo-classes such as :valid or :invalid help the user to know what they need to fix</li>
+     <li>if you want to have more control over client-side validation and error messages, use Javascript</li>
+     <li>the constraint validation API is very useful; one great thing about it is that you can set custom error messages that are very explicit about what didn't validate so that the user doesn't have to guess what went wrong</li>
+    </ul>
+     </section>
+     <section>
+      <h2><a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch">MDN: Using Fetch</a></h2>
+     <ul>
+     <li>here is a fetch request example:
+       <div class="example">fetch('http://example.com/movies.json')<br>
+        .then(response => response.json())<br>
+        .then(data => console.log(data));</div>
+     </li>
+     </ul>
+      </section>
+  </main>
+  <footer>&copy; <span id="year"></span> | Emily Wall | Idaho | <a href="https://www.byui.edu/online">BYU-I Online</a>
+    <p>
+      Last modified: <span id="lastmodified"></span>
+    </p>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="../../js/javascript.js"></script>
+  <script> WebFont.load({
+    google: {
+      families: [
+         'Metamorphous'
+      ]
+    }
+  });
+  </script>
+</body>
+
+</html>

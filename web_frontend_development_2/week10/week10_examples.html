@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client-Side Form Controls</title>
+  <meta name="description" content="Practice with forms and client-side controls.">
+  <meta name="author" content="Emily Wall">
+  <link href="examples_css.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>Practice with Forms and Client-Side Controls</h1>
+  </header>
+  <main>
+    <form>
+      <label for="name">What is your full name? <span>(required)</span></label>
+      <input id="name" minlength="3" maxlength="30" pattern="[A-Za-z\s]*" title="Please enter only letters and spaces. 3-30 characters allowed." required><span class="controls">For this input, I've used the following HTML5 controls: minlength="3" maxlength="30" pattern="[A-Za-z\s]*" required</span>
+      <p></p>
+      
+      <label for="email">What is your email? <span>(required)</span></label>
+      <input id="email" type="email" title="Please enter a valid email address. Example: youremail@gmail.com" required><span class="controls">For this input, I've used the following HTML5 controls: type="email" required</span>
+      <p></p>
+      
+      <label for="phone">What is your 10-digit phone number without any special characters? <span>(required)</span></label>
+      <input id="phone" type="tel" title="Please enter your 10 digit phone number with no special characters." minlength="10" maxlength="10" pattern="[0-9]*" required><span class="controls">For this input, I've used the following HTML5 controls: type="tel" minlength="10" maxlength="10" pattern="[0-9]*" required</span>
+      <p></p>
+
+      <label for="number">What is your favorite number from 1-10?</label>
+      <input id="number" type="number" min="1" max="10" title="Please enter a number from 1-10."><span class="controls">For this input, I've used the following HTML5 controls: type="number" min="1" max="10"</span>
+      <p></p>
+      
+
+      <button>Submit</button>
+    </form>  
+  </main>
+  <footer>
+  </footer>
+  <script src="example_script.js"></script>
+</body>
+
+</html>

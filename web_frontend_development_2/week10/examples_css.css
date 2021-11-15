@@ -1,0 +1,44 @@
+span {
+  color:darkgray;
+}
+
+.error {
+  background-color:rgb(245, 243, 212);
+  color: darkblue;
+  font-weight: bold;
+  font-size: 1.2em;
+  border: 2px solid darkblue;
+  padding: 0.5em;
+}
+
+.controls {
+  color:rgb(71, 112, 226);
+  font-weight: normal;
+  margin-left: 0.5em;
+}
+
+label {
+  display: block;
+  margin: 2em 0 0.5em 0;
+}
+
+input:invalid {
+  border: 3px solid red;
+  background-color: rgb(245, 243, 212);
+}
+
+input:focus {
+  padding: 0.5em;
+  font-weight: bold;
+  background-color: white;
+}
+
+button {
+  display: block;
+  padding: 0.5em;
+  margin: 1em;
+  font-size: 1.5em;
+  font-weight: bold;
+  background-color: rgb(184, 195, 226);
+  border-radius: 0.5em;
+}
