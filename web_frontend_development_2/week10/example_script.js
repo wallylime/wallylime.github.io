@@ -6,24 +6,24 @@ const num = document.querySelector("#number");
 //Get the place to display an error message
 const errors = Array.from(document.querySelectorAll("p"));
 
-//Event listeners (I could probably have made this code a lot more reusable, but I wanted to practice custom, detailed messages to the user)
+//Event listeners
 userName.addEventListener("input", checkName);
 email.addEventListener("input", checkEmail);
 phone.addEventListener("input", checkPhone);
 num.addEventListener("input", checkNum);
 
-//Here are all of my functions
+//Function for checking the number input
 function checkNum() {
   if (num.validity.rangeUnderflow || num.validity.rangeOverflow) {
     const message = "Sorry, you must enter a number between 1 and 10."
     errorHandling(errors[3], message);
   }
   else {
-    const message = "";
-    noError(errors[3], message);
+    noError(errors[3]);
   }
 }
 
+//Function for checking the phone number input
 function checkPhone() {
   if (phone.validity.patternMismatch) {
     const message = "You may only enter numbers. Special characters and letters are not allowed.";
@@ -38,11 +38,11 @@ function checkPhone() {
     errorHandling(errors[2], message);
   }
   else {
-    const message = "";
-    noError(errors[2], message);
+    noError(errors[2]);
   }
 }
 
+//Function for checking the email input
 function checkEmail() {
   if (email.validity.typeMismatch) {
     const message = "You must enter a valid email. For example, myemail@gmail.com";
@@ -53,11 +53,11 @@ function checkEmail() {
     errorHandling(errors[1], message);
   }
   else {
-    const message = "";
-    noError(errors[1], message);
+    noError(errors[1]);
   }
 }
 
+//Function for checking the name input
 function checkName() {
   if (userName.validity.tooShort) {
     const message = "You must enter a name that is at least 3 characters long.";
@@ -76,27 +76,30 @@ function checkName() {
     errorHandling(errors[0], message);
   }
   else {
-    const message = "";
-    noError(errors[0], message);
+    noError(errors[0]);
   }
 }
 
+//This function adds the error class and makes a custom message show up explaining the error
 function errorHandling(element, message) {
   addClass(element);
-  errorText(element, message);
+  writeTextContent(element, message);
 }
 
-function addClass(element) {
-  element.classList.add("error");
+//This function removes the error class and sets the error message to blank if there isn't an error
+function noError(element, message = "") {
+  removeClass(element);
+  writeTextContent(element, message);
 }
 
-function errorText(element, message) {
+//This function is for adding the error message or setting the error message to blank if there isn't an error
+function writeTextContent(element, message) {
   return element.textContent = message;
 }
 
-function noError(element, message) {
-  removeClass(element);
-  errorText(element, message);
+//These two functions are for adding and removing the "error" class
+function addClass(element) {
+  element.classList.add("error");
 }
 
 function removeClass(element) {
