@@ -1,6 +1,9 @@
 span {
   color:darkgray;
 }
+p {
+  transition: all 0.2s;
+}
 
 .error {
   background-color:rgb(245, 243, 212);
@@ -20,6 +23,10 @@ span {
 label {
   display: block;
   margin: 2em 0 0.5em 0;
+}
+
+input {
+  transition: all 0.3s;
 }
 
 input:invalid {
