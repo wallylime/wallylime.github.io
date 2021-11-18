@@ -1,4 +1,3 @@
-   
 import { getJSON } from './utilities.js';
 // Quake Model
 export default class Quake {
@@ -11,7 +10,7 @@ export default class Quake {
   async getEarthQuakesByRadius(position, radius = 100) {
     this._quakes = await getJSON(
       this.baseUrl +
-        `&starttime=2019-01-01&endtime=2019-03-02&latitude=${
+        `&starttime=2021-06-01&endtime=2021-11-01&latitude=${
           position.lat
         }&longitude=${position.lon}&maxradiuskm=${radius}`
     );

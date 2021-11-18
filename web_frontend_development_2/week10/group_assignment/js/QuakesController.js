@@ -43,7 +43,7 @@ export default class QuakesController {
     // render the list to html
     this.quakesView.renderQuakeList(quakeList, this.parentElement);
     // add a listener to the new list of quakes to allow drill down in to the details
-    this.parentElement.addEventListener('touchend', e => {
+    this.parentElement.addEventListener('click', e => {
       this.getQuakeDetails(e.target.dataset.id);
     });
   }
