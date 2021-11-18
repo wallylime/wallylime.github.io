@@ -1,3 +1,5 @@
+/* Work on a chalkboard effect with animation of z-index so that all of the info doesn't appear at the same time. To try: use pseudo-element with content of more to display full content after hiding some paragraphs */
+
 @import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Gloria+Hallelujah&display=swap");
 *,
 *::before,
