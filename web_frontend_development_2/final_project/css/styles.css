@@ -34,7 +34,10 @@ h1 {
 }
 
 h2 {
-  font-size: 1.2rem;
+  font-size: 2rem;
+  text-align: center;
+  border-top: var(--border-big-pink);
+  padding-top: 1em;
 }
 
 .day {
@@ -51,13 +54,52 @@ h2 {
   padding-left: 3vw;
 }
 
-input {
+input[type="radio"] {
   margin: 1vh;
   cursor: pointer;
 }
 
 .full-day {
   display: none;
+}
+
+#shopping-list {
+  border-top: var(--border-gray);
+  padding-top: 1em;
+}
+
+li {
+  padding-bottom: 0.5em;
+}
+
+.addItems {
+  border-top: var(--border-small-pink);
+  padding: 0.5em;
+  display: grid;
+  grid-template-columns: minmax(min-content, max-content) 1fr minmax(min-content, max-content);
+  gap: 1em;
+  align-items: center;
+}
+
+.addItems label {
+  color: white;
+  font-family: "Fredericka the Great", serif;
+  font-size: 1.2em;
+}
+
+input[type="text"],
+#addItem {
+  padding: 0.7em;
+  font-weight: bold;
+  border: 1px solid var(--light-gray);
+  background-color: white;
+  border-radius: 0.7em;
+  box-shadow: 0 0 10px 2px var(--light-gray) inset;
+}
+
+input[type="text"]:hover,
+#addItem:hover {
+  border: var(--border-small-pink);
 }
 
 @media only screen and (min-width: 400px) {

@@ -14,13 +14,14 @@
 
 <body>
   <header>
-    <h1>Menu Planner</h1>
+    <h1>Menu Planner & Shopping List</h1>
   </header>
   
   <main>
     <div id="menu-planner">
+      <h2>Weekly Menu Plan</h2>
       <div class="day Monday">
-        <h2>Mon<span class="full-day">day</span></h2>
+        <h3>Mon<span class="full-day">day</span></h2>
         <div class="planning-square">
           <form>
             <input type="radio" id="Mon-busy" name="time" value="busy">
@@ -34,7 +35,7 @@
       </div>
       
       <div class="day Tuesday">
-        <h2>Tues<span class="full-day">day</span></h2>
+        <h3>Tues<span class="full-day">day</span></h2>
         <div class="planning-square">
           <form>
             <input type="radio" id="Tue-busy" name="time" value="busy">
@@ -48,7 +49,7 @@
       </div>
       
       <div class="day Wednesday">
-        <h2>Wed<span class="full-day">nesday</span></h2>
+        <h3>Wed<span class="full-day">nesday</span></h2>
         <div class="planning-square">
           <form>
             <input type="radio" id="Wed-busy" name="time" value="busy">
@@ -62,7 +63,7 @@
       </div>
       
       <div class="day Thursday">
-        <h2>Thurs<span class="full-day">day</span></h2>
+        <h3>Thurs<span class="full-day">day</span></h2>
         <div class="planning-square">
           <form>
             <input type="radio" id="Thurs-busy" name="time" value="busy">
@@ -76,7 +77,7 @@
       </div>
       
       <div class="day Friday">
-        <h2>Fri<span class="full-day">day</span></h2>
+        <h3>Fri<span class="full-day">day</span></h2>
         <div class="planning-square">
           <form>
             <input type="radio" id="fri-busy" name="time" value="busy">
@@ -90,7 +91,7 @@
       </div>
       
       <div class="day Saturday">
-        <h2>Sat<span class="full-day">urday</span></h2>
+        <h3>Sat<span class="full-day">urday</span></h2>
         <div class="planning-square">
           <form>
             <input type="radio" id="Sat-busy" name="time" value="busy">
@@ -104,7 +105,7 @@
       </div>
 
       <div class="day Sunday">
-        <h2>Sun<span class="full-day">day</span></h2>
+        <h3>Sun<span class="full-day">day</span></h2>
         <div class="planning-square">
           <form>
             <input type="radio" id="Sun-busy" name="time" value="busy">
@@ -117,7 +118,18 @@
         </div>
       </div>
     </div>
-    <div     
+    <div class="list">
+      <h2>Shopping List</h2>
+      <ul id="shopping-list">
+        <li>Put something on your shopping list</li>
+        <li>Milk</li>
+        <li>Eggs</li>
+      </ul>
+      <div class="addItems">
+        <label for="item">Item: </label><input type="text" id="item" name="item">
+        <button id="addItem">+ add to list</button>
+      </div>
+    </div>     
   </main>
   
   <footer>
