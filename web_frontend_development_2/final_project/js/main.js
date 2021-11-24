@@ -1,4 +1,4 @@
-import List from "./list";
+import List from "./list.js";
 
 const list = new List("shopping-list");
 

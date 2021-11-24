@@ -1,4 +1,4 @@
-import * as lsH from "./ls";
+import { readFromLS, writeToLS } from "./ls.js";
 
 let shoppingList = [];
 
@@ -44,7 +44,7 @@ removeItem(itemID) {
 
 //Grabs the list from local storage; if nothing is there, it creates an empty array
 function getList(key) {
-  let ls = lsH.readFromLS(key);
+  let ls = readFromLS(key);
   return ls === null ? [] : ls;
 }
 
@@ -53,7 +53,7 @@ function saveItem(key, item) {
   let timestamp = Date.now();
   const newItem = {id: timestamp, content: item.value};
   shoppingList.push(newItem);//save the new item to our list
-  lsH.writeToLS(key, shoppingList);//save our shopping list to ls
+  writeToLS(key, shoppingList);//save our shopping list to ls
   item.value = "";//clears the item input
 }
 
