@@ -1,0 +1,69 @@
+html,
+body {
+  margin: 0 auto;
+}
+
+/*---Main grid---*/
+.page-wrapper {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70vh 30vh;
+  grid-template-areas:
+  "chalkboard"
+  "bookshelf";
+}
+/*---Elements in chalkboard area of page---*/
+.intro,
+.main {
+  overflow: hidden;
+  grid-area: chalkboard;//positioning on .page-wrapper parent grid
+  display: grid;//setting up grid for their children
+  grid-template-columns: 1fr;
+}
+
+header,
+.summary,
+.preamble {
+  grid-area: 1/1/2/2;//positioning children of .intro all into the same track
+}
+
+.summary,
+.preamble {
+  padding: 2vw;
+}
+
+.explanation,
+.participation,
+.benefits,
+.requirements,
+footer {
+  grid-area: 1/1/2/2;//positioning children of .main all into the same track
+  padding: 2vw;
+}
+
+/*---Elements in bookshelf area of page---*/
+.sidebar {
+  overflow: hidden;
+  grid-area: bookshelf;//positioning on .page-wrapper parent grid
+  display: grid;//setting up grid for its child (.wrapper)
+  grid-template-columns: 1fr;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas:
+  "books resources";
+}
+
+.design-selection {
+  grid-area: books;//positioning within .wrapper
+  padding: 1vw;
+}
+
+.design-archives,
+.zen-resources {
+  grid-area: resources;//positioning within .wrapper
+  padding: 2vw;
+}

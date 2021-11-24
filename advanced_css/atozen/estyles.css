@@ -1,34 +1,232 @@
-/* Work on a chalkboard effect with animation of z-index so that all of the info doesn't appear at the same time. To try: use pseudo-element with content of more to display full content after hiding some paragraphs */
-
 @import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Gloria+Hallelujah&display=swap");
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-}
-
-body {
   max-width: 60em;
-  margin: auto;
   font-family: "Gloria Hallelujah", Helvetica, sans-serif;
   font-size: 18px;
+}
+
+h3 {
+  margin: 1vw;
+  font-family: "Fredericka the Great", Georgia, serif;
+  font-size: 2em;
+  font-weight: normal;
+  color: #FE9000;
+}
+
+html,
+body {
+  margin: 0 auto;
+}
+
+/*---Main grid---*/
+.page-wrapper {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70vh 30vh;
+  grid-template-areas: "chalkboard" "bookshelf";
+}
+
+/*---Elements in chalkboard area of page---*/
+.intro,
+.main {
+  overflow: hidden;
+  grid-area: chalkboard;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+header,
+.summary,
+.preamble {
+  grid-area: 1/1/2/2;
+}
+
+.summary,
+.preamble {
+  padding: 2vw;
+}
+
+.explanation,
+.participation,
+.benefits,
+.requirements,
+footer {
+  grid-area: 1/1/2/2;
+  padding: 2vw;
+}
+
+/*---Elements in bookshelf area of page---*/
+.sidebar {
+  overflow: hidden;
+  grid-area: bookshelf;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "books resources";
+}
+
+.design-selection {
+  grid-area: books;
   padding: 1vw;
 }
 
+.design-archives,
+.zen-resources {
+  grid-area: resources;
+  padding: 2vw;
+}
+
+/*I discovered that I need to specifically set a background color (even if it's just white) or else the elements stacked below in the z-index are still visible.*/
+/*---Whole Page---*/
+* {
+  color: #ffffff;
+}
+
+/*---Chalkboard area of the grid---*/
+.intro,
+.main {
+  border: 15px solid #F04819;
+}
+
+header,
+.summary,
+.preamble,
+.explanation,
+.participation,
+.benefits,
+.requirements,
+footer {
+  background-color: #333333;
+}
+
+/*---Bookshelf area of the grid---*/
+.design-selection {
+  background-color: #2B4162;
+}
+
+.zen-resources,
+.design-archives {
+  background-color: #247BA0;
+}
+
+header {
+  z-index: 1;
+}
+
+.summary {
+  animation: changeFront 1s 5s forwards;
+}
+
+.preamble {
+  animation: changeFront 1s 10s forwards;
+}
+
+.explanation {
+  animation: changeFront 1s 15s forwards;
+}
+
+.participation {
+  animation: changeFront 1s 20s forwards;
+}
+
+.benefits {
+  animation: changeFront 1s 25s forwards;
+}
+
+.requirements {
+  animation: changeFront 1s 30s forwards;
+}
+
+footer {
+  animation: changeFront 1s 60s forwards;
+}
+
+/*---For the bookshelf portion at the bottom---*/
+.zen-resources {
+  z-index: 0;
+}
+
+.design-archives {
+  animation: changeFront 5s alternate infinite;
+}
+
+/*---Keyframes---*/
+@keyframes changeFront {
+  0% {
+    z-index: 0;
+  }
+  100% {
+    z-index: 1;
+  }
+}
 /*Added this to get our A to Zen banner*/
 header {
-  height: 70vh;
-  width: 100vw;
-  background: url(assets/atozenheader.svg);
-  border-top: 3vw solid #247BA0;
-  border-bottom: 3vw solid #247BA0;
-  background-color: #333333;
-  background-repeat: no-repeat;
-  background-size: 100vw 70vh;
+  background: url(assets/atozenheader.svg) center no-repeat;
 }
-header h1,
-header h2 {
+
+h1,
+h2 {
   display: none;
+}
+
+.summary {
+  text-align: center;
+  font-size: 2em;
+}
+
+.requirements {
+  overflow-y: scroll;
+}
+
+.requirements::-webkit-scrollbar {
+  width: 1vw;
+  /* width of the entire scrollbar */
+}
+
+.requirements::-webkit-scrollbar-track {
+  background: #247BA0;
+  /* color of the tracking area */
+}
+
+.requirements::-webkit-scrollbar-thumb {
+  background-color: #FE9000;
+  /* color of the scroll thumb */
+  border: 2px solid #2B4162;
+}
+
+footer {
+  text-align: center;
+  padding-top: 20vh;
+}
+
+footer:before {
+  content: "Helpful Links:";
+  display: block;
+  font-family: "Fredericka the Great", Georgia, serif;
+  font-size: 2em;
+  color: #FE9000;
+  margin-bottom: 1em;
+}
+
+footer:after {
+  content: "";
+  background: url(assets/chalkboard-sunshine.svg);
+  width: 100px;
+  height: 100px;
+}
+
+footer a {
+  font-family: "Fredericka the Great", Georgia, serif;
+  font-size: 2em;
+  margin-right: 1em;
 }
 
 /*# sourceMappingURL=estyles.css.map */

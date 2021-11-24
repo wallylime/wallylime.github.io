@@ -1,0 +1,33 @@
+/*I discovered that I need to specifically set a background color (even if it's just white) or else the elements stacked below in the z-index are still visible.*/
+
+/*---Whole Page---*/
+* {
+  color: $color-6;
+}
+
+/*---Chalkboard area of the grid---*/
+.intro,
+.main {
+  border: 15px solid $color-4;//border around the chalkboard
+}
+
+header,
+.summary, 
+.preamble,
+.explanation,
+.participation,
+.benefits,
+.requirements,
+footer {
+  background-color: $color-5;
+}
+
+/*---Bookshelf area of the grid---*/
+.design-selection {
+  background-color: $color-1;
+}
+
+.zen-resources,
+.design-archives {
+  background-color: $color-2;
+}

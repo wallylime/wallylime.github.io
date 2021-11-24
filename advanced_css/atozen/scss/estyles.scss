@@ -29,16 +29,25 @@ $large: 60em;
 *::before,
 *::after {
   box-sizing: border-box;
-}
-
-body {
   max-width: 60em;
-  margin: auto;
   font-family: $main-font;
   font-size: 18px;
-  padding: 1vw;
+}
+
+h3 {
+  margin: 1vw;
+  font-family: $header-font;
+  font-size: 2em;
+  font-weight: normal;
+  color: $color-3;
 }
 
 //scss partial imports
+@import 'layout';
+@import 'colors';
+@import 'animations';
 @import 'header';
+@import 'summary';
+@import 'requirements';
+@import 'footer';
 

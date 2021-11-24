@@ -1,0 +1,50 @@
+header {
+  z-index: 1;
+}
+
+.summary {
+  animation: changeFront 1s 5s forwards;
+}
+
+.preamble {
+  animation: changeFront 1s 10s forwards;
+}
+
+.explanation {
+  animation: changeFront 1s 15s forwards;
+}
+
+.participation {
+  animation: changeFront 1s 20s forwards;
+}
+
+.benefits {
+  animation: changeFront 1s 25s forwards;
+}
+
+.requirements {
+  animation: changeFront 1s 30s forwards;
+}
+
+footer {
+  animation: changeFront 1s 60s forwards;
+}
+
+/*---For the bookshelf portion at the bottom---*/
+.zen-resources {
+  z-index: 0;
+}
+
+.design-archives {
+  animation: changeFront 5s alternate infinite;
+}
+
+/*---Keyframes---*/
+@keyframes changeFront {
+  0% {
+    z-index: 0;
+  }
+  100% {
+      z-index: 1;
+  }
+}

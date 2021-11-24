@@ -102,6 +102,10 @@ input[type="text"]:hover,
   border: var(--border-small-pink);
 }
 
+.completed {
+  text-decoration: line-through;
+}
+
 @media only screen and (min-width: 400px) {
   .full-day {
     display: inline;
