@@ -17,25 +17,26 @@ showShoppingList() {
 //Reads the value from the input and saves it to the shopping list if it isn't empty
 addItem() {
   const item = document.getElementById("item");
-  if (!item.value === "") {//this ensures that nothing happens if nothing has been added to the text input
-    saveItem(item, this.key);
-    this.showShoppingList();
+  if (item.value === "") {
+    return;//this ensures that nothing happens if nothing has been added to the text input
   }
-}
+  saveItem(item, this.key);
+  this.showShoppingList();
+  }
 
 //Adding event listeners to cross off and remove list items
 addEventListeners() {
   const items = Array.from(this.element.children); //gets all of the list items in the ul
   items.forEach(item => {
-    item.children[0].addEventListener("dblclick", event => event.target.classList.toggle("completed"));//if the user double clicks, the item will be crossed off
-    item.children[1].addEventListener("click", event => this.removeItem(item.id));//if the user clicks the X, the item will be removed
+    item.children[0].addEventListener("click", () => item.classList.toggle("completed"));//if the user clicks, the item will be crossed off
+    item.children[2].addEventListener("click", () => this.removeItem(item.id));//if the user clicks the X, the item will be removed
   })
 }
 
 removeItem(itemID) {
   let item = shoppingList.findIndex(item => item.id == itemID);
   shoppingList.splice(item, 1);
-  lsHelpers.writeToLS(this.key, shoppingList);
+  writeToLS(this.key, shoppingList);
   this.showShoppingList();
 }
 
@@ -49,7 +50,7 @@ function getList(key) {
 }
 
 //Saves the list to local storage
-function saveItem(key, item) {
+function saveItem(item, key) {
   let timestamp = Date.now();
   const newItem = {id: timestamp, content: item.value};
   shoppingList.push(newItem);//save the new item to our list
@@ -64,7 +65,8 @@ function renderList(ul, lis) {
 
 function renderOneItem(item) {
   return `<li id="${item.id}">
+          <input name="${item.content}" type="checkbox">
           <p>${item.content}</p>
-          <div class="delete>X</div>
+          <div class="delete">X</div>
           </li>`;
 }

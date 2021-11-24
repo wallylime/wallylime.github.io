@@ -63,9 +63,11 @@ input[type="radio"] {
   display: none;
 }
 
+/*-----Shopping List Component-----*/
 #shopping-list {
   border-top: var(--border-gray);
   padding-top: 1em;
+  text-decoration: none;
 }
 
 li {
@@ -102,7 +104,17 @@ input[type="text"]:hover,
   border: var(--border-small-pink);
 }
 
-.completed {
+input[type="checkbox"],
+div.delete {
+  cursor: pointer;
+  display: inline;
+}
+
+div.delete {
+  color: white;
+}
+
+.completed p {
   text-decoration: line-through;
 }
 
@@ -110,4 +122,5 @@ input[type="text"]:hover,
   .full-day {
     display: inline;
   }
+
 }
