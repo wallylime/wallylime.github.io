@@ -9,7 +9,7 @@
   --border-small-pink: 0.2vw solid var(--pink);
   box-sizing: border-box;
   font-family: "Kite One", sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   background-color: var(--light-gray);
 }
 
@@ -66,12 +66,14 @@ input[type="radio"] {
 /*-----Shopping List Component-----*/
 #shopping-list {
   border-top: var(--border-gray);
-  padding-top: 1em;
-  text-decoration: none;
+  padding: 1em 0.5em;
+  list-style-type: none;
+  column-count: 3;
+  column-rule: 2px solid var(--pink);
 }
 
 li {
-  padding-bottom: 0.5em;
+  padding: 0.5em;
 }
 
 .addItems {
@@ -104,18 +106,30 @@ input[type="text"]:hover,
   border: var(--border-small-pink);
 }
 
+input[type="text"]:focus {
+  line-height: 1.5;
+}
+
 input[type="checkbox"],
 div.delete {
   cursor: pointer;
-  display: inline;
 }
 
 div.delete {
-  color: white;
+  margin-left: 1em;
+  color: var(--light-gray);
+  display: inline;
+  font-size: 0.6em;
+  line-height: 2;
+}
+
+p.store-item {
+  display: inline;
 }
 
 .completed p {
-  text-decoration: line-through;
+  text-decoration: line-through 0.2em;
+  opacity: 0.5;
 }
 
 @media only screen and (min-width: 400px) {

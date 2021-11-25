@@ -66,7 +66,7 @@ function renderList(ul, lis) {
 function renderOneItem(item) {
   return `<li id="${item.id}">
           <input name="${item.content}" type="checkbox">
-          <p>${item.content}</p>
-          <div class="delete">X</div>
+          <p class="store-item">${item.content}</p>
+          <div class="delete">X Remove</div>
           </li>`;
 }
