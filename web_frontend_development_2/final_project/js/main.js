@@ -1,6 +1,22 @@
 //Grabbing the List class
 import List from "./list.js";
 
+/*----------The code below is for the menu planning portion of my app----------*/
+fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/mealplans/generate?timeFrame=day", {
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com",
+		"x-rapidapi-key": "ca6f097664msh1915568947438f5p1d4444jsn397e4f2feb0e"
+	}
+})
+.then((response) => response.json())
+.then((mealPlan) => {
+	console.log(mealPlan);
+})
+.catch(err => {
+	console.error(err);
+});
+
 /*----------The code below is for the shopping list portion of my app----------*/
 
 //Creating a new instance of the List

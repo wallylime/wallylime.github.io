@@ -1,4 +1,13 @@
 .summary {
-  text-align: center;
-  font-size: 2em;
+  & p,
+  & abbr,
+  & a {
+    text-align: center;
+    font-size: 1.5em; 
+  }
+  & abbr,
+  & a {
+    font-family: $header-font;
+  }
+  
 }

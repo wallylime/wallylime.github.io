@@ -42,6 +42,8 @@ body {
 header,
 .summary,
 .preamble {
+  width: 100%;
+  height: 100%;
   grid-area: 1/1/2/2;
 }
 
@@ -91,11 +93,6 @@ footer {
 }
 
 /*---Chalkboard area of the grid---*/
-.intro,
-.main {
-  border: 15px solid #F04819;
-}
-
 header,
 .summary,
 .preamble,
@@ -126,7 +123,7 @@ header {
 }
 
 .preamble {
-  animation: changeFront 1s 10s forwards;
+  animation: changeFront 1s 15s forwards;
 }
 
 .explanation {
@@ -169,6 +166,8 @@ footer {
 }
 /*Added this to get our A to Zen banner*/
 header {
+  width: 100vw;
+  height: 70vh;
   background: url(assets/atozenheader.svg) center no-repeat;
 }
 
@@ -177,29 +176,12 @@ h2 {
   display: none;
 }
 
-.summary {
+.summary p, .summary abbr, .summary a {
   text-align: center;
-  font-size: 2em;
+  font-size: 1.5em;
 }
-
-.requirements {
-  overflow-y: scroll;
-}
-
-.requirements::-webkit-scrollbar {
-  width: 1vw;
-  /* width of the entire scrollbar */
-}
-
-.requirements::-webkit-scrollbar-track {
-  background: #247BA0;
-  /* color of the tracking area */
-}
-
-.requirements::-webkit-scrollbar-thumb {
-  background-color: #FE9000;
-  /* color of the scroll thumb */
-  border: 2px solid #2B4162;
+.summary abbr, .summary a {
+  font-family: "Fredericka the Great", Georgia, serif;
 }
 
 footer {
