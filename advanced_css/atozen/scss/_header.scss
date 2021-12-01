@@ -1,10 +1,13 @@
 /*Added this to get our A to Zen banner*/
-header {
-  width: 100vw;
-  height: 70vh;
-  background: url(assets/atozenheader.svg) center no-repeat;
+header::before {
+  content: url(assets/small-header.svg);
+  @include breakpoint($small) {
+    content: url(assets/header.svg);
+  }
 }
+
 h1,
-h2 {
-    display:none;
+h2,
+h2 abbr {
+    display: none;
 }

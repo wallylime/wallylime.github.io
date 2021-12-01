@@ -1,0 +1,13 @@
+.design-selection {
+  width: 100vw;
+  height: 20vh;
+  position: fixed;
+  bottom: 5vh;
+  left: 0;
+  background-color: $color-1;
+  transform: translateX(125%);
+  animation: slideLeft .2s 5s forwards;
+  & h3 {
+    display: none;
+  }
+}

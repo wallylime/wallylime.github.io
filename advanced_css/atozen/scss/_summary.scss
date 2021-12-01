@@ -1,13 +1,22 @@
 .summary {
-  & p,
-  & abbr,
-  & a {
+  & p:nth-child(1) {
+   color: transparent;
+   &::before {
+     content: url(assets/erased-board1.svg)
+   }
+   &::after {
+     content: url(assets/summary.svg);
+   }
+   }
+  & p:nth-child(2) {
     text-align: center;
-    font-size: 1.5em; 
+    opacity: 0.8;
   }
-  & abbr,
+  & abbr {
+    display: none;
+  }
   & a {
+    font-size: 1.5em;
     font-family: $header-font;
   }
-  
 }

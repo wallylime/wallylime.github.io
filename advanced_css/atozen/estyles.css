@@ -1,19 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Gloria+Hallelujah&display=swap");
+/*keyframes*/
+@keyframes slideLeft {
+  0% {
+    transform: translateX(125%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-  max-width: 60em;
+  color: #ffffff;
   font-family: "Gloria Hallelujah", Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
 }
-
-h3 {
-  margin: 1vw;
-  font-family: "Fredericka the Great", Georgia, serif;
-  font-size: 2em;
-  font-weight: normal;
-  color: #FE9000;
+@media only screen and (min-width: 760px) {
+  *,
+*::before,
+*::after {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  *,
+*::before,
+*::after {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  *,
+*::before,
+*::after {
+    font-size: 24px;
+  }
 }
 
 html,
@@ -21,194 +43,145 @@ body {
   margin: 0 auto;
 }
 
-/*---Main grid---*/
-.page-wrapper {
-  margin: 0;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 70vh 30vh;
-  grid-template-areas: "chalkboard" "bookshelf";
+body {
+  background-color: #333333;
 }
 
-/*---Elements in chalkboard area of page---*/
-.intro,
-.main {
-  overflow: hidden;
-  grid-area: chalkboard;
-  display: grid;
-  grid-template-columns: 1fr;
+h3 {
+  margin: 1vw;
+  font-family: "Fredericka the Great", Georgia, serif;
+  font-size: 2.2em;
+  font-weight: normal;
 }
 
-header,
-.summary,
-.preamble {
-  width: 100%;
-  height: 100%;
-  grid-area: 1/1/2/2;
-}
-
-.summary,
-.preamble {
-  padding: 2vw;
-}
-
-.explanation,
-.participation,
-.benefits,
-.requirements,
-footer {
-  grid-area: 1/1/2/2;
-  padding: 2vw;
-}
-
-/*---Elements in bookshelf area of page---*/
-.sidebar {
-  overflow: hidden;
-  grid-area: bookshelf;
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-.wrapper {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-areas: "books resources";
-}
-
-.design-selection {
-  grid-area: books;
-  padding: 1vw;
-}
-
-.design-archives,
-.zen-resources {
-  grid-area: resources;
-  padding: 2vw;
-}
-
-/*I discovered that I need to specifically set a background color (even if it's just white) or else the elements stacked below in the z-index are still visible.*/
-/*---Whole Page---*/
-* {
-  color: #ffffff;
-}
-
-/*---Chalkboard area of the grid---*/
-header,
-.summary,
 .preamble,
 .explanation,
 .participation,
 .benefits,
 .requirements,
-footer {
-  background-color: #333333;
-}
-
-/*---Bookshelf area of the grid---*/
-.design-selection {
-  background-color: #2B4162;
-}
-
-.zen-resources,
-.design-archives {
-  background-color: #247BA0;
-}
-
-header {
-  z-index: 1;
-}
-
-.summary {
-  animation: changeFront 1s 5s forwards;
-}
-
-.preamble {
-  animation: changeFront 1s 15s forwards;
-}
-
-.explanation {
-  animation: changeFront 1s 15s forwards;
-}
-
-.participation {
-  animation: changeFront 1s 20s forwards;
-}
-
-.benefits {
-  animation: changeFront 1s 25s forwards;
-}
-
-.requirements {
-  animation: changeFront 1s 30s forwards;
-}
-
-footer {
-  animation: changeFront 1s 60s forwards;
-}
-
-/*---For the bookshelf portion at the bottom---*/
+footer,
 .zen-resources {
-  z-index: 0;
+  padding: 2vw;
+}
+.preamble h3::first-letter,
+.explanation h3::first-letter,
+.participation h3::first-letter,
+.benefits h3::first-letter,
+.requirements h3::first-letter,
+footer h3::first-letter,
+.zen-resources h3::first-letter {
+  font-size: 2.5em;
 }
 
-.design-archives {
-  animation: changeFront 5s alternate infinite;
-}
-
-/*---Keyframes---*/
-@keyframes changeFront {
-  0% {
-    z-index: 0;
-  }
-  100% {
-    z-index: 1;
-  }
-}
 /*Added this to get our A to Zen banner*/
-header {
-  width: 100vw;
-  height: 70vh;
-  background: url(assets/atozenheader.svg) center no-repeat;
+header::before {
+  content: url(assets/small-header.svg);
+}
+@media only screen and (min-width: 480px) {
+  header::before {
+    content: url(assets/header.svg);
+  }
 }
 
 h1,
-h2 {
+h2,
+h2 abbr {
   display: none;
 }
 
-.summary p, .summary abbr, .summary a {
-  text-align: center;
-  font-size: 1.5em;
+.summary p:nth-child(1) {
+  color: transparent;
 }
-.summary abbr, .summary a {
+.summary p:nth-child(1)::before {
+  content: url(assets/erased-board1.svg);
+}
+.summary p:nth-child(1)::after {
+  content: url(assets/summary.svg);
+}
+.summary p:nth-child(2) {
+  text-align: center;
+  opacity: 0.8;
+}
+.summary abbr {
+  display: none;
+}
+.summary a {
+  font-size: 1.5em;
   font-family: "Fredericka the Great", Georgia, serif;
+}
+
+.preamble::before {
+  content: url(assets/erased-board3.svg);
+}
+
+.explanation::before {
+  content: url(assets/erased-board2.svg);
+}
+
+.participation::before {
+  content: url(assets/erased-board3.svg);
+}
+
+.benefits::before {
+  content: url(assets/erased-board1.svg);
+}
+
+.requirements::before {
+  content: url(assets/erased-board3.svg);
+}
+
+.requirements::after {
+  content: url(assets/erased-board2.svg);
 }
 
 footer {
   text-align: center;
-  padding-top: 20vh;
 }
-
-footer:before {
+footer::before {
   content: "Helpful Links:";
   display: block;
-  font-family: "Fredericka the Great", Georgia, serif;
-  font-size: 2em;
-  color: #FE9000;
-  margin-bottom: 1em;
+  font-size: 2.2em;
+  margin-bottom: 0.5em;
 }
-
-footer:after {
-  content: "";
-  background: url(assets/chalkboard-sunshine.svg);
-  width: 100px;
-  height: 100px;
-}
-
 footer a {
   font-family: "Fredericka the Great", Georgia, serif;
-  font-size: 2em;
+  font-size: 2.5em;
   margin-right: 1em;
+}
+footer::after {
+  content: url(assets/erased-board3.svg);
+}
+
+.design-selection {
+  width: 100vw;
+  height: 20vh;
+  position: fixed;
+  bottom: 5vh;
+  left: 0;
+  background-color: #2B4162;
+  transform: translateX(125%);
+  animation: slideLeft 0.2s 5s forwards;
+}
+.design-selection h3 {
+  display: none;
+}
+
+.design-archives {
+  width: 100vw;
+  height: 5vh;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #247BA0;
+  transform: translateX(125%);
+  animation: slideLeft 0.2s 5s forwards;
+}
+.design-archives h3 {
+  display: none;
+}
+
+.zen-resources::after {
+  content: url(assets/erased-board1.svg);
 }
 
 /*# sourceMappingURL=estyles.css.map */

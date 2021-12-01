@@ -1,0 +1,13 @@
+.design-archives {
+  width: 100vw;
+  height: 5vh;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: $color-2;
+  transform: translateX(125%);
+  animation: slideLeft .2s 5s forwards;
+  & h3 {
+    display: none;
+  }
+}
