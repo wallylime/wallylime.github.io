@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Gloria+Hallelujah&display=swap");
 /*keyframes*/
+@import url("https://fonts.googleapis.com/css2?family=Contrail+One&family=Crushed&family=Finger+Paint&family=Henny+Penny&family=Joti+One&family=Ranchers&family=UnifrakturCook:wght@700&display=swap");
 @keyframes slideLeft {
   0% {
     transform: translateX(125%);
@@ -63,34 +64,22 @@ footer,
 .zen-resources {
   padding: 2vw;
 }
-.preamble h3::first-letter,
-.explanation h3::first-letter,
-.participation h3::first-letter,
-.benefits h3::first-letter,
-.requirements h3::first-letter,
-footer h3::first-letter,
-.zen-resources h3::first-letter {
-  font-size: 2.5em;
-}
 
 /*Added this to get our A to Zen banner*/
 header::before {
-  content: url(assets/small-header.svg);
-}
-@media only screen and (min-width: 480px) {
-  header::before {
-    content: url(assets/header.svg);
-  }
+  content: url(assets/header.svg);
 }
 
 h1,
 h2,
 h2 abbr {
-  display: none;
+  color: transparent;
+  font-size: 1px;
 }
 
 .summary p:nth-child(1) {
   color: transparent;
+  font-size: 1px;
 }
 .summary p:nth-child(1)::before {
   content: url(assets/erased-board1.svg);
@@ -110,24 +99,24 @@ h2 abbr {
   font-family: "Fredericka the Great", Georgia, serif;
 }
 
-.preamble::before {
-  content: url(assets/erased-board3.svg);
+.preamble h3::before {
+  content: url(assets/preamble.svg);
 }
 
-.explanation::before {
-  content: url(assets/erased-board2.svg);
+.explanation h3::before {
+  content: url(assets/explanation.svg);
 }
 
-.participation::before {
-  content: url(assets/erased-board3.svg);
+.participation h3::before {
+  content: url(assets/participation.svg);
 }
 
-.benefits::before {
-  content: url(assets/erased-board1.svg);
+.benefits h3::before {
+  content: url(assets/benefits.svg);
 }
 
-.requirements::before {
-  content: url(assets/erased-board3.svg);
+.requirements h3::before {
+  content: url(assets/requirements.svg);
 }
 
 .requirements::after {
@@ -137,24 +126,30 @@ h2 abbr {
 footer {
   text-align: center;
 }
+
 footer::before {
   content: "Helpful Links:";
   display: block;
   font-size: 2.2em;
   margin-bottom: 0.5em;
 }
+
 footer a {
   font-family: "Fredericka the Great", Georgia, serif;
   font-size: 2.5em;
   margin-right: 1em;
 }
+footer a:last-child {
+  margin-right: 0;
+}
+
 footer::after {
   content: url(assets/erased-board3.svg);
 }
 
 .design-selection {
   width: 100vw;
-  height: 20vh;
+  height: 30vh;
   position: fixed;
   bottom: 5vh;
   left: 0;
@@ -180,8 +175,116 @@ footer::after {
   display: none;
 }
 
-.zen-resources::after {
-  content: url(assets/erased-board1.svg);
+.design-selection ul {
+  display: grid;
+  gap: 0.1em;
+  grid-template-columns: 1fr 1fr 1.5fr 1fr 1fr 0.6fr 1fr 1fr;
+  align-items: end;
+  list-style: none;
+  border: 5px solid #3E2D28;
+  background-color: #65483E;
+  width: 96vw;
+  margin: auto;
+  padding: 0;
+  -webkit-perspective: 2500;
+}
+.design-selection li {
+  height: 96vw;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  border: 1px solid black;
+  text-decoration: none;
+  -webkit-transform: rotateX(0deg) translateY(0);
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition-property: transform;
+  -webkit-transition-duration: 100ms;
+  color: transparent;
+}
+.design-selection a {
+  -webkit-transform-origin: 0 0 0;
+  -webkit-transform: rotateZ(90deg) translateY(-12vw);
+  margin: 0;
+  position: absolute;
+  line-height: 5vw;
+  width: 96vw;
+  height: 10vw;
+  padding: 6vw 10vw;
+  text-decoration: none;
+}
+.design-selection .design-name {
+  color: White;
+  font-weight: bold;
+  text-align: left;
+}
+.design-selection .designer-name {
+  color: black;
+  text-align: right;
+}
+.design-selection li:nth-child(1) {
+  background-color: #2B4162;
+  height: 85vw;
+}
+.design-selection li:nth-child(1) a {
+  width: 85vw;
+}
+.design-selection li:nth-child(1) a.design-name {
+  font-family: "Contrail One", cursive;
+}
+.design-selection li:nth-child(2) {
+  background-color: #247BA0;
+}
+.design-selection li:nth-child(2) a .design-name {
+  font-family: "Crushed", cursive;
+}
+.design-selection li:nth-child(3) {
+  background-color: #FE9000;
+  height: 75vw;
+}
+.design-selection li:nth-child(3) a {
+  width: 75vw;
+}
+.design-selection li:nth-child(3) .design-name {
+  font-size: 1.2rem;
+}
+.design-selection li:nth-child(4) {
+  background-color: #F04819;
+  height: 90vw;
+}
+.design-selection li:nth-child(4) a {
+  width: 90vw;
+}
+.design-selection li:nth-child(5) {
+  background-color: #333333;
+}
+.design-selection li:nth-child(6) {
+  background-color: #ffffff;
+}
+.design-selection li:nth-child(6) a {
+  color: black;
+}
+.design-selection li:nth-child(7) {
+  background-color: #247BA0;
+  height: 85vw;
+}
+.design-selection li:nth-child(7) a {
+  width: 85vw;
+}
+.design-selection li:nth-child(8) {
+  background-color: #FE9000;
+  height: 90vw;
+}
+.design-selection li:nth-child(8) a {
+  width: 90vw;
+}
+.design-selection li:hover {
+  transform: scale3d(1.15, 1.15, 1) translateY(0);
+  z-index: 99;
+  transition: transform ease-in 0.5s;
+}
+.design-selection .design-selection h3::after {
+  content: "Design Library";
+  visibility: visible;
 }
 
 /*# sourceMappingURL=estyles.css.map */

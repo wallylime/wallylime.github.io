@@ -1,17 +1,20 @@
 footer {
   text-align: center;
-  &::before {
-    content: "Helpful Links:";
-    display: block;
-    font-size: 2.2em;
-    margin-bottom: 0.5em;
+}
+footer::before {
+  content: "Helpful Links:";
+  display: block;
+  font-size: 2.2em;
+  margin-bottom: 0.5em;
+}
+footer a {
+  font-family: $header-font;
+  font-size: 2.5em;
+  margin-right: 1em;
+  &:last-child {
+    margin-right: 0;
   }
-  & a {
-    font-family: $header-font;
-    font-size: 2.5em;
-    margin-right: 1em;
-  }
-  &::after {
-    content: url(assets/erased-board3.svg);
-  }
+}
+footer::after {
+  content: url(assets/erased-board3.svg);
 }

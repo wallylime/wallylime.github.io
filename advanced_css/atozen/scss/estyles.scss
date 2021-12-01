@@ -79,9 +79,6 @@ h3 {
 footer,
 .zen-resources {
   padding: 2vw;
-  & h3::first-letter {
-    font-size: 2.5em;
-  }
 }
 
 //scss partial imports
@@ -96,6 +93,7 @@ footer,
 @import 'design-selection';
 @import 'design-archives';
 @import 'zen-resources';
+@import 'library';
 
 
 
