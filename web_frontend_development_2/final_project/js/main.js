@@ -1,25 +1,29 @@
-//Grabbing the List class
 import List from "./list.js";
+import {  PlannerSquare } from "./planner.js";
 
-/*----------The code below is for the menu planning portion of my app----------*/
-fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/mealplans/generate?timeFrame=day", {
-	"method": "GET",
-	"headers": {
-		"x-rapidapi-host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com",
-		"x-rapidapi-key": "ca6f097664msh1915568947438f5p1d4444jsn397e4f2feb0e"
-	}
-})
-.then((response) => response.json())
-.then((mealPlan) => {
-	console.log(mealPlan);
-})
-.catch(err => {
-	console.error(err);
-});
 
-/*----------The code below is for the shopping list portion of my app----------*/
+const displayDiv = document.querySelector("#menu-options");
+const closeButton = document.querySelector("button.close");
+//Event listener for closing the recipe display div
+closeButton.addEventListener("click", () => displayDiv.classList.remove("shown"));
+/*--------------------------------------------
+The code below is for the menu planning portion of my app
+--------------------------------------------*/
 
-//Creating a new instance of the List
+//Setting up each day as a new instance of a PlannerSquare
+const Mon = new PlannerSquare("Mon");
+const Tues = new PlannerSquare("Tues");
+const Wed = new PlannerSquare("Wed");
+const Thurs = new PlannerSquare("Thurs");
+const Fri = new PlannerSquare("Fri");
+const Sat = new PlannerSquare("Sat");
+const Sun = new PlannerSquare("Sun");
+
+
+
+/*--------------------------------------------
+The code below is for the shopping list portion of my app
+--------------------------------------------*/
 const list = new List("shopping-list");
 
 //Once the rest of the page is done loading, grab shopping list from local storage and add event listeners to the list items
@@ -39,3 +43,8 @@ input.addEventListener("keypress", event => {
     list.addItem();
   }
 });
+
+//I only want placeholder text in this input when the screen size is small since a label is displayed for larger screen sizes
+if (window.innerWidth < 500) {
+	input.setAttribute("placeholder", "item to add to list");
+}

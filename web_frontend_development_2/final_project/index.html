@@ -19,102 +19,88 @@
   
   <main>
     <div id="menu-planner">
-      <h2>Weekly Menu Plan</h2>
+      <h2>Weekly Dinner Plan</h2>
       <div class="day Monday">
-        <h3>Mon<span class="full-day">day</span></h2>
-        <div class="planning-square">
-          <form>
-            <input type="radio" id="Mon-busy" name="time" value="busy">
+        <h3>Mon<span class="show-more">day</span></h2>
+        <div class="planning-square" id="Mon">
+            <input type="radio" id="Mon-busy" name="Mon-time" value="busy">
             <label for="Mon-busy">busy day</label><br>
-            <input type="radio" id="Mon-normal" name="time" value="normal">
+            <input type="radio" id="Mon-normal" name="Mon-time" value="normal">
             <label for="Mon-normal">normal day</label><br>
-            <input type="radio" id="Mon-extra" name="time" value="extra-time">
+            <input type="radio" id="Mon-extra" name="Mon-time" value="extra-time">
             <label for="Mon-extra">extra time for cooking</label>
-          </form>
         </div>
       </div>
       
       <div class="day Tuesday">
-        <h3>Tues<span class="full-day">day</span></h2>
-        <div class="planning-square">
-          <form>
-            <input type="radio" id="Tue-busy" name="time" value="busy">
+        <h3>Tues<span class="show-more">day</span></h2>
+        <div class="planning-square" id="Tues">
+            <input type="radio" id="Tue-busy" name="Tues-time" value="busy">
             <label for="Tue-busy">busy day</label><br>
-            <input type="radio" id="Tue-normal" name="time" value="normal">
+            <input type="radio" id="Tue-normal" name="Tue-time" value="normal">
             <label for="Tue-normal">normal day</label><br>
-            <input type="radio" id="Tue-extra" name="time" value="extra-time">
+            <input type="radio" id="Tue-extra" name="Tue-time" value="extra-time">
             <label for="Tue-extra">extra time for cooking</label>
-          </form>
         </div>
       </div>
       
       <div class="day Wednesday">
-        <h3>Wed<span class="full-day">nesday</span></h2>
-        <div class="planning-square">
-          <form>
-            <input type="radio" id="Wed-busy" name="time" value="busy">
+        <h3>Wed<span class="show-more">nesday</span></h2>
+        <div class="planning-square" id="Wed">
+            <input type="radio" id="Wed-busy" name="Wed-time" value="busy">
             <label for="Wed-busy">busy day</label><br>
-            <input type="radio" id="Wed-normal" name="time" value="normal">
+            <input type="radio" id="Wed-normal" name="Wed-time" value="normal">
             <label for="Wed-normal">normal day</label><br>
-            <input type="radio" id="Wed-extra" name="time" value="extra-time">
+            <input type="radio" id="Wed-extra" name="Wed-time" value="extra-time">
             <label for="Wed-extra">extra time for cooking</label>
-          </form>
         </div>
       </div>
       
       <div class="day Thursday">
-        <h3>Thurs<span class="full-day">day</span></h2>
-        <div class="planning-square">
-          <form>
-            <input type="radio" id="Thurs-busy" name="time" value="busy">
+        <h3>Thurs<span class="show-more">day</span></h2>
+        <div class="planning-square" id="Thurs">
+            <input type="radio" id="Thurs-busy" name="Thurs-time" value="busy">
             <label for="Thurs-busy">busy day</label><br>
-            <input type="radio" id="Thurs-normal" name="time" value="normal">
+            <input type="radio" id="Thurs-normal" name="Thurs-time" value="normal">
             <label for="Thurs-normal">normal day</label><br>
-            <input type="radio" id="Thurs-extra" name="time" value="extra-time">
+            <input type="radio" id="Thurs-extra" name="Thurs-time" value="extra-time">
             <label for="Thurs-extra">extra time for cooking</label>
-          </form>
         </div>
       </div>
       
       <div class="day Friday">
-        <h3>Fri<span class="full-day">day</span></h2>
-        <div class="planning-square">
-          <form>
-            <input type="radio" id="fri-busy" name="time" value="busy">
+        <h3>Fri<span class="show-more">day</span></h2>
+        <div class="planning-square" id="Fri">
+            <input type="radio" id="fri-busy" name="Fri-time" value="busy">
             <label for="fri-busy">busy day</label><br>
-            <input type="radio" id="fri-normal" name="time" value="normal">
+            <input type="radio" id="fri-normal" name="Fri-time" value="normal">
             <label for="fri-normal">normal day</label><br>
-            <input type="radio" id="fri-extra" name="time" value="extra-time">
+            <input type="radio" id="fri-extra" name="Fri-time" value="extra-time">
             <label for="fri-extra">extra time for cooking</label>
-          </form>
         </div>
       </div>
       
       <div class="day Saturday">
-        <h3>Sat<span class="full-day">urday</span></h2>
-        <div class="planning-square">
-          <form>
-            <input type="radio" id="Sat-busy" name="time" value="busy">
+        <h3>Sat<span class="show-more">urday</span></h2>
+        <div class="planning-square" id="Sat">
+            <input type="radio" id="Sat-busy" name="Sat-time" value="busy">
             <label for="Sat-busy">busy day</label><br>
-            <input type="radio" id="Sat-normal" name="time" value="normal">
+            <input type="radio" id="Sat-normal" name="Sat-time" value="normal">
             <label for="Sat-normal">normal day</label><br>
-            <input type="radio" id="Sat-extra" name="time" value="extra-time">
+            <input type="radio" id="Sat-extra" name="Sat-time" value="extra-time">
             <label for="Sat-extra">extra time for cooking</label>
-          </form>
         </div>
       </div>
 
       <div class="day Sunday">
-        <h3>Sun<span class="full-day">day</span></h2>
-        <div class="planning-square">
-          <form>
-            <input type="radio" id="Sun-busy" name="time" value="busy">
+        <h3>Sun<span class="show-more">day</span></h2>
+        <div class="planning-square" id="Sun">
+            <input type="radio" id="Sun-busy" name="Sun-time" value="busy">
             <label for="Sun-busy">busy day</label><br>
-            <input type="radio" id="Sun-normal" name="time" value="normal">
+            <input type="radio" id="Sun-normal" name="Sun-time" value="normal">
             <label for="Sun-normal">normal day</label><br>
-            <input type="radio" id="Sun-extra" name="time" value="extra-time">
+            <input type="radio" id="Sun-extra" name="Sun-time" value="extra-time">
             <label for="Sun-extra">extra time for cooking</label>
-          </form>
         </div>
       </div>
     </div>
@@ -124,8 +110,11 @@
       </ul>
       <div class="addItems">
         <label for="item">Item: </label><input type="text" id="item" name="item">
-        <button id="addItem">+ add to list</button>
+        <button id="addItem">+<span class="show-more"> add</span></button>
       </div>
+    </div>
+    <div id="menu-options">
+      <button class="close">X</button>
     </div>     
   </main>
   <footer>
