@@ -1,11 +1,6 @@
 import List from "./list.js";
 import {  PlannerSquare } from "./planner.js";
 
-
-const displayDiv = document.querySelector("#menu-options");
-const closeButton = document.querySelector("button.close");
-//Event listener for closing the recipe display div
-closeButton.addEventListener("click", () => displayDiv.classList.remove("shown"));
 /*--------------------------------------------
 The code below is for the menu planning portion of my app
 --------------------------------------------*/

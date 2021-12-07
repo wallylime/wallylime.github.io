@@ -57,7 +57,7 @@ function saveItem(item, key) {
   let timestamp = Date.now();
   const newItem = {
     id: timestamp,
-    content: item.value
+    content: item.value,
   };
   shoppingList.push(newItem); //save the new item to our list
   writeToLS(key, shoppingList); //save our shopping list to ls

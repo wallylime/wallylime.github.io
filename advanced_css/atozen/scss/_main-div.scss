@@ -1,0 +1,39 @@
+.explanation h3::before {
+  content: url(assets/explanation.svg);
+}
+
+.participation h3::before {
+  content: url(assets/participation.svg);
+}
+
+.benefits h3::before {
+  content: url(assets/benefits.svg);
+}
+
+.requirements h3::before {
+  content: url(assets/requirements.svg);
+}
+.requirements::after {
+  content: url(assets/erased-board2.svg);
+}
+
+footer {
+  text-align: center;
+  &::before {
+    content: "Helpful Links:";
+    display: block;
+    font-size: 2.2em;
+    margin-bottom: 0.5em;
+  }
+  &::after {
+    content: url(assets/erased-board3.svg);
+  }
+  & a {
+    font-family: $header-font;
+    font-size: 2.5em;
+    margin-right: 1em;
+    &:last-child {
+      margin-right: 0;
+  }
+}
+}

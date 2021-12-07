@@ -44,6 +44,11 @@ h2 {
   padding-top: 1em;
 }
 
+/*Class for anything that I want to hide*/
+.hide {
+  display: none;
+}
+
 .day {
   padding: 3vw;
   border-top: var(--border-gray);
@@ -58,10 +63,28 @@ h2 {
   padding-left: 3vw;
 }
 
+.recipe-links {
+  color: var(--pink);
+  text-decoration: underline #fdded8;
+  cursor: pointer;
+}
+
+a.recipe-links:hover {
+  color: #fdded8;
+}
+
 input[type="radio"] {
   margin: 1vh;
   cursor: pointer;
 }
+
+.remove {
+  cursor: pointer;
+  display: inline;
+  margin-left: 0.5em;
+  color: var(--light-gray);
+}
+
 /*-----Recipe Ideas Component-----*/
 #menu-options {
   display: grid;
@@ -74,7 +97,7 @@ input[type="radio"] {
   bottom: 0;
   overflow-y: scroll;
   transform: translateY(100%);
-  transition: .2s ease-out;
+  transition: all .2s ease-out;
   padding: 2vw;
 }
 
@@ -87,6 +110,7 @@ input[type="radio"] {
 
 #menu-options h4 {
   line-height: 1.5;
+  cursor: pointer;
 }
 
 #menu-options.shown{
