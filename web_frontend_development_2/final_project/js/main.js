@@ -1,8 +1,8 @@
 import List from "./list.js";
-import {  PlannerSquare } from "./planner.js";
+import PlannerSquare from "./planner.js";
 
 /*--------------------------------------------
-The code below is for the menu planning portion of my app
+The code below is for the menu-planning portion of my app
 --------------------------------------------*/
 
 //Setting up each day as a new instance of a PlannerSquare

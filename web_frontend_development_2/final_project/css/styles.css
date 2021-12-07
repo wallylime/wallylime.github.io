@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Kite+One&display=swap');
 
+/*-----General Styles-----*/
 :root {
   --dark-gray: #3c3d3e;
   --light-gray: #8a8e91;
@@ -49,11 +50,17 @@ h2 {
   display: none;
 }
 
+/*I've used this class to hide things in smaller views that I want to see when the screen size is larger*/
+.show-more {
+  display: none;
+}
+
+/*-----Menu Planner Component-----*/
 .day {
-  padding: 3vw;
+  padding: 2.5vw;
   border-top: var(--border-gray);
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 0.6fr 2fr;
   gap: 2vw;
   align-items: center;
 }
@@ -61,6 +68,32 @@ h2 {
 .planning-square {
   border-left: var(--border-small-pink);
   padding-left: 3vw;
+  display: grid;
+  grid-template-columns: 3fr 0.7fr;
+  align-items: center;
+  gap: 1vw;
+}
+
+.input-div,
+.recipe-plan {
+  grid-area: 1/1/2/2;
+}
+
+.add-more {
+  grid-area: 1/2/2/3;
+  font-weight: bold;
+  border: 1px solid var(--light-gray);
+  border-radius: 0.7em;
+  box-shadow: 0 0 10px 2px var(--light-gray) inset;
+  background-color: #fdded8;
+  padding: 0.7em;
+  cursor: pointer;
+  color: black;
+  text-align: center;
+}
+
+.add-more:hover {
+  border: var(--border-small-pink);
 }
 
 .recipe-links {
@@ -69,7 +102,7 @@ h2 {
   cursor: pointer;
 }
 
-a.recipe-links:hover {
+.recipe-links:hover {
   color: #fdded8;
 }
 
@@ -80,12 +113,11 @@ input[type="radio"] {
 
 .remove {
   cursor: pointer;
-  display: inline;
   margin-left: 0.5em;
   color: var(--light-gray);
 }
 
-/*-----Recipe Ideas Component-----*/
+/*-----Recipe Ideas Component (where info from the API is displayed-----*/
 #menu-options {
   display: grid;
   grid-template-columns: 1fr;
@@ -141,18 +173,11 @@ img {
   color: var(--light-gray);
 }
 
-/*---I've used this class to hide things in smaller views that I want to see when the screen size is larger---*/
-.show-more {
-  display: none;
-}
-
 /*-----Shopping List Component-----*/
 #shopping-list {
   border-top: var(--border-gray);
   padding: 1em 0.5em;
   list-style-type: none;
-  column-count: 2;
-  column-rule: 2px solid var(--pink);
 }
 
 li {
@@ -226,18 +251,26 @@ p.store-item {
 
 /*---Code for larger screen sizes---*/
 @media only screen and (min-width: 500px) {
-  .show-more {/*This shows the unabbreviated day of the week in the menu plan and the word 'remove' next to the X in the shopping list when the screen is at least 500px*/
+  .show-more {/*This shows things that I've shortened for smaller screen sizes*/
     display: inline;
   }
-  #shopping-list {
-    column-count: 3;
+  
+  .day {
+    grid-template-columns: 0.7fr 2fr;
   }
+
+  #shopping-list {
+    column-count: 2;
+    column-rule: 2px solid var(--pink);
+  }
+
   .addItems {
     display: grid;
     grid-template-columns: minmax(min-content, max-content) 1fr minmax(min-content, max-content);
     gap: 1em;
     align-items: center;
   }
+
   .addItems label {/*Only show the "Item" label for screens > 500px*/
     display: block;
     color: white;
@@ -263,7 +296,11 @@ p.store-item {
   }
 }
 
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 800px) {
+  #shopping-list {
+    column-count: 3;
+  }
+  
   #menu-options {
     grid-template-columns: repeat(3, 1fr);
   }
