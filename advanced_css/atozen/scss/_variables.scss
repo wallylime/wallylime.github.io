@@ -9,8 +9,13 @@ $color-6: #ffffff; // white
 //font variables
 $main-font: "Gloria Hallelujah", Helvetica, sans-serif;
 $header-font: "Fredericka the Great", Georgia, serif;
+$book-font: Arial, Helvetica, sans-serif;
 
 //breakpoints
 $small: 400px;
 $medium: 650px;
 $large: 900px;
+
+//shelf width for resource books
+$med-shelf-width: 48vw;
+$large-shelf-width: 28vw;

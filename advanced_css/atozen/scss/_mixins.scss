@@ -3,3 +3,68 @@
     @content;
   }
 }
+@mixin pull-book{
+  transform: scale3d(1.15, 1.15, 1)
+    translateY(0);
+    z-index:99;
+    transition: transform ease-in .5s;}
+  
+  // for creating the design library shelf
+  
+  @mixin library($shelf-width, $shelf-height) {
+    ul { width: $shelf-width;}
+  
+    li { height: $shelf-height;}
+  
+   a {
+    -webkit-transform: rotateZ(90deg) translateY($shelf-width* -.12);
+    transform: rotateZ(90deg) translateY($shelf-width* -.12);
+    line-height: $shelf-width*.05;
+  }
+  
+  .design-name{padding-top: $shelf-width*.06;} 
+  
+  .designer-name{padding-top: $shelf-width*.08;}
+  
+   li:nth-child(1) {
+    & a { width: $shelf-height;} 
+   }
+  
+   li:nth-child(2) {
+    height: $shelf-height*.85;
+    & a { width: $shelf-height*.85;}
+   }
+  
+   li:nth-child(3) {
+    height: $shelf-height*.75;
+    & a { width: $shelf-height*.75;}
+   }
+  
+   li:nth-child(4) {
+    height: $shelf-height*.9;
+    & a { width: $shelf-height*.9; }
+    }
+    
+   ul li:nth-child(5) {
+      & a { width: $shelf-height*.9;
+          -webkit-transform: rotateZ(90deg) translateY($shelf-width* -.11);
+          transform: rotateZ(90deg) translateY($shelf-width* -.11);
+      }
+   }
+  
+   li:nth-child(6) {
+    height: $shelf-height*.9;
+    & a {width: $shelf-height*.9;}
+    }
+  
+   li:nth-child(7) {
+    height: $shelf-height;
+    & a { width: $shelf-height;} 
+   }
+  
+   li:nth-child(8) {
+    background-color: $color-4; 
+    height: $shelf-height*.9;
+    & a { width: $shelf-height*.9;}
+   }
+  }

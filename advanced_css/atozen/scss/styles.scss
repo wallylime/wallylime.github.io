@@ -53,6 +53,12 @@ body {
   background-color: $color-5;
 }
 
+.main,
+.intro {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 h3 {
   margin: 1vw;
   font-family: $header-font;
