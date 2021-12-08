@@ -10,7 +10,7 @@
   grid-template-columns: 100vw;
   grid-template-rows: 29vh 7vh;
   transform: translateX(200%);
-  animation: slideLeft .4s 5s forwards;
+  animation: slideLeft .3s 5s forwards;
 
   & h3 {
     display: none;
@@ -20,6 +20,7 @@
     height: 35vh;
     grid-template-columns: 66vw 34vw;
     grid-template-rows: 30vh 5vh;
+    background-color: $shelf-border;
   }
 
   @include breakpoint($medium) {
@@ -28,8 +29,8 @@
 
   @include breakpoint($large) {
     height: 32vh;
-    border: 5px solid #3E2D28;
-    background-color: #3E2D28;
+    border: 5px solid $shelf-border;
+    background-color: $shelf-border;
     justify-content: space-evenly;
     grid-template-columns: 30vw 30vw 30vw;
   }
@@ -65,12 +66,10 @@
   grid-template-columns: 1.5fr 1fr 1fr 1fr .7fr 1fr 1.2fr 1fr;
   align-items: end;
   list-style: none;
-  border: 5px solid #3E2D28;
-  background-color: #65483E;
+  border: 5px solid $shelf-border;
+  background-color: $shelf-background;
   margin: 0 auto 0 0;
   padding: 0;
-  -webkit-perspective: 2500;
-  perspective: 2500;
 }
 
 .design-selection li {
@@ -107,7 +106,6 @@
   padding-left: 1vh;
   padding-right: 2vh;
   font-family: Helvetica, sans-serif;
-
 }
 
 .designer-name {
@@ -224,8 +222,8 @@
     height: 30vh;
     display: grid;
     grid-template-columns: 45% 55%;
-    border: 5px solid #3E2D28;
-    background-color: #65483E;
+    border: 5px solid $shelf-border;
+    background-color: $shelf-background;
     padding: 0;
     align-content: end;
 
@@ -252,7 +250,7 @@
       text-align: center;
 
       & li:nth-child(1) {
-        background: url(assets/yellow-apple.svg);
+        background: url(assets/maygreen-apple.svg);
         background-size: 16vw 15vh;
         background-repeat: no-repeat;
         padding-top: 5vh;
@@ -269,8 +267,12 @@
 
     & nav ul li a {
       color:white;
-      font-size: 0.8em;
+      font-size: 0.7em;
       text-decoration: none;
+      &:hover {
+        font-size: 0.9em;
+        text-decoration: underline;
+      }
     }
   }
 }
@@ -278,8 +280,6 @@
 
 //Resources
 .zen-resources {
-  width: 0;
-  height: 0;
   visibility: hidden;
 
   & ul {
@@ -296,7 +296,7 @@
     & a:hover,
     abbr:hover {
       font-weight: bold;
-      color: $color-4;
+      color: $color-6;
     }
   }
 
@@ -306,30 +306,37 @@
     visibility: visible;
     width: 34vw;
     height: 30vh;
+    background-image: url(assets/clipboard.svg);
+    background-repeat: no-repeat;
 
     & ul {
-      line-height: 1.1;
+      padding: 27% 38% 20% 18%;
+      line-height: 1;
 
-      & a {
-        font-size: 14px;
+      & li {
+        color: $color-5;
+        font-size: 10px;
+      }
+
+      & a,
+      & abbr {
+        color: $color-5;
+        font-size: 11px;
         margin: 15px 0;
-
-        & abbr {
-          font-size: 14px;
-        }
       }
     }
   }
 
   @include breakpoint($medium) {
-    border: 5px solid #3E2D28;
-    background-color: #65483E;
+    border: 5px solid $shelf-border;
+    background-color: $shelf-background;
     padding: 0;
     align-content: end;
     align-items: end;
     height: 30vh;
     width: 50vw;
     position: relative;
+    background-image: none;
 
     & h3 {
       display: none;
@@ -356,6 +363,7 @@
           background-color: $color-2;
           grid-row: 6/7;
           grid-column: 2/7;
+          padding-left: 0.5em;
         }
 
         &:nth-child(2) {
@@ -372,41 +380,53 @@
           grid-row: 3/4;
           width: $med-shelf-width*.75;
           justify-self: end;
+          text-align: center;
+          padding-top: 0.5em;
+          & abbr {
+            font-size: 2em;
+          }
         }
 
         &:nth-child(4) {
           background-color: $color-1;
           grid-column: 2/6;
           grid-row: 4/5;
+          padding-left: 0.3em;
+          & a {
+            font-size: 1.2em;
+          }
         }
 
         &:nth-child(5) {
           background-color: $color-3;
           grid-column: 1/6;
           grid-row: 5/6;
+          text-align: center;
+          padding-top: 0.5em;
+          & a {
+            font-size: 2em;
+          }
         }
 
         &:hover {
           @include pull-book;
         }
 
+        & a,
+        & abbr {
+          color: $color-6;
+          font-size: 16px;
+          font-weight: bold;
+          text-decoration: none;
+          margin-left: 3vh;
+          font-family: $book-font;
+        }
+
       }
 
     }
 
-    & a,
-    & abbr {
-      color: white;
-      font-size: 16px;
-      font-weight: bold;
-      text-decoration: none;
-      margin-left: 3vh;
-      font-family: $book-font;
-    }
-
-    & a:hover {
-      text-align: center;
-    }
+   
   }
 @include breakpoint($large) {
   grid-column: 3/4;
