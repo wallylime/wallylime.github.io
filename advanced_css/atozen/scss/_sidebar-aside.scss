@@ -5,7 +5,7 @@
   position: fixed;
   bottom: 0;
   left: 0;
-  background-color: $color-1;
+  background-color: $shelf-background;
   display: grid;
   grid-template-columns: 100vw;
   grid-template-rows: 29vh 7vh;
@@ -20,7 +20,6 @@
     height: 35vh;
     grid-template-columns: 66vw 34vw;
     grid-template-rows: 30vh 5vh;
-    background-color: $shelf-border;
   }
 
   @include breakpoint($medium) {
@@ -180,7 +179,7 @@
 
 //Archives
 .design-archives {
-  z-index: 1;
+  z-index: 2;
   width: 100vw;
   height: 7vh;
   position: fixed;
@@ -284,14 +283,6 @@
 
   & ul {
     list-style-type: square;
-    padding-left: 20px;
-    margin-top: .5vh;
-
-    & a {
-      line-height: 1.5;
-      margin: 5px 0;
-      font-size: 14px;
-    }
 
     & a:hover,
     abbr:hover {
@@ -304,6 +295,7 @@
     grid-column: 2/3;
     grid-row: 1/2;
     visibility: visible;
+    border: 5px solid $shelf-border;
     width: 34vw;
     height: 30vh;
     background-image: url(assets/clipboard.svg);
@@ -311,13 +303,23 @@
     background-repeat: no-repeat;
 
     & ul {
-      margin: 11vw 6vw;
-      line-height: 1;
-      @include breakpoint($small-tweak) {
-        margin: 9vw 8.5vw;
+      margin: 10.5vw 0;
+      padding-right: 3.5vw;
+      @include breakpoint($tweak-1) {
+        margin: 10vw 1.9vw;
+      }
+      @include breakpoint($tweak-2) {
+        margin: 10vw 3vw;
+      }
+      @include breakpoint($tweak-3) {
+        margin: 7.5vw 4.1vw;
+      }
+      @include breakpoint($tweak-4) {
+        margin: 7vw 5vw;
       }
 
       & li {
+        line-height: 1.5;
         color: $color-5;
         font-size: 10px;
       }
@@ -326,7 +328,6 @@
       & abbr {
         color: $color-5;
         font-size: 11px;
-        margin: 15px 0;
       }
     }
   }
