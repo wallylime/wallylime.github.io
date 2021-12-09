@@ -307,11 +307,15 @@
     width: 34vw;
     height: 30vh;
     background-image: url(assets/clipboard.svg);
+    background-position: center;
     background-repeat: no-repeat;
 
     & ul {
-      padding: 27% 38% 20% 18%;
+      margin: 11vw 6vw;
       line-height: 1;
+      @include breakpoint($small-tweak) {
+        margin: 9vw 8.5vw;
+      }
 
       & li {
         color: $color-5;
