@@ -12,13 +12,12 @@ const apiKey = "&apiKey=9a3cf066a8854da19ab328252cf0843b";
 //this div is what will pop up and show the results of the api request
 const displayDiv = document.querySelector("#menu-options");
 
-let plan = [];
 //This is the template for setting up each day of the week's menu planning square
 export default class PlannerSquare {
 	constructor(name) {
 		//These are for local storage
 		this.key = name;
-		plan = this.getList();
+		this.plan = this.getList();
 		//Radio buttons
 		this.input = document.querySelectorAll(`input[name="${name}-time"]`);
 		//This is where the selected menu item will show up
@@ -38,9 +37,9 @@ export default class PlannerSquare {
 	showSavedPlan() {
 		this.recipePlan.innerHTML = "";
 		//This makes sure that there's actually something in the array
-		if (plan.length > 0) {
+		if (this.plan.length > 0) {
 			this.radioInputs.classList.add("hide");
-			plan.forEach(item => this.renderMenuItem(item));
+			this.plan.forEach(item => this.renderMenuItem(item));
 			//attach the listeners to remove a recipe or add more recipes
 			this.addPlannedRecipeListeners();
 			//display an add button to allow adding more recipes
@@ -60,20 +59,27 @@ export default class PlannerSquare {
 	addPlannedRecipeListeners() {
 		const removeButtons = this.recipePlan.querySelectorAll("span.remove");
 		removeButtons.forEach(button => button.addEventListener("click", event => {
-			let removeItem = plan.findIndex(i => i.id === event.target.parentNode.id);
-			plan.splice(removeItem, 1);
-			writeToLS(this.key, plan);
+			let removeItem = this.plan.findIndex(i => i.id == event.target.parentNode.id);
+
+			this.plan.splice(removeItem, 1);
+			writeToLS(this.key, this.plan);
 			this.showSavedPlan();
 		}));
 
 		this.addButton.addEventListener("click", () => {
+			let checked = "";
+			//First I'm going to check what the user has already selected as their time requirement and use that for the side dish fetch request.
 			this.input.forEach(radio => {
 				if (radio.checked) {
-					this.evaluate(radio.value, sideDish);
-				} else {
-					this.evaluate("busy", sideDish); //This is a good default prep time if none of the radio buttons are checked (which is the case when an item is retrieved from ls on a new browser session)
+					return checked = radio.value;
 				}
 			})
+			if (checked !== "") {
+				this.evaluate(checked, sideDish);
+			}
+			else {//When the user's recipe ideas are retrieved from ls in a new browser session, no radio buttons will be checked. I'm using "busy" as my fallback for that scenario.
+				this.evaluate("busy", sideDish);
+			}
 		});
 	}
 
@@ -100,7 +106,7 @@ export default class PlannerSquare {
 				if (response.ok) {
 					return response.json();
 				} else {
-					throw new Error("Uh-oh! Something went wrong.");
+					throw Error(response.statusText);
 				}
 			})
 			.then(data => {
@@ -163,8 +169,8 @@ export default class PlannerSquare {
 			title: event.target.textContent,
 			link: event.target.nextElementSibling.nextElementSibling.getAttribute("href"),
 		};
-		plan.push(newItem); //add new item to menu plan
-		writeToLS(this.key, plan); //save plan to ls
+		this.plan.push(newItem); //add new item to menu plan
+		writeToLS(this.key, this.plan); //save plan to ls
 	}
 
 	getList() {
