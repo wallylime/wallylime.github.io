@@ -1,8 +1,9 @@
 body {
   font-family: 'DM Sans', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   color: #031f3a;
-  margin: 0.4em;
+  margin: 0.5em;
+  box-sizing: border-box;
 }
 
 .page-wrapper {
@@ -61,26 +62,6 @@ footer div {
   padding: 0 0.5em;
 }
 
-#contact-button {
-  cursor: pointer;
-  position: sticky;
-  top: 0;
-  padding: 0.5em;
-  text-align: center;
-  font-size: 1.5em;
-  font-weight: bold;
-  background-color: white;
-  border: 1px solid #031f3a;
-  border-radius: 0.5em;
-  box-shadow: 0 0 7px 2px #bb4430 inset;
-}
-
-#contact-button:hover {
-  font-size: 1.7em;
-  box-shadow: 0 0 10px 2px #bb4430 inset;
-  border: 3px solid #031f3a;
-}
-
 section {
   border-top: 0.2em solid #031f3a;
   margin-bottom: 3.5em;
@@ -101,4 +82,56 @@ section:first-child {
 
 .indent p {
   margin-top: 0;
+}
+
+a {
+  color: #bb4430;
+  cursor: pointer;
+}
+
+a:hover {
+  font-size: 1.3em;
+}
+
+.examples {
+  border: 2px solid #489599;
+  padding: 0.5em;
+  margin-top: 0.5em;
+}
+#contact-button {
+  cursor: pointer;
+  position: sticky;
+  top: 0.1em;
+  padding: 0.5em;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  background-color: white;
+  border: 1px solid #031f3a;
+  border-radius: 0.5em;
+  box-shadow: 0 0 7px 2px #bb4430 inset;
+}
+
+#contact-button:hover {
+  font-size: 1.7em;
+  box-shadow: 0 0 10px 2px #bb4430 inset;
+  border: 3px solid #031f3a;
+}
+
+#contact-info {
+  position: relative;
+  margin-top: -0.5em;
+  border: 0.1em solid #489599;
+  border-radius: 0 0 0.5em 0.5em;
+  box-shadow: 0 0 7px 2px #489599 inset;
+  background-color: white;
+  padding: 1em;
+}
+
+#contact-info a {
+  font-weight: bold;
+}
+
+#contact-info.showInfo { 
+  border-radius: 0.5em; 
 }
