@@ -8,19 +8,21 @@
   <title>Emily Wall's Resume</title>
   <meta name="description" content="Emily Wall's resume. I am a frontend web developer/UI/UX designer with a background in psychology. I understand the importance of marketing to the user, writing organized code, and creating visually-appealing designs.">
   <meta name="author" content="Emily Wall">
-  <link href="" rel="stylesheet">
-  <link href="" rel="stylesheet">
-  <link href="" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Vollkorn:wght@400;700&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/small.css" rel="stylesheet">
 </head>
 
 <body>
+  <div class="page-wrapper">
   <header>
-    <img src="images\Emily.jpg" alt="Emily Wall">
-    <h1>Emily Wall</h1>
-    <h2>frontend web developer with psychology background</h2>
-    <p>emilyswall@outlook.com<br>
-    435-216-8686</p>
+    <img src="images/mypic.jpg" alt="picture of Emily Wall">
+      <h1>Emily Wall</h1>
+      <h2>Frontend Web Developer with Psychology Background</h2>
   </header>
+  <div id="contact-button">Contact Me</div>
   <main>
     <section>
       <h2>About Me</h2>
@@ -33,13 +35,18 @@
     </section>
     <section>
       <h2>Education</h2>
+      <div class="indent">
       <h3>Brigham Young University</h3>
       <p>B.S. in Psychology (Aug. 2009) - 3.5 GPA</p>
+      </div>
+      <div class="indent">
       <h3>Brigham Young University - Idaho</h3>
       <p>Certificate in Web Frontend (Dec. 2021) - 4.0 GPA</p>
+    </div>
     </section>
     <section>
       <h2>Skills</h2>
+      <div class="indent">
       <h3>Hard Skills</h3>
       <ul>
         <li>Responsive, mobile-first design</li>
@@ -51,15 +58,18 @@
         <li>APIs</li>
         <li>Github</li>
       </ul>
+      </div>
+      <div class="indent">
       <h3>Soft Skills</h3>
       <ul>
-        <li><span class="list-emphasis">I'm user focused.</span> A website's design isn't about what <i>I</i> want or what <i>I</i> think is cool; it's about the target audience. What does the selected demographic need or want?</li>
+        <li><span class="list-emphasis">I'm user focused.</span> A website's design isn't about what I want or what I think is cool; it's about the target audience. What does the selected demographic need or want?</li>
         <li><span class="list-emphasis">I like to be organized.</span> Well-organized code saves time and reduces headaches. Well-organized websites are easy for users to navigate and for web crawlers to index.</li>
         <li><span class="list-emphasis">I'm a problem solver.</span> When something doesn't work, there's usually a way over it, around it, or under it. I'm not afraid to come up with creative solutions.</li>
         <li><span class="list-emphasis">I'm good at Googling things.</span> When I encounter a problem in coding, my first line of defense is a search engine. It's also important to learn new skills continually and Google is a big part of that.</li>
         <li><span class="list-emphasis">I pay attention to detail.</span> Some people say that they dot their i's and cross their t's; I would say that I remember my semicolons and paranthesis.</li>
         <li><span class="list-emphasis">I love graphic design.</span> One of my favorite classes was Visual Media which was all about design principles, typography, and using the Adobe Creative Cloud. I got 100% in that class and loved every minute.</li>
       </ul>
+      </div>
     </section>
     <section>
       <h2>Work Examples</h2>
@@ -82,11 +92,12 @@
       </div>
     </section>
   </main>
-  <aside>
-    <button id="contact-button">Contact Me</button>
-  </aside>
-  <footer>&copy; 2022 | Emily Wall | Meridian, ID | emilyswall@outlook.com | 435-216-8686
+  <footer>
+    <div>&copy; 2022 | Emily Wall</div>
+    <div>emilyswall@outlook.com</div>
+    <div>435-216-8686</div>
   </footer>
+  </div>
   <script src=""></script>
 </body>
 
