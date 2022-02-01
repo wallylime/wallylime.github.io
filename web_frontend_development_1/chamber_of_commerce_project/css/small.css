@@ -197,6 +197,7 @@ input, textarea {
 }
 
 .submit-button {
+  background-color: lightgray;
   min-width:fit-content;
   width: 50%;
   margin-top: 1rem;
