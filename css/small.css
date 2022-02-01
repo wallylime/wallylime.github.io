@@ -98,10 +98,16 @@ a:hover {
   padding: 0.5em;
   margin-top: 0.5em;
 }
-#contact-button {
-  cursor: pointer;
+
+.contact {
   position: sticky;
   top: 0.1em;
+}
+
+#contact-button {
+  cursor: pointer;
+  /* position: sticky; */
+  /* top: 0.1em; */
   padding: 0.5em;
   text-align: center;
   font-size: 1.5em;
@@ -119,19 +125,19 @@ a:hover {
 }
 
 #contact-info {
-  position: relative;
-  margin-top: -0.5em;
-  border: 0.1em solid #489599;
-  border-radius: 0 0 0.5em 0.5em;
-  box-shadow: 0 0 7px 2px #489599 inset;
-  background-color: white;
-  padding: 1em;
+  display: none;
 }
 
 #contact-info a {
   font-weight: bold;
 }
 
-#contact-info.showInfo { 
-  border-radius: 0.5em; 
+#contact-info.showInfo {
+  display: block;
+  margin-top: -0.5em;
+  border: 0.1em solid #489599;
+  border-radius: 0 0 0.5em 0.5em;
+  box-shadow: 0 0 15px 1px #489599 inset;
+  background-color: white;
+  padding: 1em;
 }
