@@ -374,7 +374,7 @@ div.images {
   margin-left: -.7rem;
   margin-right: -.7rem;
   padding: .5rem;
-  background-color: var(--davys-grey);
+  background-color: black;
 }
 
 div.images img {
