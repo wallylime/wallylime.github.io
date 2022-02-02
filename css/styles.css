@@ -108,7 +108,7 @@ a:hover {
   margin: 0;
 }
 
-#contact-button p:first-child {
+#contact-button p:nth-child(2) {
   padding: 0.7em 0.5em 0em 0.5em;
 }
 
