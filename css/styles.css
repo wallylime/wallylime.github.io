@@ -87,45 +87,33 @@ a:hover {
   margin-top: 0.5em;
 }
 
-.contact {
+#contact-button {
   position: sticky;
   top: 0.1em;
-}
-
-#contact-button {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   cursor: pointer;
-  padding: 0.5em;
   text-align: center;
-  font-size: 1.5em;
   font-weight: bold;
   background-color: white;
+  color: #bb4430;
   border: 1px solid #031f3a;
   border-radius: 0.5em;
-  box-shadow: 0 0 7px 2px #bb4430 inset;
+  box-shadow: 0 0 10px 1px #031f3a inset;
 }
 
-#contact-button:hover {
-  font-size: 1.7em;
-  box-shadow: 0 0 10px 2px #bb4430 inset;
-  border: 3px solid #031f3a;
+#contact-button p {
+  padding: 0.7em 0.5em;
+  margin: 0;
 }
 
-#contact-info {
+#contact-button p:first-child {
+  padding: 0.7em 0.5em 0em 0.5em;
+}
+
+.city {
   display: none;
-}
-
-#contact-info a {
-  font-weight: bold;
-}
-
-#contact-info.showInfo {
-  display: block;
-  margin-top: -0.65em;
-  border: 0.1em solid #489599;
-  border-radius: 0 0 0.5em 0.5em;
-  box-shadow: 0 0 15px 1px #489599 inset;
-  background-color: white;
-  padding: 1em;
 }
 
 footer {
@@ -163,8 +151,12 @@ footer div {
     grid-area: 1/1/2/2;
   }
 
-  aside {
+  #contact-button {
     margin-top: 1em;
+  }
+
+  .city {
+    display: block;
   }
 
   .example-container {
